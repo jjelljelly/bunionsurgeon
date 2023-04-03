@@ -78,4 +78,7 @@
   .flipCard {
     width: 100%;
   }
+  .cardCont {
+    visibility: hidden;
+  }
 }
