@@ -1,0 +1,22 @@
+.overviewCont {
+  background-color: #063b5e;
+  text-align: center;
+  padding: 40px 0 50px;
+  position: relative;
+  min-height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header {
+  color: #ffffff;
+  padding-bottom: 10px;
+}
+.overviewInfo {
+  color: #ffffff;
+}
+
+.contentCont {
+  z-index: 2;
+}

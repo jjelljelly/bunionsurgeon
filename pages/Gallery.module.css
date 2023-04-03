@@ -1,0 +1,22 @@
+.headerSec {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  background-color: #063b5e;
+  color: white;
+  min-height: 300px;
+  padding: 40px 0 50px;
+  position: relative;
+}
+
+.baaCont {
+  width: 100%;
+  background-color: #e1e7f2;
+  min-height: 400px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 20px 10px;
+}

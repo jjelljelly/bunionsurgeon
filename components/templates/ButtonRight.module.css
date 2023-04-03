@@ -1,0 +1,59 @@
+.buttonRight {
+  width: 100px;
+  height: 60px;
+  position: absolute;
+  top: 35%;
+  right: -110px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  background-color: white;
+  border-radius: 20px;
+  color: #063b5e;
+  font-size: 24px;
+}
+
+.button {
+  visibility: hidden;
+  width: 100px;
+  height: 60px;
+  position: absolute;
+  top: 35%;
+  right: -110px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 20px;
+  color: #063b5e;
+  font-size: 24px;
+}
+
+@media screen and (max-width: 700px) {
+  .buttonRight {
+    right: 38%;
+    top: 106%;
+    transform: rotate(90deg);
+    width: 80px;
+    height: 50px;
+    border: solid #063b5e 1px;
+    margin: 0;
+  }
+  .buttonRight:hover {
+    background-color: white;
+  }
+
+  .button {
+    right: 38%;
+    top: 106%;
+    transform: rotate(90deg);
+    width: 80px;
+    height: 50px;
+    border: solid #063b5e 1px;
+    margin: 0;
+  }
+  .button:hover {
+    background-color: white;
+  }
+}

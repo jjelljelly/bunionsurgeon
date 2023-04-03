@@ -1,0 +1,33 @@
+.telephone {
+  fill: none;
+  stroke-dasharray: 11000px;
+  stroke-dashoffset: 11000px;
+  animation: dashes 12s linear forwards;
+  animation-delay: 0.5s;
+}
+
+.background {
+  fill: none;
+}
+
+@keyframes line {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes dash {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes dashes {
+  50% {
+    stroke-dashoffset: 0;
+    /* fill-opacity: 0; */
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}

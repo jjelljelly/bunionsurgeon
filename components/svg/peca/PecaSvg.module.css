@@ -1,0 +1,44 @@
+.imageCont {
+  height: 200px;
+  width: 200px;
+  display: flex;
+}
+.st0 {
+  fill: none;
+  stroke: black;
+  stroke-miterlimit: 10;
+}
+
+.st1 {
+  stroke-width: 3;
+  fill: none;
+  stroke: black;
+  stroke-miterlimit: 10;
+}
+
+.st2 {
+  stroke-width: 3;
+  fill: none;
+  stroke: #e0e56a;
+  stroke-miterlimit: 10;
+}
+
+.st3 {
+  opacity: 0.3;
+  fill: none;
+  stroke: #000000;
+  stroke-width: 3;
+  stroke-miterlimit: 10;
+}
+.pecaSize {
+  height: 100%;
+  width: 100%;
+}
+
+.stop {
+  stop-color: #ffffff;
+}
+
+.stop1 {
+  stop-color: #000000;
+}

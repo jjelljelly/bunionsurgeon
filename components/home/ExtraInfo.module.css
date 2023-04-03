@@ -1,0 +1,15 @@
+.moreInfo {
+  padding: 20px 0 40px;
+  background-color: #063b5e;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  text-align: center;
+}
+
+@media screen and (max-width: 700px) {
+  .moreInfo {
+    padding: 20px 20px 40px;
+  }
+}

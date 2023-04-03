@@ -1,0 +1,80 @@
+.headerSec {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  background-color: #063b5e;
+  color: white;
+  min-height: 300px;
+  padding: 40px 0 50px;
+  position: relative;
+}
+
+.surgeryCont {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: #063b5e;
+  min-height: 350px;
+  padding: 40px 0;
+}
+
+.surgeryType {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-evenly;
+  height: 200px;
+  align-items: center;
+}
+
+.surgery {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #e1e7f2;
+}
+
+.surgery:hover {
+  transition-duration: 0.2s;
+  background-color: #063b5e;
+  color: white;
+  cursor: pointer;
+}
+
+.link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e1e7f2;
+  width: 30%;
+  height: 80%;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 700px) {
+  .surgeryType {
+    flex-direction: column;
+    min-height: 450px;
+  }
+
+  .surgery {
+    margin: 20px 0;
+    height: 80%;
+    background-color: #063b5e;
+    color: white;
+  }
+
+  .surgery:hover {
+    transition-duration: none;
+  }
+
+  .link {
+    margin: 20px 0;
+    height: 80%;
+    width: 80%;
+    background-color: #063b5e;
+  }
+}

@@ -1,0 +1,64 @@
+.imageCont {
+  height: 200px;
+  width: 200px;
+  display: flex;
+}
+
+.st0 {
+  opacity: 0.3;
+}
+
+.st1 {
+  fill: none;
+  stroke: #000000;
+  stroke-miterlimit: 10;
+}
+
+.st2 {
+  fill: #757575;
+  stroke: #000000;
+  stroke-miterlimit: 10;
+}
+
+.st3 {
+  fill: none;
+  /* stroke: url(#SVGID_1_); */
+  stroke-width: 3;
+  stroke-miterlimit: 10;
+}
+
+.st4 {
+  fill: none;
+  /* stroke: url(#SVGID_2_); */
+  stroke-width: 3;
+  stroke-miterlimit: 10;
+}
+
+.st5 {
+  fill: none;
+  stroke: #000000;
+  stroke-width: 3;
+  stroke-miterlimit: 10;
+}
+
+.st6 {
+  fill: none;
+  stroke: #e0e56a;
+  stroke-width: 3;
+  stroke-miterlimit: 10;
+}
+
+.st7 {
+  fill: none;
+  /* stroke: url(#SVGID_3_); */
+  stroke-width: 3;
+  stroke-miterlimit: 10;
+}
+
+.stop {
+  stop-color: #ffffff;
+}
+
+.stop {
+  stop-color: #000000;
+}

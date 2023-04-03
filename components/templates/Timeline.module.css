@@ -1,0 +1,90 @@
+/* .timelineCont {
+  background-color: rgba(230, 231, 232, 0.8);
+  min-height: 375px;
+} */
+
+.header {
+  text-align: center;
+  color: #4f5f78;
+  margin: 0;
+  padding: 40px 0;
+}
+
+.line {
+  width: 80%;
+  border: solid 2px #4f5f78;
+  margin: 0 10px;
+}
+
+.arrowCont {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.timeLine {
+  height: 18px;
+  width: 1px;
+  border-right: 2px solid white;
+}
+
+.itemContainer {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+}
+
+.timelineWrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+  /* padding-top: 30px; */
+}
+
+.timelineValues {
+  padding: 0 10px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  width: 100%;
+}
+
+.button {
+  visibility: hidden;
+  margin: 0;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  padding: 20px 20px;
+  display: flex;
+  align-items: center;
+}
+
+.buttonVis {
+  margin: 0;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.time {
+  font-weight: bold;
+}
+
+.description {
+  font-style: italic;
+}
+
+@media screen and (max-width: 700px) {
+  .itemContainer {
+    width: 90%;
+    min-height: 250px;
+  }
+}

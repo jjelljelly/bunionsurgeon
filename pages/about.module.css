@@ -1,0 +1,57 @@
+.headerSec {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  background-color: #063b5e;
+  color: white;
+  min-height: 300px;
+  padding: 40px 0 50px;
+  position: relative;
+}
+
+.kaserCont {
+  width: 100%;
+  min-height: 450px;
+  display: flex;
+}
+
+.video {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.kaserBio {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #063b5e;
+  background-color: #e1e7f2;
+  margin: 0;
+  padding: 0 40px;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 700px) {
+  .headerSec {
+    padding: 0 10px;
+    min-height: 300px;
+  }
+
+  .kaserCont {
+    flex-wrap: wrap;
+  }
+  .video {
+    width: 100%;
+    min-height: 300px;
+  }
+  .kaserBio {
+    width: 100%;
+    padding: 20px;
+  }
+}

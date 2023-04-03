@@ -1,0 +1,162 @@
+.headerSec {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  background-color: #063b5e;
+  color: white;
+  min-height: 300px;
+  padding: 40px 0 50px;
+  position: relative;
+}
+
+.scarfCont {
+  width: 100%;
+  min-height: 400px;
+  display: flex;
+}
+
+.video {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.scarfIntro {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #063b5e;
+  background-color: #e1e7f2;
+  margin: 0;
+  padding: 0 40px;
+  flex-direction: column;
+}
+
+.bulletCont {
+  width: 80%;
+  margin-left: 25%;
+  list-style-type: "⬗";
+  text-align: left;
+}
+
+.whatIs {
+  text-align: center;
+  background-color: #063b5e;
+  color: white;
+  margin: 0;
+  padding: 30px 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.howCont {
+  display: flex;
+  text-align: center;
+  color: #063b5e;
+  margin: 0;
+  padding: 40px 0;
+  flex-direction: column;
+}
+.stepsCont {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  min-height: 360px;
+  cursor: pointer;
+}
+
+.imageCont {
+  height: 270px;
+  width: 18%;
+  display: flex;
+  border: solid 3px #063b5e;
+  border-radius: 20px;
+  padding: 10px;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+  position: relative;
+}
+
+.imageCont:hover {
+  background-color: rgba(230, 231, 232, 0.8);
+  transition: 0.75s;
+}
+
+.stepsImage {
+  padding: 40px 10px 10px;
+}
+
+.modalCont {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+}
+
+.modalImage {
+  background-color: white;
+  position: relative;
+  width: 40%;
+  border-radius: 20px;
+  min-height: 250px;
+}
+
+.modalText {
+  width: 60%;
+  padding: 0 20px;
+  white-space: pre-line;
+}
+
+@media screen and (max-width: 700px) {
+  .headerSec {
+    padding: 0 30px;
+  }
+  .scarfCont {
+    flex-direction: column;
+  }
+  .video {
+    width: 100%;
+    min-height: 300px;
+  }
+  .scarfIntro {
+    width: 100%;
+    padding: 30px 40px;
+  }
+  .bulletCont {
+    margin-left: 0;
+    width: 100%;
+  }
+  .whatIs {
+    padding: 30px 40px;
+  }
+
+  .stepsCont {
+    flex-direction: column;
+  }
+  .howTitle {
+    padding: 0 40px 20px;
+  }
+  .imageCont {
+    width: 80%;
+    margin: 10px;
+    height: 225px;
+  }
+  .modalCont {
+    flex-direction: column;
+  }
+
+  .modalImage {
+    width: 100%;
+  }
+  .modalText {
+    width: 100%;
+  }
+}

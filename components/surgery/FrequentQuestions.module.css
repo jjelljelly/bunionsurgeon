@@ -1,0 +1,22 @@
+.questionCont {
+  min-height: 600px;
+  width: 100%;
+  background-color: #063b5e;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.questions {
+  width: 40%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: white;
+  border-radius: 20px;
+  color: #063b5e;
+  padding: 20px 40px;
+}

@@ -1,0 +1,10 @@
+.dividers {
+  margin: 0 20px;
+}
+
+@media screen and (max-width: 700px) {
+  .dividers {
+    margin: 0 5px;
+    display: none;
+  }
+}

@@ -1,0 +1,154 @@
+.headerSec {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  background-color: #063b5e;
+  color: white;
+  min-height: 300px;
+  padding: 40px 0 50px;
+  position: relative;
+}
+.misCont {
+  width: 100%;
+  min-height: 400px;
+  display: flex;
+}
+
+.video {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.misIntro {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #063b5e;
+  background-color: #e1e7f2;
+  margin: 0;
+  padding: 0 40px;
+  flex-direction: column;
+}
+
+.bulletCont {
+  width: 80%;
+  margin-left: 25%;
+  list-style-type: "⬗";
+  text-align: left;
+}
+
+.svgCont {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  min-height: 360px;
+  cursor: pointer;
+}
+
+.pecaCont {
+  height: 270px;
+  width: 18%;
+  display: flex;
+  border: solid 3px #063b5e;
+  border-radius: 20px;
+  padding: 10px;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+}
+
+.pecaCont:hover {
+  background-color: rgba(230, 231, 232, 0.8);
+  transition: 0.75s;
+}
+
+.howCont {
+  display: flex;
+  text-align: center;
+  color: #063b5e;
+  margin: 0;
+  padding: 40px 0;
+  flex-direction: column;
+}
+
+/* .stepsCont {
+  display: flex;
+  justify-content: space-evenly;
+} */
+
+.misSteps {
+  margin: 0;
+  padding: 0;
+  width: 18%;
+  cursor: pointer;
+}
+
+.whatIs {
+  text-align: center;
+  background-color: #063b5e;
+  color: white;
+  margin: 0;
+  padding: 30px 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.whyImplant {
+  text-align: center;
+  color: #063b5e;
+  background-color: #e1e7f2;
+  margin: 0;
+  padding: 30px 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 325px;
+}
+
+@media screen and (max-width: 700px) {
+  .headerSec {
+    padding: 0 30px;
+  }
+  .misCont {
+    flex-direction: column;
+  }
+  .video {
+    width: 100%;
+    min-height: 300px;
+  }
+  .misIntro {
+    width: 100%;
+    padding: 30px 40px;
+  }
+  .bulletCont {
+    margin-left: 0;
+    width: 100%;
+  }
+  .whatIs {
+    padding: 30px 40px;
+  }
+
+  .svgCont {
+    flex-direction: column;
+  }
+  .howTitle {
+    padding: 0 40px 20px;
+  }
+  .pecaCont {
+    width: 80%;
+    margin: 10px;
+    height: 225px;
+  }
+  .whyImplant {
+    padding: 30px 40px;
+  }
+}
