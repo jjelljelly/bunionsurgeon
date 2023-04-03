@@ -79,6 +79,6 @@
     width: 100%;
   }
   .cardCont {
-    visibility: hidden;
+    /* visibility: hidden; */
   }
 }
