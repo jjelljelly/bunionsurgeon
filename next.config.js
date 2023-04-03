@@ -1,4 +1,4 @@
-const { withPlaiceholder } = require('@plaiceholder/next')
+const { withPlaiceholder } = require("@plaiceholder/next");
 
 module.exports = withPlaiceholder({
     images: {
