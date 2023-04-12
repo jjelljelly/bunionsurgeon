@@ -1,44 +1,35 @@
 import style from "./TelephoneSvg.module.css";
 import { Waypoint } from "react-waypoint";
 import { useState } from "react";
-import ScrollTrigger from "react-scroll-trigger";
 
 export function TelephoneSvg() {
   const [isInView, setIsInView] = useState(false);
   return (
     <>
       <Waypoint onEnter={() => setIsInView(true)}>
-        {isInView && (
-          <svg
-            x="0px"
-            y="0px"
-            viewBox="0 0 1190.6 591.9"
-            // width="100%"
-            // className={style.telephone}
-            // style={{ enableBackground: "new 0 0 1190.6 841.9;" }}
-          >
+        <svg x="0px" y="0px" viewBox="0 0 1190.6 591.9">
+          <g>
+            <rect
+              x="0"
+              y="0"
+              className={style.background}
+              width="1190.6"
+              height="841.9"
+            />
+          </g>
+          <g id="line_art">
             <g>
-              <rect
-                x="0"
-                y="0"
-                className={style.background}
-                width="1190.6"
-                height="841.9"
-              />
-            </g>
-            <g id="line_art">
-              <g>
-                <path
-                  className={style.telephone}
-                  style={{
-                    stroke: "#191924",
-                    strokeWidth: 1,
-                    strokeLinecap: "butt",
-                    strokeLinejoin: "miter",
-                    strokeMiterlimit: 10,
-                    strokeOpacity: 1,
-                  }}
-                  d="M467.5,525.8c-38.9,0-64.6-39.5-80-63.1l-1.4-2.2c-0.6-0.9-1.5-2.2-2.5-3.6l-1.9,1.4c-0.7,0.5-1.7,0.5-2.4,0
+              <path
+                className={style.telephone}
+                style={{
+                  stroke: "#191924",
+                  strokeWidth: 1,
+                  strokeLinecap: "butt",
+                  strokeLinejoin: "miter",
+                  strokeMiterlimit: 10,
+                  strokeOpacity: 1,
+                }}
+                d="M467.5,525.8c-38.9,0-64.6-39.5-80-63.1l-1.4-2.2c-0.6-0.9-1.5-2.2-2.5-3.6l-1.9,1.4c-0.7,0.5-1.7,0.5-2.4,0
 			l-11.3-8.2c-11.4,4.8-24.5,7-39,5.4c-17.3-1.9-34.7-12-50.3-29.1c-11.7-12.8-18.1-24.9-18.4-25.4c-0.5-0.9-0.2-2,0.7-2.6
 			c0.9-0.6,2-0.4,2.7,0.4c0.1,0.2,13.8,17.4,35.7,28.5c27.5,13.9,55,12.5,81.8-4.3c-4.9-0.6-12.4-2-21-5.5
 			c-13.9-5.6-33.5-17.8-48-43.9c-0.3-0.5-0.3-1.1-0.2-1.6l3.5-11c0.2-0.7,0.8-1.2,1.5-1.4c0.7-0.1,1.5,0.1,1.9,0.7
@@ -63,11 +54,10 @@ export function TelephoneSvg() {
 			c26.8,47.3,70.7,47.1,71.1,47.1c0.9,0,1.7,0.5,1.9,1.4c0.3,0.8,0,1.8-0.8,2.3c-37.1,25.8-69.9,18.5-91,7.8
 			C288.6,426.5,281.1,421.1,275.2,416.2z M379.1,444.5c1.7,2.2,3.5,4.6,5.3,7l0.7-0.5l-4.2-7.6C380.4,443.7,379.7,444.1,379.1,444.5
 			z M366.6,444.3l1.8,1.3c1.6-0.7,3.2-1.5,4.7-2.3c-0.4-0.5-0.7-0.9-1-1.3L366.6,444.3z"
-                />
-              </g>
+              />
             </g>
-          </svg>
-        )}
+          </g>
+        </svg>
       </Waypoint>
     </>
   );

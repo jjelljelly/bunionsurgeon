@@ -6,6 +6,7 @@ body {
   margin: 0;
   font-family: "Cormorant", serif;
   height: 100%;
+  width: 100%;
 }
 
 html {
@@ -13,7 +14,7 @@ html {
 }
 
 body {
-  overflow: auto;
+  overflow-y: auto;
 }
 
 a {
@@ -33,7 +34,8 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  background-color: rgba(230, 231, 232);
+  /* background-color: rgba(230, 231, 232); */
+  background-color: white;
   /* box-shadow: 10px 5px 5px #e1e6ed; */
 }
 

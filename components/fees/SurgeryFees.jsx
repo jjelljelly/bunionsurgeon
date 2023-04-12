@@ -1,6 +1,4 @@
 import style from "./SurgeryFees.module.css";
-import { useState } from "react";
-import { FeesFlipCard } from "../templates/FeesFlipCard";
 import { usePricingContext } from "../../context/pricingContext";
 import { FeesCont } from "./FeesCont";
 
@@ -37,8 +35,8 @@ export function SurgeryFees({ visible }) {
             header={"Lapidus Procedure Fees"}
             unilatLocal={"£" + Math.round(data?.unilateralLapidusLocal)}
             unilatSedation={"£" + Math.round(data?.unilateralLapidusSedation)}
-            bilatLocal={"Unavailable for both feet at the same time"}
-            bilatSedation={"Unavailable for both feet at the same time"}
+            bilatLocal={"Unavailable"}
+            bilatSedation={"Unavailable"}
           />
         </div>
         <div className={style.addInfo}>

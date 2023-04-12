@@ -1,7 +1,5 @@
 import style from "./FeesCont.module.css";
-import { useState } from "react";
 import { FeesFlipCard } from "../templates/FeesFlipCard";
-import { usePricingContext } from "../../context/pricingContext";
 
 export function FeesCont({
   header,
@@ -20,10 +18,14 @@ export function FeesCont({
       </div>
       <div className={style.feesCont}>
         <FeesFlipCard
-          unilatLocal={unilatLocal}
-          unilatSedation={unilatSedation}
-          bilatLocal={bilatLocal}
-          bilatSedation={bilatSedation}
+          feeType="Unilateral"
+          local={unilatLocal}
+          sedation={unilatSedation}
+        />
+        <FeesFlipCard
+          feeType="Bilateral"
+          local={bilatLocal}
+          sedation={bilatSedation}
         />
       </div>
     </div>

@@ -24,13 +24,11 @@
 .wrapper {
   height: 100%;
   width: 100%;
-  border: solid 3px #063b5e;
   position: relative;
   border-radius: 20px;
-  background-color: white;
   text-align: center;
   cursor: pointer;
-  transition: transform 0.8s;
+  transition: transform 0.6s;
   transform-style: preserve-3d;
 }
 
@@ -53,6 +51,11 @@
   }
 }
 
+.flipCardFront {
+  background-color: white;
+  border: solid 3px #063b5e;
+}
+
 .flipCardFront,
 .flipCardBack {
   position: absolute;
@@ -60,6 +63,7 @@
   height: 100%;
   -webkit-backface-visibility: hidden; /* Safari */
   backface-visibility: hidden;
+  border-radius: 20px;
 }
 
 .image {
@@ -71,7 +75,6 @@
   background-color: #063b5e;
   color: white;
   transform: rotateY(180deg);
-  border-radius: 20px;
   display: flex;
   align-items: center;
   justify-content: center;

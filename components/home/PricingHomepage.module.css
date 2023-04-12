@@ -15,11 +15,14 @@
   width: 100%;
   flex-direction: row;
   padding: 20px;
+  align-items: cemter;
 }
 
 .info {
+  display: flex;
   width: 45%;
   text-align: center;
+  justify-content: center;
   margin: 20px 20px 20px 70px;
   display: flex;
   flex-wrap: wrap;
@@ -42,9 +45,17 @@
   padding: 30px 0;
 }
 
+.fetchedPrice {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
 @media screen and (max-width: 700px) {
   .pricingOuter {
     padding-top: 0;
+    padding: 0 10px;
   }
   .infoCont {
     flex-wrap: wrap;
@@ -57,10 +68,18 @@
 
   .pricing {
     width: 100%;
+    min-height: 500px;
   }
 
   .price {
     width: 80%;
     margin: 5px;
+  }
+
+  .fetchedPrice {
+    flex-direction: column;
+    min-height: 300px;
+    align-items: center;
+    width: 100%;
   }
 }

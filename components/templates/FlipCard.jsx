@@ -3,36 +3,41 @@ import { useState } from "react";
 
 export function FlipCard({ questions }) {
   const [styling, setStyling] = useState(false);
+
   return (
     <>
-      <div className={style.cardCont}>
-        {questions.map((item) => (
-          <div className={style.flipCard}>
+      {questions.map((item) => {
+        const isFlipped = styling === item.question;
+        return (
+          <div
+            className={style.card}
+            onClick={() =>
+              setStyling((styling) =>
+                styling === item.question ? false : item.question
+              )
+            }
+          >
             <div
-              onClick={() => {
-                setStyling(styling === item.question ? false : item.question);
-              }}
               className={
-                styling === item.question ? style.rotate : style.wrapper
+                style.cardInner + (isFlipped ? "" : ` ${style.rotate}`)
               }
             >
+              <div className={style.cardBack}>
+                <div>
+                  <p>{item.answer}</p>
+                </div>
+              </div>
               <div
                 className={
-                  styling === item.question
-                    ? style.flipCardBack
-                    : style.flipCardFront
+                  style.cardFront + (isFlipped ? "" : ` ${style.rotate}`)
                 }
               >
-                {styling === item.question ? (
-                  <p>{item.answer}</p>
-                ) : (
-                  <h2>{item.question}</h2>
-                )}
+                <h2>{item.question}</h2>
               </div>
             </div>
           </div>
-        ))}
-      </div>
+        );
+      })}
     </>
   );
 }
