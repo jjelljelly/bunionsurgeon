@@ -50,6 +50,12 @@
   transform: rotateY(180deg);
 }
 
+.cardFront:hover {
+  background-color: white;
+  color: #063b5e;
+  border: solid 3px #063b5e;
+}
+
 .fontWeight {
   font-weight: bold;
 }

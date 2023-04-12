@@ -41,7 +41,6 @@ export default function Form() {
     const response = await fetch(endpoint, options);
 
     // Get the response data from server as JSON.
-    // If server returns the name submitted, that means the form works.
     const result = await response.json();
     alert(`Information submitted: ${result.data}`);
   };
