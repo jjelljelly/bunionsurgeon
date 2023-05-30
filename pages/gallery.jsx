@@ -10,6 +10,9 @@ export async function getStaticProps() {
   const { base64: blBase64, img: blImg } = await getPlaiceholder(
     "/images/abstract-lines.png"
   );
+  const fetchedProducts = await fetchEntries({
+    content_type: "beforeandafterimage",
+  });
 
   return {
     props: {
@@ -17,9 +20,24 @@ export async function getStaticProps() {
         ...blImg,
         blurDataURL: blBase64,
       },
+      images: fetchedProducts,
     },
   };
 }
+
+// export async function getStaticProps() {
+//   //fetch posts from contentful
+//   const fetchedProducts = await fetchEntries({
+//     content_type: "beforeandafterimage",
+//   });
+
+//   // const Beforeandafterimage = await getProductsWithPlaceholders(
+//   //   fetchedProducts
+//   // );
+//   return {
+//     props: { images: fetchedProducts },
+//   };
+// }
 
 export default function Gallery({ images, blImage }) {
   return (
@@ -47,18 +65,4 @@ export default function Gallery({ images, blImage }) {
       </Layout>
     </>
   );
-}
-
-export async function getStaticProps() {
-  //fetch posts from contentful
-  const fetchedProducts = await fetchEntries({
-    content_type: "beforeandafterimage",
-  });
-
-  // const Beforeandafterimage = await getProductsWithPlaceholders(
-  //   fetchedProducts
-  // );
-  return {
-    props: { images: fetchedProducts },
-  };
 }
