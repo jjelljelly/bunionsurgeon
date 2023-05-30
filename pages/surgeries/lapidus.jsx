@@ -6,6 +6,7 @@ import { Modal } from "../../components/templates/Modal";
 import style from "./Lapidus.module.css";
 import Image from "next/image";
 import { useState } from "react";
+import { getPlaiceholder } from "plaiceholder";
 
 const lapidusSteps = [
   {

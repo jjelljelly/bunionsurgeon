@@ -6,6 +6,7 @@ import { Modal } from "../../components/templates/Modal";
 import style from "./ScarfAkin.module.css";
 import { useState } from "react";
 import Image from "next/image";
+import { getPlaiceholder } from "plaiceholder";
 
 const scarfSteps = [
   {

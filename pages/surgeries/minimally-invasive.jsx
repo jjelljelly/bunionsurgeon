@@ -10,6 +10,7 @@ import style from "./MinimallyInvasive.module.css";
 import { useState } from "react";
 import { Modal } from "../../components/templates/Modal";
 import { MisTimeline } from "../../components/surgery/surgeryTimelines/MisTimeline";
+import { getPlaiceholder } from "plaiceholder";
 
 const pecaSteps = [
   {
