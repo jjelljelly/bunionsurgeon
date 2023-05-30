@@ -1,16 +1,20 @@
 import Image from "next/image";
 import styles from "./Banner.module.css";
 
-export function BannerBackground() {
+export function BannerBackground({ image }) {
+  const { src, blurDataURL } = image;
   return (
     <Image
-      src="/images/homepage-idea.jpg"
+      // src="/images/homepage-idea.jpg"
+      src={src}
       fill
-      objectFit="cover"
-      objectPosition="top"
       alt="Image of Mr Kaser Nazir"
       className={styles.bannerImage}
-      // placeholder="blur"
+      placeholder="blur"
+      blurDataURL={blurDataURL}
+      style={{ objectFit: "cover", objectPosition: "top" }}
+      sizes="100%"
+      priority={true}
     />
   );
 }

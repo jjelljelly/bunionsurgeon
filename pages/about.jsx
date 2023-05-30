@@ -8,6 +8,7 @@ import style from "./about.module.css";
 import { useState } from "react";
 import { Marker } from "../components/templates/map/Marker";
 import { NewMap } from "../components/templates/map/NewMap.";
+import { getPlaiceholder } from "plaiceholder";
 // import {
 //   InfoWindow,
 //   withScriptjs,
@@ -18,6 +19,21 @@ import { NewMap } from "../components/templates/map/NewMap.";
 const render = (status) => {
   return <h1>{status}</h1>;
 };
+
+export async function getStaticProps() {
+  const { base64: blBase64, img: blImg } = await getPlaiceholder(
+    "/images/abstract-lines.png"
+  );
+
+  return {
+    props: {
+      blImage: {
+        ...blImg,
+        blurDataURL: blBase64,
+      },
+    },
+  };
+}
 
 // const MapWithAMakredInfoWindow = compose(
 //   withStateHandlers(
@@ -49,7 +65,7 @@ const mapStyles = [
   // { featureType: "poi.medical", stylers: [{ visibility: "on" }] },
 ];
 
-export default function About() {
+export default function About({ blImage }) {
   const [clicks, setClicks] = useState([]);
   const [zoom, setZoom] = useState(16); // initial zoom
   const [center, setCenter] = useState({
@@ -70,15 +86,26 @@ export default function About() {
 
   return (
     <>
-      <Head />
+      <Head>
+        <title>About Us | Mr Kaser Nazir | Bunion Surgeon</title>
+        <meta
+          name="description"
+          content="Our bunion surgeon, Mr Kaser Nazir, is one of the leading surgeons in the United Kingdom. With over a 97% success rate, excellent patient results and feedback."
+        />
+        <link rel="icon" href="/images/bunion-logo.png" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1.0,user-scalable=0"
+        />
+      </Head>
       <Layout>
         <div>
           <div className={style.headerSec}>
-            <BackgroundLines />
+            <BackgroundLines image={blImage} />
             <h1>About The Bunion Surgeon</h1>
             <p>
               The Bunion Surgeon is a central London based clinic that
-              specialises in minimally invasive or key hole bunion surgery.
+              specialises in minimally invasive key hole bunion surgery.
             </p>
             <p>
               All consultations and procedures are carried out by our expert
@@ -92,7 +119,7 @@ export default function About() {
               <p>
                 Mr Kaser Nazir is a foot and ankle surgeon who primarily
                 operates in central London. He is one of the leading bunion
-                surgeons in the United Kingdom and Dubai, UAE.
+                surgeons in the United Kingdom.
               </p>
               <p>
                 Specialising in minimally invasive and innovative surgical

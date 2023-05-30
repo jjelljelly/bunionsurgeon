@@ -11,12 +11,12 @@ export function HomeFeesCont({
     // <div className={style.feesCont}>
     <>
       <FeesFlipCard
-        feeType="Unilateral"
+        feeType="One Foot"
         local={unilatLocal}
         sedation={unilatSedation}
       />
       <FeesFlipCard
-        feeType="Bilateral"
+        feeType="Both Feet"
         local={bilatLocal}
         sedation={bilatSedation}
       />

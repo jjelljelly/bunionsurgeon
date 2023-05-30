@@ -4,16 +4,18 @@ import Link from "next/link";
 
 export function BunLogo() {
   return (
-    <div style={{ position: "relative", height: "120px", width: "120px" }}>
-      <Link href={"/"}>
-        <Image
-          src="/images/bunion-logo.png"
-          style={{ objectFit: "contain" }}
-          alt="Bunion surgeon logo"
-          className={styles.bunionLogo}
-          fill
-        />
-      </Link>
-    </div>
+    <Link
+      href={"/"}
+      style={{ position: "relative", height: "110px", width: "180px" }}
+    >
+      <Image
+        src="/images/bunion-logo.png"
+        style={{ objectFit: "contain", objectPosition: "bottom" }}
+        alt="Bunion surgeon logo"
+        className={styles.bunionLogo}
+        fill
+        sizes="100%"
+      />
+    </Link>
   );
 }

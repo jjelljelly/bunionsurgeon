@@ -12,19 +12,19 @@ export function PricingHomepage({}) {
       </div>
       <div className={style.infoCont}>
         <div className={style.info}>
-          <h3>
+          <p>
             We offer our patients a clear outline of expected fees following a
             consultation and X-rays. Here you can find our typical approximate
             procedure costs, excluding postoperative X-rays.
-          </h3>
-          <h3>Are you planning on using medical insurance?</h3>
+          </p>
+          <p>Are you planning on using medical insurance?</p>
 
-          <h3>
+          <p>
             Mr Kaser Nazir is covered by all major insurance companies. Contact
             your insurance provider to request authorisation for a consultation
             and X-ray, our team will assist you with all required information to
             authorise the procedure following your appointment.
-          </h3>
+          </p>
         </div>
         <div className={style.pricing}>
           <div className={style.price}>

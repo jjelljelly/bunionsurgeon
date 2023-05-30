@@ -373,9 +373,9 @@ export default function handler(req, res) {
         transporter.sendMail(confirmMail, async (error) => {
             if (error) {
                 console.log("Error:", error)
-                // res.send(error.message);
+                res.status(500).send()
             }
-            await res.json({ data: "success" });
+            await res.status(200).json({ data: "success" });
         });
 
     }

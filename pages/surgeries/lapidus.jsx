@@ -47,7 +47,18 @@ export default function lapidus() {
   const [idx, setIdx] = useState();
   return (
     <>
-      <Head />
+      <Head>
+        <title>Lapidus Procedure | Bunion Surgeon</title>
+        <meta
+          name="description"
+          content="The Lapidus Procedure is generally reserved to correct severe bunion deformities and for patient's suffering from hypermobility."
+        />
+        <link rel="icon" href="/images/bunion-logo.png" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1.0,user-scalable=0"
+        />
+      </Head>
       <Layout>
         <div className={style.headerSec}>
           <BackgroundLines />

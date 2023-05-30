@@ -80,7 +80,18 @@ export default function ScarfAkin() {
 
   return (
     <>
-      <Head />
+      <Head>
+        <title>Bunion Surgery | Scarf & Akin Osteotomy | bunionsurgeon</title>
+        <meta
+          name="description"
+          content="Key information on surgical treatment of Bunions, also known as Hallux Valgus, with the Scarf & Akin Osteotomy. Offering a faster recovery than traditional ..."
+        />
+        <link rel="icon" href="/images/bunion-logo.png" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1.0,user-scalable=0"
+        />
+      </Head>
       <Layout>
         <div className={style.headerSec}>
           <BackgroundLines />

@@ -45,7 +45,20 @@ export default function MinimallyInvasive() {
 
   return (
     <>
-      <Head />
+      <Head>
+        <title>
+          Minimally Invasive Keyhole Bunion Surgery | Bunion Surgeon
+        </title>
+        <meta
+          name="description"
+          content="Keyhole Surgery, also known as Minimally Invasive Surgery, uses modern techniques and equipment to decrease the number and size of incisions..."
+        />
+        <link rel="icon" href="/images/bunion-logo.png" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1.0,user-scalable=0"
+        />
+      </Head>
       <Layout>
         <div className={style.headerSec}>
           <BackgroundLines />

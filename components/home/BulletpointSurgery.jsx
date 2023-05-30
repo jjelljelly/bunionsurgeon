@@ -3,11 +3,11 @@ import { HappyFeet } from "./HappyFeet";
 import styling from "./BulletpointSurgery.module.css";
 import Link from "next/link";
 
-export function BulletpointSurgery() {
+export function BulletpointSurgery({ images, image }) {
   return (
     <div className={styling.bulletpointCont}>
       <div className={styling.happyfeetCont}>
-        <HappyFeet />
+        <HappyFeet images={images} />
       </div>
       <div className={styling.bulletpointTextCont}>
         <div className={styling.bulletpoints}>
@@ -23,7 +23,7 @@ export function BulletpointSurgery() {
           </ul>
         </div>
         <div className={styling.moreInfo}>
-          <BackgroundLines />
+          <BackgroundLines image={image} />
           <div className={styling.buttonCont}>
             <button>
               <Link href={"/surgeries/minimally-invasive"}>Find out more</Link>

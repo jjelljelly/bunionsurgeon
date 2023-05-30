@@ -9,7 +9,7 @@ const timelineObj = [
   },
   {
     date: "2017",
-    qualification: "Elected Dean of Faculty of Podiatric Surgery, UK",
+    qualification: "Elected member of Faculty of Podiatric Surgery, UK",
     key: "qual2",
   },
   {

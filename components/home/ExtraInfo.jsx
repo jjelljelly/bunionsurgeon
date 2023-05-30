@@ -1,10 +1,10 @@
 import { BackgroundLines } from "./BackgroundLines";
 import style from "./ExtraInfo.module.css";
 
-export function ExtraInfo() {
+export function ExtraInfo({ image }) {
   return (
     <div className={style.moreInfo}>
-      <BackgroundLines />
+      <BackgroundLines image={image} />
       <h3>
         We provide alternative surgical options for bunion correction, such as
         the scarf and akin osteotomy and lapidus procedure.

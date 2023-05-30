@@ -1,9 +1,17 @@
 import style from "./Form.module.css";
 import { RadioInput } from "./RadioInput";
 import React, { useState } from "react";
+import { Modal } from "./Modal";
+import { ModalContact } from "./ModalContact";
+
+const SUCCESS = "SUCCESS";
+const SENDING = "SENDING";
+const FAILURE = "FAILURE";
 
 export default function Form() {
   const [select, setSelect] = useState("");
+  const [response, setResponse] = useState(false);
+  // const [visible, setVisible] = useState(false);
 
   // Handles the submit event on form submit.
   const handleSubmit = async (event) => {
@@ -38,70 +46,125 @@ export default function Form() {
     };
 
     // Send the form data to our forms API on Vercel and get a response.
-    const response = await fetch(endpoint, options);
+    const res = await fetch(endpoint, options);
 
     // Get the response data from server as JSON.
-    const result = await response.json();
-    alert(`Information submitted: ${result.data}`);
+    const result = await res.json();
+
+    if (res.status === 200) {
+      setResponse(SUCCESS);
+    } else if (res.status === 500) {
+      setResponse(FAILURE);
+    }
+
+    //check if result is OK (200)
+    //if ok setState to sent
+    //else set state to error or whatever
+
+    // alert(`Information submitted: ${result.data}`);
   };
   return (
-    <form className={style.form} onSubmit={handleSubmit}>
-      <label htmlFor="name">Full name:</label>
-      <input className={style.box} type="text" id="name" name="name" required />
-      <label htmlFor="contact">Contact number:</label>
-      <input
-        className={style.box}
-        type="tel"
-        id="number"
-        name="number"
-        required
-      />
-      <label htmlFor="email">Email:</label>
-      <input
-        className={style.box}
-        type="email"
-        id="email"
-        name="email"
-        required
-      />
-      <label htmlFor="email">Enquiry:</label>
-      <textarea
-        className={style.box}
-        id="enquiry"
-        name="enquiry"
-        rows="6"
-        required
-      />
-      <div>
-        <h4 className={style.question}>
-          Do you have insurance or are you self-funding?
-        </h4>
+    <>
+      <form className={style.form} onSubmit={handleSubmit}>
+        <label className={style.boxContainer}>
+          Full name:
+          <input
+            className={style.box}
+            type="text"
+            id="name"
+            name="name"
+            required
+          />
+        </label>
+        <label className={style.boxContainer}>
+          Contact number:
+          <input
+            className={style.box}
+            type="tel"
+            id="number"
+            name="contact"
+            required
+          />
+        </label>
+        <label className={style.boxContainer}>
+          Email:
+          <input
+            className={style.box}
+            type="email"
+            id="email"
+            name="email"
+            required
+          />
+        </label>
+        <label className={style.boxContainer}>
+          Enquiry:
+          <textarea
+            className={style.box}
+            id="enquiry"
+            name="enquiry"
+            rows="6"
+            required
+          />
+        </label>
         <div>
-          <RadioInput
-            state={select}
-            setState={setSelect}
-            label="Insurance"
-            value="insured"
-            name="funding"
-          />
-          <RadioInput
-            state={select}
-            setState={setSelect}
-            label="Self-funding"
-            value="self-funding"
-            name="funding"
-          />
-          <div className={style.message}>
-            <p>
-              {select === "self-funding"
-                ? "Our team will provide you with a procedure quote"
-                : ""}
-            </p>
+          <p className={style.question}>
+            Do you have insurance or are you self-funding?
+          </p>
+          <div>
+            <label className={style.boxContainer}>
+              <RadioInput
+                state={select}
+                setState={setSelect}
+                label="Insurance"
+                value="insured"
+                name="funding"
+              />
+            </label>
+            <label className={style.boxContainer}>
+              <RadioInput
+                state={select}
+                setState={setSelect}
+                label="Self-funding"
+                value="self-funding"
+                name="funding"
+              />
+            </label>
+            <div className={style.message}>
+              <p>
+                {select === "self-funding"
+                  ? "Our team will provide you with a procedure quote"
+                  : ""}
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-      <input type="hidden" name="oh_no_honey" value="oh_no_honey" />
-      <button type="submit">Submit</button>
-    </form>
+        <input type="hidden" name="oh_no_honey" value="oh_no_honey" />
+        <button type="submit" onClick={() => setResponse(SENDING)}>
+          Submit
+        </button>
+      </form>
+      {response === SENDING && (
+        <p className={style.sending}>
+          We are prosessing your request, please wait one a moment. We will
+          confirm once the enquiry has been succsessfully sent.
+        </p>
+      )}
+      {response === SUCCESS && (
+        <ModalContact visible={Boolean(response)} setResponse={setResponse}>
+          <h2>
+            Your enquiry has been succsessfully sent to our team who will be in
+            touch as soon as possible.
+          </h2>
+        </ModalContact>
+      )}
+      {response === FAILURE && (
+        <ModalContact visible={visible}>
+          <h2>
+            Unfortunately there was an error sending your enquiry. Please call
+            our team on 02078208007 or email admin@bunionsurgeon.co.uk
+          </h2>
+        </ModalContact>
+      )}
+    </>
   );
 }

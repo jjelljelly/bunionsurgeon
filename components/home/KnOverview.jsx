@@ -2,10 +2,10 @@ import style from "./KnOverview.module.css";
 import { BackgroundLines } from "./BackgroundLines";
 import Link from "next/link";
 
-export function KnOverview() {
+export function KnOverview({ image }) {
   return (
     <div className={style.overviewCont}>
-      <BackgroundLines />
+      <BackgroundLines image={image} />
       <div className={style.contentCont}>
         <h2 className={style.header}>About The Bunion Surgeon</h2>
         <h3 className={style.overviewInfo}>

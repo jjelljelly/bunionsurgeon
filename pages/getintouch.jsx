@@ -8,6 +8,7 @@ import style from "./GetInTouch.module.css";
 import { useState } from "react";
 import { ContactDetails } from "../components/templates/ContactDetails";
 import Form from "../components/templates/Form";
+import { getPlaiceholder } from "plaiceholder";
 
 const render = (status) => {
   return <h1>{status}</h1>;
@@ -20,7 +21,22 @@ const mapStyles = [
   },
 ];
 
-export default function GetInTouch() {
+export async function getStaticProps() {
+  const { base64: blBase64, img: blImg } = await getPlaiceholder(
+    "/images/abstract-lines.png"
+  );
+
+  return {
+    props: {
+      blImage: {
+        ...blImg,
+        blurDataURL: blBase64,
+      },
+    },
+  };
+}
+
+export default function GetInTouch({ blImage }) {
   const [clicks, setClicks] = useState([]);
   const [zoom, setZoom] = useState(16);
   const [center, setCenter] = useState({
@@ -41,10 +57,21 @@ export default function GetInTouch() {
 
   return (
     <>
-      <Head />
+      <Head>
+        <title>Get In Touch | Bunion Surgeon</title>
+        <meta
+          name="description"
+          content="If you have any questions contact us, via - Tel: 0207 820 8007, Email: admin@bunionsurgeon.co.uk, Address: 17 Harley Street, London, W1G 9QH"
+        />
+        <link rel="icon" href="/images/bunion-logo.png" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1.0,user-scalable=0"
+        />
+      </Head>
       <Layout>
         <div className={style.headerSec}>
-          <BackgroundLines />
+          <BackgroundLines image={blImage} />
           <h1>Get in Touch</h1>
         </div>
         <ContactDetails />

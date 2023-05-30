@@ -10,6 +10,7 @@ import { Wrapper } from '@googlemaps/react-wrapper'
 import { Location } from '../components/templates/map/Location'
 import { Marker } from '../components/templates/map/Marker'
 import { useState } from "react";
+import { getPlaiceholder } from "plaiceholder";
 
 // Google maps
 const render = (status) => {
@@ -23,7 +24,32 @@ const mapStyles = [
   }
 ];
 
-export default function Home() {
+export async function getStaticProps() {
+  const { base64, img } = await getPlaiceholder("/images/homepage-idea.jpg");
+  const { base64: bsBase64, img: bsImg } = await getPlaiceholder("/images/bunion-surgeon-homepage-test.jpeg");
+  const { base64: blBase64, img: blImg } = await getPlaiceholder(
+    "/images/abstract-lines.png"
+  );
+
+  return {
+    props: {
+      imageProps: {
+        ...img,
+        blurDataURL: base64,
+      },
+      bsImage: {
+        ...bsImg,
+        blurDataURL: bsBase64
+      },
+      blImage: {
+        ...blImg,
+        blurDataURL: blBase64,
+      },
+    },
+  };
+};
+
+export default function Home({ imageProps, bsImage, blImage }) {
 
   const [clicks, setClicks] = useState([]);
   const [zoom, setZoom] = useState(16); // initial zoom
@@ -39,13 +65,21 @@ export default function Home() {
 
   return (
     <>
-      <Head />
+      <Head>
+        <title>Bunion Surgeon London | Minimally invasive keyhole bunion surgery</title>
+        <meta name="description" content="Welcome to Bunion Surgeon in central London. Our bunion surgeon provides comprehensive assessment and minimally invasive surgery to correct bunion deformities. " />
+        <link rel="icon" href="/images/bunion-logo.png" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1.0"
+        />
+      </Head>
       <Layout>
-        <Banner />
-        <KnOverview />
-        <BulletpointSurgery />
+        <Banner image={imageProps} />
+        <KnOverview image={blImage} />
+        <BulletpointSurgery images={bsImage} image={blImage} />
         <PricingHomepage />
-        <ExtraInfo />
+        <ExtraInfo image={blImage} />
         <ContactDetails />
         <Wrapper apiKey={process.env.NEXT_PUBLIC_MAP_API} render={render}>
           <Location center={center} zoom={zoom} options={{ styles: mapStyles }}>

@@ -5,14 +5,41 @@ import { BackgroundLines } from "../components/home/BackgroundLines";
 import Link from "next/link";
 import { BunionInfo } from "../components/surgery/BunionInfo";
 import { FrequentQuestions } from "../components/surgery/FrequentQuestions";
+import { getPlaiceholder } from "plaiceholder";
 
-export default function Surgery() {
+export async function getStaticProps() {
+  const { base64: blBase64, img: blImg } = await getPlaiceholder(
+    "/images/abstract-lines.png"
+  );
+
+  return {
+    props: {
+      blImage: {
+        ...blImg,
+        blurDataURL: blBase64,
+      },
+    },
+  };
+}
+
+export default function Surgery({ blImage }) {
   return (
     <>
-      <Head />
+      <Head>
+        <title>What is a Bunion? | Bunion Surgeon</title>
+        <meta
+          name="description"
+          content="Key information on how to recognise a bunion, the ranges of bunion surgery and when it is time to have bunion surgery."
+        />
+        <link rel="icon" href="/images/bunion-logo.png" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1.0,user-scalable=0"
+        />
+      </Head>
       <Layout>
         <div className={style.headerSec}>
-          <BackgroundLines />
+          <BackgroundLines image={blImage} />
           <h1>Bunion Surgery</h1>
           <p>
             Although there are many types of bunion surgery, The Bunion Surgeon
@@ -29,16 +56,18 @@ export default function Surgery() {
           <div className={style.surgeryType}>
             <Link href={"/surgeries/minimally-invasive"} className={style.link}>
               <button className={style.surgery}>
-                Minimally invasive bunion surgery
+                <h2>Minimally invasive bunion surgery</h2>
               </button>
             </Link>
             <Link href={"/surgeries/scarf-akin"} className={style.link}>
               <button className={style.surgery}>
-                Scarf and akin osteotomy
+                <h2>Scarf and akin osteotomy</h2>
               </button>
             </Link>
             <Link href={"/surgeries/lapidus"} className={style.link}>
-              <button className={style.surgery}>Lapidus procedure</button>
+              <button className={style.surgery}>
+                <h2>Lapidus procedure</h2>
+              </button>
             </Link>
           </div>
         </div>
