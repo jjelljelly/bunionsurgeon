@@ -39,7 +39,22 @@ const pecaSteps = [
   },
 ];
 
-export default function MinimallyInvasive() {
+export async function getStaticProps() {
+  const { base64: blBase64, img: blImg } = await getPlaiceholder(
+    "/images/abstract-lines.png"
+  );
+
+  return {
+    props: {
+      blImage: {
+        ...blImg,
+        blurDataURL: blBase64,
+      },
+    },
+  };
+}
+
+export default function MinimallyInvasive({ blImage }) {
   const [item, setItem] = useState(false);
   const [idx, setIdx] = useState();
 
@@ -61,7 +76,7 @@ export default function MinimallyInvasive() {
       </Head>
       <Layout>
         <div className={style.headerSec}>
-          <BackgroundLines />
+          <BackgroundLines image={blImage} />
           <h1>Minimally Invasive Bunion Surgery</h1>
           <p>
             With over 98% success rate, The Bunion Surgeon is one of the leading

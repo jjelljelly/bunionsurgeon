@@ -42,7 +42,22 @@ const lapidusSteps = [
   },
 ];
 
-export default function lapidus() {
+export async function getStaticProps() {
+  const { base64: blBase64, img: blImg } = await getPlaiceholder(
+    "/images/abstract-lines.png"
+  );
+
+  return {
+    props: {
+      blImage: {
+        ...blImg,
+        blurDataURL: blBase64,
+      },
+    },
+  };
+}
+
+export default function lapidus({ blImage }) {
   const [item, setItem] = useState(false);
   const [idx, setIdx] = useState();
   return (
@@ -61,7 +76,7 @@ export default function lapidus() {
       </Head>
       <Layout>
         <div className={style.headerSec}>
-          <BackgroundLines />
+          <BackgroundLines image={blImage} />
           <h1>Lapidus Procedure</h1>
           <p>
             The Lapidus procedure is recommended for people with more severe

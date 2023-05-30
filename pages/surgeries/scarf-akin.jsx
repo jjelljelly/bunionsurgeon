@@ -74,7 +74,22 @@ const scarfSteps = [
   },
 ];
 
-export default function ScarfAkin() {
+export async function getStaticProps() {
+  const { base64: blBase64, img: blImg } = await getPlaiceholder(
+    "/images/abstract-lines.png"
+  );
+
+  return {
+    props: {
+      blImage: {
+        ...blImg,
+        blurDataURL: blBase64,
+      },
+    },
+  };
+}
+
+export default function ScarfAkin({ blImage }) {
   const [item, setItem] = useState(false);
   const [idx, setIdx] = useState();
 
@@ -94,7 +109,7 @@ export default function ScarfAkin() {
       </Head>
       <Layout>
         <div className={style.headerSec}>
-          <BackgroundLines />
+          <BackgroundLines image={blImage} />
           <h1>Scarf and Akin Osteotomy</h1>
           <p>
             The Scarf and Akin Osteotomy is one of the most common bunion
