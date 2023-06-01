@@ -24,12 +24,19 @@ export async function getStaticProps() {
   const { base64: blBase64, img: blImg } = await getPlaiceholder(
     "/images/abstract-lines.png"
   );
+  const { base64: logoBase64, img: logoImg } = await getPlaiceholder(
+    "/images/bunion-logo.png"
+  );
 
   return {
     props: {
       blImage: {
         ...blImg,
         blurDataURL: blBase64,
+      },
+      logoImage: {
+        ...logoImg,
+        blurDataURL: logoBase64,
       },
     },
   };
@@ -65,7 +72,7 @@ const mapStyles = [
   // { featureType: "poi.medical", stylers: [{ visibility: "on" }] },
 ];
 
-export default function About({ blImage }) {
+export default function About({ blImage, logoImage }) {
   const [clicks, setClicks] = useState([]);
   const [zoom, setZoom] = useState(16); // initial zoom
   const [center, setCenter] = useState({
@@ -98,7 +105,7 @@ export default function About({ blImage }) {
           content="width=device-width, initial-scale=1.0,user-scalable=0"
         />
       </Head>
-      <Layout>
+      <Layout logo={logoImage}>
         <div>
           <div className={style.headerSec}>
             <BackgroundLines image={blImage} />

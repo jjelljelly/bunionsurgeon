@@ -1,5 +1,6 @@
 import { Divider } from "./Divider";
 import style from "./Footer.module.css";
+import { Instagram } from "./FooterIcons/Instagram";
 import { Twitter } from "./FooterIcons/Twitter";
 import { Youtube } from "./FooterIcons/Youtube";
 
@@ -17,6 +18,7 @@ export function Footer() {
         <div className={style.iconContainer}>
           <Youtube />
           <Twitter />
+          <Instagram />
         </div>
         <div className={style.footContainer}>
           <p>© Copyright Bunionsurgeon</p>

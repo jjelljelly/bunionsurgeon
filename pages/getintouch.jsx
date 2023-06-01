@@ -26,17 +26,25 @@ export async function getStaticProps() {
     "/images/abstract-lines.png"
   );
 
+  const { base64: logoBase64, img: logoImg } = await getPlaiceholder(
+    "/images/bunion-logo.png"
+  );
+
   return {
     props: {
       blImage: {
         ...blImg,
         blurDataURL: blBase64,
       },
+      logoImage: {
+        ...logoImg,
+        blurDataURL: logoBase64,
+      },
     },
   };
 }
 
-export default function GetInTouch({ blImage }) {
+export default function GetInTouch({ blImage, logoImage }) {
   const [clicks, setClicks] = useState([]);
   const [zoom, setZoom] = useState(16);
   const [center, setCenter] = useState({
@@ -69,16 +77,12 @@ export default function GetInTouch({ blImage }) {
           content="width=device-width, initial-scale=1.0,user-scalable=0"
         />
       </Head>
-      <Layout>
+      <Layout logo={logoImage}>
         <div className={style.headerSec}>
           <BackgroundLines image={blImage} />
           <h1>Get in Touch</h1>
         </div>
         <ContactDetails />
-        {/* <div className={style.textCont}>
-          <h2 className={style.header}>Request an Appointment</h2>
-          <Form />
-        </div> */}
         <Wrapper apiKey={process.env.NEXT_PUBLIC_MAP_API} render={render}>
           <Location center={center} zoom={zoom} options={{ styles: mapStyles }}>
             <Marker

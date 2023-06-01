@@ -11,34 +11,62 @@ import { getPlaiceholder } from "plaiceholder";
 const lapidusSteps = [
   {
     title: "Step one",
-    text: "A small cut is made between the ankle and the big toe.",
+    text: "An incision is made inside the foot arch.",
     image1: {
+      src: "/images/step1-lapidus.png",
+      alt: "Lapidus procedure step 1",
+    },
+    image2: {
       src: "/images/step1-lapidus.png",
       alt: "Lapidus procedure step 1",
     },
   },
   {
     title: "Step two",
-    text: "The joint is opened up and fused using screws and a plate.",
+    text: "The joint is cut out in the midfoot and the metatarsal straightened.",
     image1: {
+      src: "/images/step2-lapidus.png",
+      alt: "Lapidus procedure step 2",
+    },
+    image2: {
       src: "/images/step2-lapidus.png",
       alt: "Lapidus procedure step 2",
     },
   },
   {
     title: "Step three",
-    text: "If there is a deformity at the joint it will be reshaped.",
+    text: "Plate and screws used to aid fusion of midfoot.",
     image1: {
-      src: "/images/step3-lapidus.png",
+      src: "/images/step3-scarf.png",
+      alt: "Lapidus procedure step 3",
+    },
+    image2: {
+      src: "/images/step3-scarf.png",
       alt: "Lapidus procedure step 3",
     },
   },
   {
     title: "Step four",
-    text: "To reshape, extra bone is used that is taken from the shin, or alternativey with the use of a sterile bone chip called an Allograft.",
+    text: "A small wedge is removed from the phalanx to straighten the end of the toe.",
     image1: {
-      src: "/images/step4-lapidus.png",
+      src: "/images/step4-scarf.png",
       alt: "Lapidus procedure step 4",
+    },
+    image2: {
+      src: "/images/step4-scarf-text.png",
+      alt: "Lapidus procedure step 4",
+    },
+  },
+  {
+    title: "Step five",
+    text: "The phalanx is fixed together where the wedge has been removed, promoting a correct alignment of the toe.",
+    image1: {
+      src: "/images/step5-scarf.png",
+      alt: "Lapidus procedure step 5",
+    },
+    image2: {
+      src: "/images/step5-scarf-text.png",
+      alt: "Lapidus procedure step 5",
     },
   },
 ];
@@ -47,6 +75,9 @@ export async function getStaticProps() {
   const { base64: blBase64, img: blImg } = await getPlaiceholder(
     "/images/abstract-lines.png"
   );
+  const { base64: logoBase64, img: logoImg } = await getPlaiceholder(
+    "/images/bunion-logo.png"
+  );
 
   return {
     props: {
@@ -54,11 +85,15 @@ export async function getStaticProps() {
         ...blImg,
         blurDataURL: blBase64,
       },
+      logoImage: {
+        ...logoImg,
+        blurDataURL: logoBase64,
+      },
     },
   };
 }
 
-export default function lapidus({ blImage }) {
+export default function lapidus({ blImage, logoImage }) {
   const [item, setItem] = useState(false);
   const [idx, setIdx] = useState();
   return (
@@ -75,7 +110,7 @@ export default function lapidus({ blImage }) {
           content="width=device-width, initial-scale=1.0,user-scalable=0"
         />
       </Head>
-      <Layout>
+      <Layout logo={logoImage}>
         <div className={style.headerSec}>
           <BackgroundLines image={blImage} />
           <h1>Lapidus Procedure</h1>
@@ -88,10 +123,7 @@ export default function lapidus({ blImage }) {
           <div className={style.video}>Lapidus video to follow</div>
           <div className={style.lapidusIntro}>
             <h2>What are the benefits of the Lapidus procedure?</h2>
-            {/* <p>
-              The lapidus procedure has several benefits for people who suffer
-              from a severe bunion, including:
-            </p> */}
+
             <ul className={style.bulletCont}>
               <li> Preservation of big toe joint function</li>
               <li>
@@ -121,8 +153,8 @@ export default function lapidus({ blImage }) {
                   {item.title}
                   <div>
                     <Image
-                      src={item.image1.src}
-                      alt={item.image1.alt}
+                      src={item.image2.src}
+                      alt={item.image2.alt}
                       fill
                       objectFit="contain"
                       className={style.stepsImage}

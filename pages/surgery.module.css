@@ -62,7 +62,7 @@
 
   .surgery {
     margin: 20px 0;
-    height: 80%;
+    height: 85%;
     background-color: #063b5e;
     color: white;
   }
@@ -74,7 +74,7 @@
   .link {
     margin: 20px 0;
     height: 80%;
-    width: 80%;
+    width: 85%;
     background-color: #063b5e;
   }
 }

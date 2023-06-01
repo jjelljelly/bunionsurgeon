@@ -30,6 +30,9 @@ export async function getStaticProps() {
   const { base64: blBase64, img: blImg } = await getPlaiceholder(
     "/images/abstract-lines.png"
   );
+  const { base64: logoBase64, img: logoImg } = await getPlaiceholder(
+    "/images/bunion-logo.png"
+  );
 
   return {
     props: {
@@ -45,11 +48,15 @@ export async function getStaticProps() {
         ...blImg,
         blurDataURL: blBase64,
       },
+      logoImage: {
+        ...logoImg,
+        blurDataURL: logoBase64
+      }
     },
   };
 };
 
-export default function Home({ imageProps, bsImage, blImage }) {
+export default function Home({ imageProps, bsImage, blImage, logoImage }) {
 
   const [clicks, setClicks] = useState([]);
   const [zoom, setZoom] = useState(16); // initial zoom
@@ -74,7 +81,7 @@ export default function Home({ imageProps, bsImage, blImage }) {
           content="width=device-width, initial-scale=1.0"
         />
       </Head>
-      <Layout>
+      <Layout logo={logoImage} >
         <Banner image={imageProps} />
         <KnOverview image={blImage} />
         <BulletpointSurgery images={bsImage} image={blImage} />

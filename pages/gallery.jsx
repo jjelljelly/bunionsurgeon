@@ -13,6 +13,9 @@ export async function getStaticProps() {
   const fetchedProducts = await fetchEntries({
     content_type: "beforeandafterimage",
   });
+  const { base64: logoBase64, img: logoImg } = await getPlaiceholder(
+    "/images/bunion-logo.png"
+  );
 
   return {
     props: {
@@ -21,25 +24,15 @@ export async function getStaticProps() {
         blurDataURL: blBase64,
       },
       images: fetchedProducts,
+      logoImage: {
+        ...logoImg,
+        blurDataURL: logoBase64,
+      },
     },
   };
 }
 
-// export async function getStaticProps() {
-//   //fetch posts from contentful
-//   const fetchedProducts = await fetchEntries({
-//     content_type: "beforeandafterimage",
-//   });
-
-//   // const Beforeandafterimage = await getProductsWithPlaceholders(
-//   //   fetchedProducts
-//   // );
-//   return {
-//     props: { images: fetchedProducts },
-//   };
-// }
-
-export default function Gallery({ images, blImage }) {
+export default function Gallery({ images, blImage, logoImage }) {
   return (
     <>
       <Head>
@@ -54,7 +47,7 @@ export default function Gallery({ images, blImage }) {
           content="width=device-width, initial-scale=1.0,user-scalable=0"
         />
       </Head>
-      <Layout>
+      <Layout logo={logoImage}>
         <div className={style.headerSec}>
           <BackgroundLines image={blImage} />
           <h1>Before and After Images</h1>

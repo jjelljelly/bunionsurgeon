@@ -148,3 +148,13 @@
     width: 100%;
   }
 }
+
+@media screen and (min-width: 701px) and (max-width: 1300px) {
+  .lapidusIntro {
+    padding: 30px 40px;
+  }
+  .bulletCont {
+    margin-left: 15%;
+    width: 100%;
+  }
+}

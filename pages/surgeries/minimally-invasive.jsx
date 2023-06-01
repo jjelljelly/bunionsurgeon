@@ -1,48 +1,82 @@
 import Head from "next/head";
 import { BackgroundLines } from "../../components/home/BackgroundLines";
-import { PecaSvg1 } from "../../components/svg/peca/PecaSvg1";
-import { PecaSvg2 } from "../../components/svg/peca/PecaSvg2";
-import { PecaSvg3 } from "../../components/svg/peca/PecaSvg3";
-import { PecaSvg4 } from "../../components/svg/peca/PecaSvg4";
-import { PecaSvg5 } from "../../components/svg/peca/PecaSvg5";
 import { Layout } from "../../components/templates/Layout";
 import style from "./MinimallyInvasive.module.css";
 import { useState } from "react";
 import { Modal } from "../../components/templates/Modal";
 import { MisTimeline } from "../../components/surgery/surgeryTimelines/MisTimeline";
 import { getPlaiceholder } from "plaiceholder";
+import Image from "next/image";
 
 const pecaSteps = [
   {
     title: "Step one",
     text: "A small 2mm incision is made allowing the first metatarsal to be cut.",
-    image: <PecaSvg1 />,
+    image1: {
+      src: "/images/step1-peca.png",
+      alt: "Minimally invasive bunion procedure step 1",
+    },
+    image2: {
+      src: "/images/step1-peca.png",
+      alt: "Minimally invasive bunion procedure step 1",
+    },
   },
   {
     title: "Step two",
     text: "The head of the first metatarsal is repositioned, to partially minimise the bony prominence.",
-    image: <PecaSvg2 />,
+    image1: {
+      src: "/images/step2-peca.png",
+      alt: "Minimally invasive bunion procedure step 2",
+    },
+    image2: {
+      src: "/images/step2-peca.png",
+      alt: "Minimally invasive bunion procedure step 2",
+    },
   },
   {
     title: "Step three",
     text: "Two screws are used to fix both sections of the metatarsal in its new position.",
-    image: <PecaSvg3 />,
+    image1: {
+      src: "/images/step3-peca.png",
+      alt: "Minimally invasive bunion procedure step 3",
+    },
+    image2: {
+      src: "/images/step3-peca.png",
+      alt: "Minimally invasive bunion procedure step 3",
+    },
   },
   {
     title: "Step four",
     text: "A wedge is removed from the first proximal phalanx to reposition the toe into a straighter natural alignment. This is also fixed in place with a screw.",
-    image: <PecaSvg4 />,
+    image1: {
+      src: "/images/step4-peca.png",
+      alt: "Minimally invasive bunion procedure step 4",
+    },
+    image2: {
+      src: "/images/step4-peca.png",
+      alt: "Minimally invasive bunion procedure step 4",
+    },
   },
   {
     title: "Step five",
     text: "The protruding bone is cut away and flattened to a natural outer arc.",
-    image: <PecaSvg5 />,
+    image1: {
+      src: "/images/step5-peca.png",
+      alt: "Minimally invasive bunion procedure step 5",
+    },
+    image2: {
+      src: "/images/step5-peca.png",
+      alt: "Minimally invasive bunion procedure step 5",
+    },
   },
 ];
 
 export async function getStaticProps() {
   const { base64: blBase64, img: blImg } = await getPlaiceholder(
     "/images/abstract-lines.png"
+  );
+  const { base64: logoBase64, img: logoImg } = await getPlaiceholder(
+    "/images/bunion-logo.png"
   );
 
   return {
@@ -51,11 +85,15 @@ export async function getStaticProps() {
         ...blImg,
         blurDataURL: blBase64,
       },
+      logoImage: {
+        ...logoImg,
+        blurDataURL: logoBase64,
+      },
     },
   };
 }
 
-export default function MinimallyInvasive({ blImage }) {
+export default function MinimallyInvasive({ blImage, logoImage }) {
   const [item, setItem] = useState(false);
   const [idx, setIdx] = useState();
 
@@ -75,7 +113,7 @@ export default function MinimallyInvasive({ blImage }) {
           content="width=device-width, initial-scale=1.0,user-scalable=0"
         />
       </Head>
-      <Layout>
+      <Layout logo={logoImage}>
         <div className={style.headerSec}>
           <BackgroundLines image={blImage} />
           <h1>Minimally Invasive Bunion Surgery</h1>
@@ -127,20 +165,28 @@ export default function MinimallyInvasive({ blImage }) {
           <h2 className={style.howTitle}>
             How is the minimally invasive bunion procedure performed?
           </h2>
-          <div className={style.svgCont}>
-            {/* <div className={!item ? style.stepsCont : ""}> */}
+          {/* <div className={style.svgCont}> */}
+          <div className={style.stepsCont}>
             {pecaSteps.map((item, idx) => {
               return (
                 <div
                   key={item.title}
-                  className={style.pecaCont}
+                  className={style.imageCont}
                   onClick={() => {
                     setItem(item);
                     setIdx(idx);
                   }}
                 >
-                  {item.image}
                   {item.title}
+                  <div>
+                    <Image
+                      src={item.image1.src}
+                      alt={item.image1.alt}
+                      fill
+                      objectFit="contain"
+                      className={style.stepsImage}
+                    />
+                  </div>
                 </div>
               );
             })}
@@ -154,7 +200,20 @@ export default function MinimallyInvasive({ blImage }) {
           idx={idx}
           setIdx={setIdx}
         >
-          {Boolean(item) && <p>{item.text}</p>}
+          {Boolean(item) && (
+            <div className={style.modalCont}>
+              <div className={style.modalImage}>
+                <Image
+                  src={item?.image2?.src}
+                  alt={item?.image2?.alt}
+                  fill
+                  objectFit="contain"
+                  className={style.stepsImage}
+                />
+              </div>
+              <p className={style.modalText}>{item.text}</p>
+            </div>
+          )}
         </Modal>
         <MisTimeline />
         <div className={style.whyImplant}>

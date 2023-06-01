@@ -11,6 +11,9 @@ export async function getStaticProps() {
   const { base64: blBase64, img: blImg } = await getPlaiceholder(
     "/images/abstract-lines.png"
   );
+  const { base64: logoBase64, img: logoImg } = await getPlaiceholder(
+    "/images/bunion-logo.png"
+  );
 
   return {
     props: {
@@ -18,11 +21,15 @@ export async function getStaticProps() {
         ...blImg,
         blurDataURL: blBase64,
       },
+      logoImage: {
+        ...logoImg,
+        blurDataURL: logoBase64,
+      },
     },
   };
 }
 
-export default function Pricing({ blImage }) {
+export default function Pricing({ blImage, logoImage }) {
   const [visible, setVisible] = useState();
   return (
     <>
@@ -38,7 +45,7 @@ export default function Pricing({ blImage }) {
           content="width=device-width, initial-scale=1.0,user-scalable=0"
         />
       </Head>
-      <Layout>
+      <Layout logo={logoImage}>
         <div className={style.headerSec}>
           <BackgroundLines image={blImage} />
           <h1>Pricing Information</h1>
