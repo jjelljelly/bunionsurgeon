@@ -3,6 +3,7 @@ import { RadioInput } from "./RadioInput";
 import React, { useState } from "react";
 import { Modal } from "./Modal";
 import { ModalContact } from "./ModalContact";
+import Link from "next/link";
 
 const SUCCESS = "SUCCESS";
 const SENDING = "SENDING";
@@ -135,6 +136,22 @@ export default function Form() {
                   ? "Our team will provide you with a procedure quote"
                   : ""}
               </p>
+            </div>
+            <div>
+              <label className={style.privacyContainer}>
+                <RadioInput
+                  state={select}
+                  setState={setSelect}
+                  label="Select if you agree to our"
+                  value="privacy"
+                  name="privacy"
+                />
+                <Link legacyBehavior href={"/privacy"}>
+                  <a target="_blank" className={style.privacy}>
+                    <u>Privacy Policy</u>
+                  </a>
+                </Link>
+              </label>
             </div>
           </div>
         </div>

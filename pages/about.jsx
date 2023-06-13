@@ -104,6 +104,88 @@ export default function About({ blImage, logoImage }) {
           name="viewport"
           content="width=device-width, initial-scale=1.0,user-scalable=0"
         />
+
+        <script type="application/ld+json" class="aioseo-schema">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@graph": [
+              {
+                "@type": "BreadcrumbList",
+                "@id": "https://www.bunionsurgeon.co.uk/about/#breadcrumblist",
+                itemListElement: [
+                  {
+                    "@type": "ListItem",
+                    "@id": "https://www.bunionsurgeon.co.uk/#listItem",
+                    position: 1,
+                    item: {
+                      "@type": "WebPage",
+                      "@id": "https://www.bunionsurgeon.co.uk/",
+                      name: "Home",
+                      description:
+                        "London\u2019s Premier Minimally Invasive Bunion Clinic",
+                      url: "https://www.bunionsurgeon.co.uk/",
+                    },
+                    nextItem: "https://www.bunionsurgeon.co.uk/about/#listItem",
+                  },
+                  {
+                    "@type": "ListItem",
+                    "@id": "https://www.bunionsurgeon.co.uk/about/#listItem",
+                    position: 2,
+                    item: {
+                      "@type": "WebPage",
+                      "@id": "https://www.bunionsurgeon.co.uk/about/",
+                      name: "About us | Bunion Surgeon",
+                      description:
+                        "Mr Kaser Nazir, Consultant Podiatric Surgeon, Mr. Nazir has performed over 1900 Bunion surgeries since 2010 with a 97% success rate...",
+                      url: "https://www.bunionsurgeon.co.uk/about/",
+                    },
+                    previousItem: "https://www.bunionsurgeon.co.uk/#listItem",
+                  },
+                ],
+              },
+              {
+                "@type": "Organization",
+                "@id": "https://www.bunionsurgeon.co.uk/#organization",
+                name: "Bunion Surgeon",
+                url: "https://www.bunionsurgeon.co.uk/",
+
+                contactPoint: {
+                  "@type": "ContactPoint",
+                  telephone: "+44 207 820 8007",
+                  contactType: "none",
+                },
+              },
+              {
+                "@type": "WebSite",
+                "@id": "https://www.bunionsurgeon.co.uk/#website",
+                url: "https://www.bunionsurgeon.co.uk/",
+                name: "bunionsurgeon",
+                description:
+                  "London\u2019s Premier Minimally Invasive Bunion Clinic",
+                inLanguage: "en-GB",
+                publisher: {
+                  "@id": "https://www.bunionsurgeon.co.uk/#organization",
+                },
+              },
+              {
+                "@type": "WebPage",
+                "@id": "https://www.bunionsurgeon.co.uk/about/#webpage",
+                url: "https://www.bunionsurgeon.co.uk/about/",
+                name: "Mr Kaser Nazir | Surgeon Biography | bunionsurgeon",
+                description:
+                  "Mr Kaser Nazir, Consultant Podiatric Surgeon, Mr. Nazir has performed over 1900 Bunion surgeries since 2010 with a 97% success rate...",
+                inLanguage: "en-GB",
+                isPartOf: { "@id": "https://www.bunionsurgeon.co.uk/#website" },
+                breadcrumb: {
+                  "@id":
+                    "https://www.bunionsurgeon.co.uk/about/#breadcrumblist",
+                },
+                datePublished: "2018-11-23T18:13:22+00:00",
+                dateModified: "2023-06-05T16:22:32+01:00",
+              },
+            ],
+          })}
+        </script>
       </Head>
       <Layout logo={logoImage}>
         <div>

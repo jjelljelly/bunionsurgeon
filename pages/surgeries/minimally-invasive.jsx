@@ -112,6 +112,92 @@ export default function MinimallyInvasive({ blImage, logoImage }) {
           name="viewport"
           content="width=device-width, initial-scale=1.0,user-scalable=0"
         />
+        <script type="application/ld+json" class="aioseo-schema">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@graph": [
+              {
+                "@type": "BreadcrumbList",
+                "@id":
+                  "https://www.bunionsurgeon.co.uk/surgeries/minimally-invasive/#breadcrumblist",
+                itemListElement: [
+                  {
+                    "@type": "ListItem",
+                    "@id": "https://www.bunionsurgeon.co.uk/#listItem",
+                    position: 1,
+                    item: {
+                      "@type": "WebPage",
+                      "@id": "https://www.bunionsurgeon.co.uk/",
+                      name: "Home",
+                      description:
+                        "London\u2019s Premier Minimally Invasive Bunion Clinic",
+                      url: "https://www.bunionsurgeon.co.uk/",
+                    },
+                    nextItem:
+                      "https://www.bunionsurgeon.co.uk/surgeries/minimally-invasive/#listItem",
+                  },
+                  {
+                    "@type": "ListItem",
+                    "@id":
+                      "https://www.bunionsurgeon.co.uk/surgeries/minimally-invasive/#listItem",
+                    position: 2,
+                    item: {
+                      "@type": "WebPage",
+                      "@id":
+                        "https://www.bunionsurgeon.co.uk/surgeries/minimally-invasive/",
+                      name: "Minimally Invasive (Keyhole) Bunion Surgery",
+                      description:
+                        "Keyhole Surgery, also known as Minimally Invasive Surgery, uses modern techniques and equipment to decrease the number and size of incisions...",
+                      url: "https://www.bunionsurgeon.co.uk/surgeries/minimally-invasive/",
+                    },
+                    previousItem: "https://www.bunionsurgeon.co.uk/#listItem",
+                  },
+                ],
+              },
+              {
+                "@type": "Organization",
+                "@id": "https://www.bunionsurgeon.co.uk/#organization",
+                name: "Bunion Surgeon",
+                url: "https://www.bunionsurgeon.co.uk/",
+
+                contactPoint: {
+                  "@type": "ContactPoint",
+                  telephone: "+44 207 820 8007",
+                  contactType: "none",
+                },
+              },
+              {
+                "@type": "WebSite",
+                "@id": "https://www.bunionsurgeon.co.uk/#website",
+                url: "https://www.bunionsurgeon.co.uk/",
+                name: "bunionsurgeon",
+                description:
+                  "London\u2019s Premier Minimally Invasive Bunion Clinic",
+                inLanguage: "en-GB",
+                publisher: {
+                  "@id": "https://www.bunionsurgeon.co.uk/#organization",
+                },
+              },
+              {
+                "@type": "WebPage",
+                "@id":
+                  "https://www.bunionsurgeon.co.uk/surgeries/minimally-invasive/#webpage",
+                url: "https://www.bunionsurgeon.co.uk/surgeries/minimally-invasive/",
+                name: "Keyhole Bunion Surgery | bunionsurgeon",
+                description:
+                  "Keyhole Surgery, also known as Minimally Invasive Surgery, uses modern techniques and equipment to decrease the number and size of incisions...",
+                inLanguage: "en-GB",
+                isPartOf: { "@id": "https://www.bunionsurgeon.co.uk/#website" },
+                breadcrumb: {
+                  "@id":
+                    "https://www.bunionsurgeon.co.uk/surgeries/minimally-invasive/#breadcrumblist",
+                },
+                datePublished: "2019-12-03T14:14:13+00:00",
+                dateModified: "2023-06-05T16:10:33+01:00",
+              },
+            ],
+          })}
+        </script>
       </Head>
       <Layout logo={logoImage}>
         <div className={style.headerSec}>

@@ -9,6 +9,15 @@
   flex-direction: column;
 }
 
+.privacyContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.privacy {
+  padding-left: 4px;
+}
+
 .box {
   border-radius: 5px;
   margin: 5px 0;

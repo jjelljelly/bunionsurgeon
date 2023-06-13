@@ -76,6 +76,90 @@ export default function GetInTouch({ blImage, logoImage }) {
           name="viewport"
           content="width=device-width, initial-scale=1.0,user-scalable=0"
         />
+        <script type="application/ld+json" class="aioseo-schema">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@graph": [
+              {
+                "@type": "BreadcrumbList",
+                "@id":
+                  "https://www.bunionsurgeon.co.uk/getintouch/#breadcrumblist",
+                itemListElement: [
+                  {
+                    "@type": "ListItem",
+                    "@id": "https://www.bunionsurgeon.co.uk/#listItem",
+                    position: 1,
+                    item: {
+                      "@type": "WebPage",
+                      "@id": "https://www.bunionsurgeon.co.uk/",
+                      name: "Home",
+                      description:
+                        "London\u2019s Premier Minimally Invasive Bunion Clinic",
+                      url: "https://www.bunionsurgeon.co.uk/",
+                    },
+                    nextItem:
+                      "https://www.bunionsurgeon.co.uk/getintouch/#listItem",
+                  },
+                  {
+                    "@type": "ListItem",
+                    "@id":
+                      "https://www.bunionsurgeon.co.uk/getintouch/#listItem",
+                    position: 2,
+                    item: {
+                      "@type": "WebPage",
+                      "@id": "https://www.bunionsurgeon.co.uk/getintouch/",
+                      name: "Get in Touch",
+                      description:
+                        "Contact us, via - Tel: 0207 820 8007, Email: admin@bunionsurgeon.co.uk, Address: 17 Harley Street, London, W1G 9QH",
+                      url: "https://www.bunionsurgeon.co.uk/getintouch/",
+                    },
+                    previousItem: "https://www.bunionsurgeon.co.uk/#listItem",
+                  },
+                ],
+              },
+              {
+                "@type": "Organization",
+                "@id": "https://www.bunionsurgeon.co.uk/#organization",
+                name: "Bunion Surgeon",
+                url: "https://www.bunionsurgeon.co.uk/",
+
+                contactPoint: {
+                  "@type": "ContactPoint",
+                  telephone: "+44 207 820 8007",
+                  contactType: "none",
+                },
+              },
+              {
+                "@type": "WebSite",
+                "@id": "https://www.bunionsurgeon.co.uk/#website",
+                url: "https://www.bunionsurgeon.co.uk/",
+                name: "bunionsurgeon",
+                description:
+                  "London\u2019s Premier Minimally Invasive Bunion Clinic",
+                inLanguage: "en-GB",
+                publisher: {
+                  "@id": "https://www.bunionsurgeon.co.uk/#organization",
+                },
+              },
+              {
+                "@type": "WebPage",
+                "@id": "https://www.bunionsurgeon.co.uk/getintouch/#webpage",
+                url: "https://www.bunionsurgeon.co.uk/getintouch/",
+                name: "Get In Touch | bunionsurgeon",
+                description:
+                  "Contact us, via - Tel: 0207 820 8007, Email: admin@bunionsurgeon.co.uk, Address: 17 Harley Street, London, W1G 9QH",
+                inLanguage: "en-GB",
+                isPartOf: { "@id": "https://www.bunionsurgeon.co.uk/#website" },
+                breadcrumb: {
+                  "@id":
+                    "https://www.bunionsurgeon.co.uk/getintouch/#breadcrumblist",
+                },
+                datePublished: "2018-12-11T14:51:17+00:00",
+                dateModified: "2023-06-05T16:36:24+00:00",
+              },
+            ],
+          })}
+        </script>
       </Head>
       <Layout logo={logoImage}>
         <div className={style.headerSec}>

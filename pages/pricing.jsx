@@ -44,6 +44,89 @@ export default function Pricing({ blImage, logoImage }) {
           name="viewport"
           content="width=device-width, initial-scale=1.0,user-scalable=0"
         />
+        <script type="application/ld+json" class="aioseo-schema">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@graph": [
+              {
+                "@type": "BreadcrumbList",
+                "@id":
+                  "https://www.bunionsurgeon.co.uk/pricing/#breadcrumblist",
+                itemListElement: [
+                  {
+                    "@type": "ListItem",
+                    "@id": "https://www.bunionsurgeon.co.uk/#listItem",
+                    position: 1,
+                    item: {
+                      "@type": "WebPage",
+                      "@id": "https://www.bunionsurgeon.co.uk/",
+                      name: "Home",
+                      description:
+                        "London\u2019s Premier Minimally Invasive Bunion Clinic",
+                      url: "https://www.bunionsurgeon.co.uk/",
+                    },
+                    nextItem:
+                      "https://www.bunionsurgeon.co.uk/pricing/#listItem",
+                  },
+                  {
+                    "@type": "ListItem",
+                    "@id": "https://www.bunionsurgeon.co.uk/pricing/#listItem",
+                    position: 2,
+                    item: {
+                      "@type": "WebPage",
+                      "@id": "https://www.bunionsurgeon.co.uk/pricing/",
+                      name: "Self funding fees and insurance for bunion surgery",
+                      description:
+                        "We believe in total transparency when it comes to the fees and costs involved in Bunion Surgery. Below is a breakdown of fees for patients who are self-funding.",
+                      url: "https://www.bunionsurgeon.co.uk/pricing/",
+                    },
+                    previousItem: "https://www.bunionsurgeon.co.uk/#listItem",
+                  },
+                ],
+              },
+              {
+                "@type": "Organization",
+                "@id": "https://www.bunionsurgeon.co.uk/#organization",
+                name: "Bunion Surgeon",
+                url: "https://www.bunionsurgeon.co.uk/",
+
+                contactPoint: {
+                  "@type": "ContactPoint",
+                  telephone: "+44 207 820 8007",
+                  contactType: "none",
+                },
+              },
+              {
+                "@type": "WebSite",
+                "@id": "https://www.bunionsurgeon.co.uk/#website",
+                url: "https://www.bunionsurgeon.co.uk/",
+                name: "bunionsurgeon",
+                description:
+                  "London\u2019s Premier Minimally Invasive Bunion Clinic",
+                inLanguage: "en-GB",
+                publisher: {
+                  "@id": "https://www.bunionsurgeon.co.uk/#organization",
+                },
+              },
+              {
+                "@type": "WebPage",
+                "@id": "https://www.bunionsurgeon.co.uk/pricing/#webpage",
+                url: "https://www.bunionsurgeon.co.uk/pricing/",
+                name: "Pricing for Bunion Surgery | Insurance for Bunion Surgery | Bunion Surgeon",
+                description:
+                  "We believe in total transparency when it comes to the fees and costs involved in Bunion Surgery. Below is a breakdown of fees for patients who are self-funding.",
+                inLanguage: "en-GB",
+                isPartOf: { "@id": "https://www.bunionsurgeon.co.uk/#website" },
+                breadcrumb: {
+                  "@id":
+                    "https://www.bunionsurgeon.co.uk/pricing/#breadcrumblist",
+                },
+                datePublished: "2018-11-23T18:21:33+00:00",
+                dateModified: "2023-06-05T16:24:58+01:00",
+              },
+            ],
+          })}
+        </script>
       </Head>
       <Layout logo={logoImage}>
         <div className={style.headerSec}>

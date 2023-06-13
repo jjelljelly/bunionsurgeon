@@ -1,0 +1,39 @@
+.headerSec {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  background-color: #063b5e;
+  color: white;
+  min-height: 300px;
+  padding: 40px 0 50px;
+  position: relative;
+}
+
+.mainDiv {
+  color: #063b5e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 60px;
+}
+
+.bulletDiv {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.bulletPoints {
+  display: flex;
+  width: 60%;
+  align-items: left;
+  justify-content: left;
+  flex-direction: column;
+  text-align: left;
+}

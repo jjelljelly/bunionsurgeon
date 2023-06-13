@@ -1,5 +1,6 @@
-import styling from "./Navigation.module.css";
+import styling from "./NavigationMobile.module.css";
 import { useState } from "react";
+import { BurgerBar } from "./BurgerBar";
 import Link from "next/link";
 
 const navObjects = [
@@ -57,12 +58,13 @@ const navObjects = [
   },
 ];
 
-export function Navigation() {
+export function NavigationMobile() {
+  const [responsive, setResponsive] = useState(false);
   const [dropDown, setDropDown] = useState(false);
 
   return (
     <>
-      <nav className={styling.navWrap}>
+      <nav className={responsive ? styling.responsive : styling.navWrap}>
         <ul className={styling.navList}>
           {navObjects.map((item) => {
             return (
@@ -93,6 +95,7 @@ export function Navigation() {
           })}
         </ul>
       </nav>
+      <BurgerBar responsive={responsive} setResponsive={setResponsive} />
     </>
   );
 }

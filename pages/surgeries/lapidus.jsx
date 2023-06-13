@@ -109,6 +109,92 @@ export default function lapidus({ blImage, logoImage }) {
           name="viewport"
           content="width=device-width, initial-scale=1.0,user-scalable=0"
         />
+        <script type="application/ld+json" class="aioseo-schema">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@graph": [
+              {
+                "@type": "BreadcrumbList",
+                "@id":
+                  "https://www.bunionsurgeon.co.uk/surgeries/lapidus/#breadcrumblist",
+                itemListElement: [
+                  {
+                    "@type": "ListItem",
+                    "@id": "https://www.bunionsurgeon.co.uk/#listItem",
+                    position: 1,
+                    item: {
+                      "@type": "WebPage",
+                      "@id": "https://www.bunionsurgeon.co.uk/",
+                      name: "Home",
+                      description:
+                        "London\u2019s Premier Minimally Invasive Bunion Clinic",
+                      url: "https://www.bunionsurgeon.co.uk/",
+                    },
+                    nextItem:
+                      "https://www.bunionsurgeon.co.uk/surgeries/lapidus/#listItem",
+                  },
+                  {
+                    "@type": "ListItem",
+                    "@id":
+                      "https://www.bunionsurgeon.co.uk/lsurgeries/lapidus/#listItem",
+                    position: 2,
+                    item: {
+                      "@type": "WebPage",
+                      "@id":
+                        "https://www.bunionsurgeon.co.uk/surgeries/lapidus/",
+                      name: "Lapidus Fusion Procedure",
+                      description:
+                        "The Lapidus Fusion Procedure is a surgical procedure, generally reserved for severe deformities or patient's who suffer from hypermobility.",
+                      url: "https://www.bunionsurgeon.co.uk/surgeries/lapidus/",
+                    },
+                    previousItem: "https://www.bunionsurgeon.co.uk/#listItem",
+                  },
+                ],
+              },
+              {
+                "@type": "Organization",
+                "@id": "https://www.bunionsurgeon.co.uk/#organization",
+                name: "Bunion Surgeon",
+                url: "https://www.bunionsurgeon.co.uk/",
+
+                contactPoint: {
+                  "@type": "ContactPoint",
+                  telephone: "+44 207 820 8007",
+                  contactType: "none",
+                },
+              },
+              {
+                "@type": "WebSite",
+                "@id": "https://www.bunionsurgeon.co.uk/#website",
+                url: "https://www.bunionsurgeon.co.uk/",
+                name: "bunionsurgeon",
+                description:
+                  "London\u2019s Premier Minimally Invasive Bunion Clinic",
+                inLanguage: "en-GB",
+                publisher: {
+                  "@id": "https://www.bunionsurgeon.co.uk/#organization",
+                },
+              },
+              {
+                "@type": "WebPage",
+                "@id":
+                  "https://www.bunionsurgeon.co.uk/surgeries/lapidus/#webpage",
+                url: "https://www.bunionsurgeon.co.uk/lsurgeries/lapidus/",
+                name: "Lapidus Bunion Surgery | bunionsurgeon",
+                description:
+                  "The Lapidus Fusion Procedure is a surgical procedure, generally reserved for severe deformities or patient's who suffer from hypermobility.",
+                inLanguage: "en-GB",
+                isPartOf: { "@id": "https://www.bunionsurgeon.co.uk/#website" },
+                breadcrumb: {
+                  "@id":
+                    "https://www.bunionsurgeon.co.uk/surgeries/lapidus/#breadcrumblist",
+                },
+                datePublished: "2018-11-23T18:11:18+00:00",
+                dateModified: "2023-06-05T15:49:31+01:00",
+              },
+            ],
+          })}
+        </script>
       </Head>
       <Layout logo={logoImage}>
         <div className={style.headerSec}>

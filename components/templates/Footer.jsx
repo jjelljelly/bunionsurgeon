@@ -3,6 +3,7 @@ import style from "./Footer.module.css";
 import { Instagram } from "./FooterIcons/Instagram";
 import { Twitter } from "./FooterIcons/Twitter";
 import { Youtube } from "./FooterIcons/Youtube";
+import Link from "next/link";
 
 export function Footer() {
   return (
@@ -17,11 +18,20 @@ export function Footer() {
         </div>
         <div className={style.iconContainer}>
           <Youtube />
-          <Twitter />
-          <Instagram />
+          <Link
+            legacyBehavior
+            href={"https://www.instagram.com/bunionsurgeon/?hl=en"}
+          >
+            <a target="_blank">
+              <Instagram />
+            </a>
+          </Link>
         </div>
-        <div className={style.footContainer}>
+        <div className={style.finalCont}>
           <p>© Copyright Bunionsurgeon</p>
+          <Link href={"/privacy"}>
+            <p className={style.privacy}>Privacy policy</p>
+          </Link>
         </div>
       </div>
     </footer>
