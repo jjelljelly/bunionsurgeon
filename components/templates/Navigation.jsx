@@ -81,7 +81,9 @@ export function Navigation() {
                     {item.title}
                   </Link>
                 ) : (
-                  <a style={{ cursor: "pointer" }}>{item.title}</a>
+                  <a style={{ cursor: "pointer" }} href="#">
+                    {item.title}
+                  </a>
                 )}
                 {dropDown && (
                   <ul className={styling.dropMenu}>

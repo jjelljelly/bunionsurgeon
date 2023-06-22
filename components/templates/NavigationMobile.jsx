@@ -79,7 +79,15 @@ export function NavigationMobile() {
                 className={styling.navItem}
                 onClick={() => setDropDown(dropDown ? false : item.subMenu)}
               >
-                <Link href={item?.link ?? ""}>{item.title}</Link>
+                {item?.link ? (
+                  <Link href={item?.link} scroll={true}>
+                    {item.title}
+                  </Link>
+                ) : (
+                  <a style={{ cursor: "pointer" }} href="#">
+                    {item.title}
+                  </a>
+                )}
                 {dropDown && (
                   <ul className={styling.dropMenu}>
                     {item.subMenuItems?.map((dropItem) => {
