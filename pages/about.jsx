@@ -42,46 +42,22 @@ export async function getStaticProps() {
   };
 }
 
-// const MapWithAMakredInfoWindow = compose(
-//   withStateHandlers(
-//     () => ({
-//       isOpen: false,
-//     }),
-//     {
-//       onToggleOpen:
-//         ({ isOpen }) =>
-//         () => ({
-//           isOpen: !isOpen,
-//         }),
-//     }
-//   ),
-//   withScriptjs,
-//   withGoogleMap
-// );
-
 const mapStyles = [
   {
     featureType: "poi",
     stylers: [{ visibility: "off" }],
   },
-  // {
-  //   featureType: "road",
-  //   elementType: "geometry",
-  //   stylers: [{ color: "#063b5e;" }],
-  // },
-  // { featureType: "poi.medical", stylers: [{ visibility: "on" }] },
 ];
 
 export default function About({ blImage, logoImage }) {
   const [clicks, setClicks] = useState([]);
-  const [zoom, setZoom] = useState(16); // initial zoom
+  const [zoom, setZoom] = useState(16);
   const [center, setCenter] = useState({
     lat: 51.51745302940149,
     lng: -0.1465417440665885,
   });
 
   const onClick = (e) => {
-    // avoid directly mutating state
     setClicks([...clicks, e.latLng]);
   };
 

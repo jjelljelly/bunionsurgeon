@@ -1,0 +1,67 @@
+.cookieCont {
+  position: absolute;
+  bottom: 0%;
+  width: 100%;
+  background-color: #063b5e;
+  border: solid white 5px;
+  height: 20%;
+  display: flex;
+  text-align: left;
+  align-items: left;
+  z-index: 12;
+  flex-direction: column;
+  color: white;
+  padding: 0px 50px 20px;
+}
+
+.buttonCont {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.textCont {
+  width: 65%;
+}
+
+.cookieText {
+  margin: 0;
+}
+
+.cookieButton {
+  display: flex;
+  justify-content: space-evenly;
+  width: 35%;
+}
+
+.button {
+  margin: 0;
+}
+
+@media screen and (max-width: 1000px) {
+  .cookieCont {
+    height: 30%;
+    text-align: center;
+    align-items: center;
+  }
+
+  .buttonCont {
+    flex-direction: column;
+    height: 80%;
+  }
+  .textCont {
+    width: 100%;
+  }
+
+  .cookieButton {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .cookieCont {
+    height: 40%;
+    text-align: center;
+    align-items: center;
+  }
+}

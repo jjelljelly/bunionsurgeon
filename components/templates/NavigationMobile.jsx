@@ -24,15 +24,15 @@ const navObjects = [
       },
       {
         subMenuTitle: "Minimally Invase Bunion Surgery",
-        subMenuLink: "/surgeries/minimally-invasive",
+        subMenuLink: "/surgeries/minimally-invasive-bunion-surgery",
       },
       {
         subMenuTitle: "Scarf and Akin Osteotomy",
-        subMenuLink: "/surgeries/scarf-akin",
+        subMenuLink: "/surgeries/scarf-and-akin-osteotomy",
       },
       {
         subMenuTitle: "Lapidus Procedure",
-        subMenuLink: "/surgeries/lapidus",
+        subMenuLink: "/surgeries/lapidus-fusion-procedure",
       },
     ],
   },
@@ -44,13 +44,19 @@ const navObjects = [
   {
     title: "Gallery",
     subMenu: false,
-    link: "/gallery",
+    link: "/before-after-gallery",
   },
   {
     title: "Get in touch",
     subMenu: false,
     link: "/getintouch",
   },
+  {
+    title: "Blogs",
+    subMenu: false,
+    link: "/blog",
+  },
+
   {
     title: "Book online",
     subMenu: false,

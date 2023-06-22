@@ -1,7 +1,7 @@
 import Head from "next/head";
 import { BackgroundLines } from "../components/home/BackgroundLines";
 import { Layout } from "../components/templates/Layout";
-import style from "./Gallery.module.css";
+import style from "./BeforeAfterGallery.module.css";
 import { fetchEntries } from "../lib/contentful";
 import { BeforeAndAfterCard } from "../components/templates/BeforeAndAfterCard";
 import { getPlaiceholder } from "plaiceholder";

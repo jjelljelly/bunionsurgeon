@@ -23,15 +23,15 @@ const navObjects = [
       },
       {
         subMenuTitle: "Minimally Invase Bunion Surgery",
-        subMenuLink: "/surgeries/minimally-invasive",
+        subMenuLink: "/surgeries/minimally-invasive-bunion-surgery",
       },
       {
         subMenuTitle: "Scarf and Akin Osteotomy",
-        subMenuLink: "/surgeries/scarf-akin",
+        subMenuLink: "/surgeries/scarf-and-akin-osteotomy",
       },
       {
         subMenuTitle: "Lapidus Procedure",
-        subMenuLink: "/surgeries/lapidus",
+        subMenuLink: "/surgeries/lapidus-fusion-procedure",
       },
     ],
   },
@@ -43,12 +43,17 @@ const navObjects = [
   {
     title: "Gallery",
     subMenu: false,
-    link: "/gallery",
+    link: "/before-after-gallery",
   },
   {
     title: "Get in touch",
     subMenu: false,
     link: "/getintouch",
+  },
+  {
+    title: "Blogs",
+    subMenu: false,
+    link: "/blog",
   },
   {
     title: "Book online",
@@ -71,7 +76,13 @@ export function Navigation() {
                 className={styling.navItem}
                 onClick={() => setDropDown(dropDown ? false : item.subMenu)}
               >
-                <Link href={item?.link ?? ""}>{item.title}</Link>
+                {item?.link ? (
+                  <Link href={item?.link} scroll={true}>
+                    {item.title}
+                  </Link>
+                ) : (
+                  <a style={{ cursor: "pointer" }}>{item.title}</a>
+                )}
                 {dropDown && (
                   <ul className={styling.dropMenu}>
                     {item.subMenuItems?.map((dropItem) => {
@@ -80,7 +91,7 @@ export function Navigation() {
                           key={dropItem.subMenuTitle}
                           className={styling.dropItem}
                         >
-                          <Link href={dropItem.subMenuLink ?? ""}>
+                          <Link href={dropItem.subMenuLink ?? ""} scroll={true}>
                             {dropItem.subMenuTitle}
                           </Link>
                         </li>

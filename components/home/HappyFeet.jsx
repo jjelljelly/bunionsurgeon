@@ -9,8 +9,6 @@ export function HappyFeet({ images }) {
       <Image
         src="/images/bunion-surgeon-homepage-test.jpeg"
         fill
-        // objectFit="cover"
-        // objectPosition="top"
         alt="Image of Mr Kaser Nazir holding foot with bunion"
         className={style.happyFeet}
         style={{ objectFit: "cover", objectPosition: "top" }}

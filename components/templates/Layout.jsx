@@ -2,16 +2,16 @@ import Link from "next/link";
 import { Navigation } from "./Navigation";
 import { BunLogo } from "./BunLogo";
 import { Footer } from "./Footer";
-import Image from "next/image";
 import styles from "./Layout.module.css";
 import { NavigationMobile } from "./NavigationMobile";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
+import Cookies from "../../pages/cookies";
 
 export function Layout({ children, logo }) {
   const router = useRouter();
   useEffect(() => {
-    router.push(router.pathname + "#top");
+    router.push("#top");
   }, []);
   return (
     <div id="top">
@@ -21,6 +21,7 @@ export function Layout({ children, logo }) {
         <NavigationMobile />
       </header>
       {children}
+      <Cookies />
       <Footer />
     </div>
   );
