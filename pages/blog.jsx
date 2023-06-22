@@ -4,7 +4,7 @@ import { Layout } from "../components/templates/Layout";
 import { BackgroundLines } from "../components/home/BackgroundLines";
 import { getPlaiceholder } from "plaiceholder";
 import { fetchEntries } from "../lib/contentful";
-import { Blog } from "../components/templates/blog";
+import { Blog } from "../components/templates/Blog";
 
 export async function getStaticProps() {
   const { base64: blBase64, img: blImg } = await getPlaiceholder(
