@@ -144,17 +144,26 @@ export default function Surgery({ blImage, logoImage }) {
         <div className={style.surgeryCont}>
           <h2>Types of Bunion Surgery</h2>
           <div className={style.surgeryType}>
-            <Link href={"/surgeries/minimally-invasive"} className={style.link}>
+            <Link
+              href={"/surgeries/minimally-invasive-bunion-surgery"}
+              className={style.link}
+            >
               <button className={style.surgery}>
                 <h2>Minimally invasive bunion surgery</h2>
               </button>
             </Link>
-            <Link href={"/surgeries/scarf-akin"} className={style.link}>
+            <Link
+              href={"/surgeries/scarf-and-akin-osteotomy"}
+              className={style.link}
+            >
               <button className={style.surgery}>
                 <h2>Scarf and akin osteotomy</h2>
               </button>
             </Link>
-            <Link href={"/surgeries/lapidus"} className={style.link}>
+            <Link
+              href={"/surgeries/lapidus-fusion-procedure"}
+              className={style.link}
+            >
               <button className={style.surgery}>
                 <h2>Lapidus procedure</h2>
               </button>
