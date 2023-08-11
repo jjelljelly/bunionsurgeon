@@ -7,7 +7,7 @@ import style from "./ScarfAkin.module.css";
 import { useState } from "react";
 import Image from "next/image";
 import { getPlaiceholder } from "plaiceholder";
-import { ScarfImage } from "./ScarfImage";
+import { ScarfImage } from "../../components/surgeryImages/ScarfImage";
 
 const scarfSteps = [
   {

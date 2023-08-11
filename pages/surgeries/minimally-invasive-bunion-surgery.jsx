@@ -7,7 +7,7 @@ import { Modal } from "../../components/templates/Modal";
 import { MisTimeline } from "../../components/surgery/surgeryTimelines/MisTimeline";
 import { getPlaiceholder } from "plaiceholder";
 import Image from "next/image";
-import { MinimallyImage } from "./MinimallyImage";
+import { MinimallyImage } from "../../components/surgeryImages/MinimallyImage";
 
 const pecaSteps = [
   {

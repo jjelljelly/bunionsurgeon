@@ -7,7 +7,7 @@ import style from "./Lapidus.module.css";
 import Image from "next/image";
 import { useState } from "react";
 import { getPlaiceholder } from "plaiceholder";
-import { LapidusImage } from "./LapidusImage";
+import { LapidusImage } from "../../components/surgeryImages/LapidusImage";
 
 const lapidusSteps = [
   {
@@ -102,7 +102,7 @@ export async function getStaticProps() {
   };
 }
 
-export default function lapidus({ blImage, logoImage, lapidusImage }) {
+export default function Lapidus({ blImage, logoImage, lapidusImage }) {
   const [item, setItem] = useState(false);
   const [idx, setIdx] = useState();
   return (
