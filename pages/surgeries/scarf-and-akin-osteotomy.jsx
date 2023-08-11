@@ -7,6 +7,7 @@ import style from "./ScarfAkin.module.css";
 import { useState } from "react";
 import Image from "next/image";
 import { getPlaiceholder } from "plaiceholder";
+import { ScarfImage } from "./ScarfImage";
 
 const scarfSteps = [
   {
@@ -83,6 +84,10 @@ export async function getStaticProps() {
     "/images/bunion-logo.png"
   );
 
+  const { base64: scarfBase64, img: scarfImg } = await getPlaiceholder(
+    "/images/scarf-akin-image.jpg"
+  );
+
   return {
     props: {
       blImage: {
@@ -93,11 +98,15 @@ export async function getStaticProps() {
         ...logoImg,
         blurDataURL: logoBase64,
       },
+      scarfImage: {
+        ...scarfImg,
+        blurDataURL: scarfBase64,
+      },
     },
   };
 }
 
-export default function ScarfAkin({ blImage, logoImage }) {
+export default function ScarfAkin({ blImage, logoImage, scarfImage }) {
   const [item, setItem] = useState(false);
   const [idx, setIdx] = useState();
 
@@ -211,7 +220,10 @@ export default function ScarfAkin({ blImage, logoImage }) {
           </p>
         </div>
         <div className={style.scarfCont}>
-          <div className={style.video}>Scarf video to follow</div>
+          <div className={style.image}>
+            <div className={style.picOverlay}></div>
+            <ScarfImage scarfImage={scarfImage} />
+          </div>
           <div className={style.scarfIntro}>
             <h2>What are the benefits of the Scarf and Akin Osteotomy?</h2>
             <ul className={style.bulletCont}>

@@ -90,4 +90,7 @@
     width: 90%;
     min-height: 200px;
   }
+  .timelineCont {
+    padding: 0 10px;
+  }
 }

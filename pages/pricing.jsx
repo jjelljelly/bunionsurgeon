@@ -30,7 +30,7 @@ export async function getStaticProps() {
 }
 
 export default function Pricing({ blImage, logoImage }) {
-  const [visible, setVisible] = useState();
+  const [visible, setVisible] = useState("insured");
   return (
     <>
       <Head>

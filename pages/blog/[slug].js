@@ -8,7 +8,6 @@ import { BackgroundLines } from "../../components/home/BackgroundLines";
 import { getSlug } from "../../lib/utils";
 
 export default function Slug({ blogs, logoImage, blImage }) {
-  console.log("blogs:", blogs)
   return (
     <Layout logo={logoImage}>
       <Head>

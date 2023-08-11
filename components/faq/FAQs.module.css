@@ -1,0 +1,28 @@
+.FAQContainer {
+  width: 70%;
+  margin: 40px auto;
+}
+
+.question {
+  color: #063b5e;
+}
+
+.answer li {
+  padding-top: 0;
+}
+
+.imageContainer {
+  width: 100%;
+  max-width: 550px;
+  text-align: center;
+}
+
+.image {
+  width: 80%;
+}
+
+@media only screen and (max-width: 1200px) {
+  .FAQContainer {
+    width: 90%;
+  }
+}

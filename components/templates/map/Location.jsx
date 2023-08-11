@@ -43,8 +43,8 @@ export function Location({ children, ...options }) {
             </p>
           </div>
           <p>
-            All surgeries are arranged around the corner at Harley Street
-            Specialist Hospital or The Weymouth Street Hospital.
+            All surgeries are arranged at The Weymouth Street Hospital, who
+            provide high quality care with state of the art facilities.
           </p>
         </div>
         <div className={style.mapCont}>

@@ -11,7 +11,12 @@
     "@contentful/rich-text-html-renderer": "^16.1.0",
     "@contentful/rich-text-react-renderer": "^15.17.0",
     "@contentful/rich-text-types": "^16.2.0",
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
     "@googlemaps/react-wrapper": "^1.1.35",
+    "@mui/icons-material": "^5.14.3",
+    "@mui/material": "^5.14.4",
+    "@mui/styled-engine-sc": "^5.12.0",
     "@plaiceholder/next": "^2.5.0",
     "@react-google-maps/api": "^2.17.1",
     "contentful": "^9.3.5",
@@ -23,6 +28,7 @@
     "react-dom": "18.2.0",
     "react-scroll-trigger": "^0.6.14",
     "react-waypoint": "^10.3.0",
-    "sharp": "^0.32.0"
+    "sharp": "^0.32.0",
+    "styled-components": "^5.3.11"
   }
 }

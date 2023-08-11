@@ -14,7 +14,6 @@ export function BunLogo({ logo }) {
         blurDataURL={blurDataURL}
         style={{ objectFit: "contain", objectPosition: "bottom" }}
         alt="Bunion surgeon logo"
-        className={styles.bunionLogo}
         fill
         sizes="100%"
       />

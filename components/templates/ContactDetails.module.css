@@ -1,11 +1,12 @@
 .contactWrapper {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  height: 700px;
   width: 100%;
   color: #063b5e;
   background-color: #e1e7f2;
+  padding-bottom: 50px;
 }
 
 .howContact {
@@ -26,7 +27,7 @@
   justify-content: space-evenly;
   background-color: white;
   border-radius: 20px;
-  margin: 0;
+  margin: 10px 0;
   border: solid 3px #063b5e;
 }
 
@@ -48,11 +49,6 @@
 }
 
 @media screen and (max-width: 700px) {
-  .contactWrapper {
-    height: 1100px;
-    flex-wrap: wrap;
-  }
-
   .howContact {
     width: 100%;
     height: 450px;

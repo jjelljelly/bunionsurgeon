@@ -1,5 +1,4 @@
 import { Timeline } from "../../templates/Timeline";
-import { useState, useEffect } from "react";
 import style from "./SurgeryTimeline.module.css";
 
 const timelineObj = [

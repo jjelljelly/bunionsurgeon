@@ -9,18 +9,20 @@
   flex-direction: column;
   align-items: center;
   margin: 20px;
+  z-index: 2;
 }
 
 .cardInner {
   position: relative;
   width: 100%;
   height: 100%;
+  display: flex;
+  justify-content: center;
   text-align: center;
+  align-items: center;
   transition: transform 0.6s;
   transform-style: preserve-3d;
-  border: solid 3px #063b5e;
   border-radius: 20px;
-  text-align: center;
   cursor: pointer;
 }
 
@@ -28,7 +30,19 @@
   transform: rotateY(180deg);
 }
 
-.cardFront,
+.cardFront {
+  position: absolute;
+  width: 60%;
+  height: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 20px;
+  border: solid 3px #063b5e;
+}
+
 .cardBack {
   position: absolute;
   width: 100%;
@@ -39,6 +53,7 @@
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   border-radius: 20px;
+  border: solid 3px #063b5e;
 }
 
 .cardBack {
@@ -63,8 +78,32 @@
   border-radius: 20px;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (min-width: 701px and max-width: 1200px) {
+  .card {
+    width: 40%;
+    margin: 0;
+    height: 40%;
+  }
+  .cardFront {
+    width: 100%;
+    height: 100%;
+  }
+  .cardBack {
+    padding: 0 5px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
   .card {
     width: 80%;
+    margin: 0;
+    height: 20%;
+  }
+  .cardFront {
+    width: 100%;
+    height: 100%;
+  }
+  .cardBack {
+    padding: 0 5px;
   }
 }

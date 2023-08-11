@@ -6,22 +6,31 @@
   text-align: center;
   background-color: #063b5e;
   color: white;
-  min-height: 300px;
+  min-height: 350px;
   padding: 40px 0 50px;
   position: relative;
 }
 
 .scarfCont {
   width: 100%;
-  min-height: 400px;
+  height: 425px;
   display: flex;
 }
 
-.video {
+.image {
   width: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  height: 100%;
+  position: relative;
+}
+
+.picOverlay {
+  background-color: rgba(105, 137, 158, 0.2);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
 }
 
 .scarfIntro {
@@ -54,6 +63,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  height: 325px;
 }
 
 .howCont {
@@ -121,10 +131,11 @@
   }
   .scarfCont {
     flex-direction: column;
+    height: 550px;
   }
-  .video {
+
+  .image {
     width: 100%;
-    min-height: 300px;
   }
   .scarfIntro {
     width: 100%;
@@ -161,9 +172,24 @@
   }
 }
 
-@media screen and (min-width: 701px) and (max-width: 1300px) {
+@media screen and (min-width: 701px) and (max-width: 1200px) {
   .bulletCont {
-    margin-left: 40%;
+    margin-left: 0%;
     width: 100%;
+  }
+  .modalCont {
+    flex-direction: column;
+  }
+
+  .modalImage {
+    height: 50%;
+    width: 80%;
+  }
+  .modalText {
+    display: flex;
+    height: 50%;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
   }
 }

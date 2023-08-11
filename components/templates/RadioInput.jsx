@@ -1,4 +1,3 @@
-import { useState, setEffect } from "react";
 import style from "./RadioInput.module.css";
 
 export function RadioInput({ state, setState, label, value, name }) {

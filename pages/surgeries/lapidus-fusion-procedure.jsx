@@ -7,6 +7,7 @@ import style from "./Lapidus.module.css";
 import Image from "next/image";
 import { useState } from "react";
 import { getPlaiceholder } from "plaiceholder";
+import { LapidusImage } from "./LapidusImage";
 
 const lapidusSteps = [
   {
@@ -79,6 +80,10 @@ export async function getStaticProps() {
     "/images/bunion-logo.png"
   );
 
+  const { base64: lapidusBase64, img: lapidusImg } = await getPlaiceholder(
+    "/images/lapidus-image.jpg"
+  );
+
   return {
     props: {
       blImage: {
@@ -89,11 +94,15 @@ export async function getStaticProps() {
         ...logoImg,
         blurDataURL: logoBase64,
       },
+      lapidusImage: {
+        ...lapidusImg,
+        blurDataURL: lapidusBase64,
+      },
     },
   };
 }
 
-export default function lapidus({ blImage, logoImage }) {
+export default function lapidus({ blImage, logoImage, lapidusImage }) {
   const [item, setItem] = useState(false);
   const [idx, setIdx] = useState();
   return (
@@ -206,7 +215,10 @@ export default function lapidus({ blImage, logoImage }) {
           </p>
         </div>
         <div className={style.lapidusCont}>
-          <div className={style.video}>Lapidus video to follow</div>
+          <div className={style.image}>
+            <div className={style.picOverlay}></div>
+            <LapidusImage lapidusImage={lapidusImage} />
+          </div>
           <div className={style.lapidusIntro}>
             <h2>What are the benefits of the Lapidus procedure?</h2>
 

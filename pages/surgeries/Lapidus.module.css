@@ -13,15 +13,24 @@
 
 .lapidusCont {
   width: 100%;
-  min-height: 400px;
+  height: 400px;
   display: flex;
 }
 
-.video {
+.image {
   width: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  position: relative;
+  height: 100%;
+}
+
+.picOverlay {
+  background-color: rgba(105, 137, 158, 0.2);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
 }
 
 .lapidusIntro {
@@ -33,7 +42,7 @@
   color: #063b5e;
   background-color: #e1e7f2;
   margin: 0;
-  padding: 0 40px;
+  padding: 0 60px;
   flex-direction: column;
 }
 
@@ -42,6 +51,7 @@
   margin-left: 25%;
   list-style-type: "⬗";
   text-align: left;
+  padding: 0;
 }
 
 .howCont {
@@ -109,10 +119,10 @@
   }
   .lapidusCont {
     flex-direction: column;
+    height: 600px;
   }
-  .video {
+  .image {
     width: 100%;
-    min-height: 300px;
   }
   .lapidusIntro {
     width: 100%;
@@ -149,12 +159,26 @@
   }
 }
 
-@media screen and (min-width: 701px) and (max-width: 1300px) {
+@media screen and (min-width: 701px) and (max-width: 1200px) {
   .lapidusIntro {
     padding: 30px 40px;
   }
   .bulletCont {
-    margin-left: 15%;
+    margin-left: 0%;
     width: 100%;
+  }
+  .modalCont {
+    flex-direction: column;
+  }
+  .modalImage {
+    height: 50%;
+    width: 80%;
+  }
+  .modalText {
+    display: flex;
+    height: 50%;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
   }
 }

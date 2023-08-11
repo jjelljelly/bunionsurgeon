@@ -33,7 +33,6 @@ export async function getStaticProps() {
 }
 
 export default function Blogs({ logoImage, blImage, blogs }) {
-  console.log(blogs);
   return (
     <>
       <Head />

@@ -1,7 +1,6 @@
 import style from "./Form.module.css";
 import { RadioInput } from "./RadioInput";
 import React, { useState } from "react";
-import { Modal } from "./Modal";
 import { ModalContact } from "./ModalContact";
 import Link from "next/link";
 
@@ -12,7 +11,6 @@ const FAILURE = "FAILURE";
 export default function Form() {
   const [select, setSelect] = useState("");
   const [response, setResponse] = useState(false);
-  // const [visible, setVisible] = useState(false);
 
   // Handles the submit event on form submit.
   const handleSubmit = async (event) => {
@@ -139,13 +137,14 @@ export default function Form() {
             </div>
             <div>
               <label className={style.privacyContainer}>
-                <RadioInput
-                  state={select}
-                  setState={setSelect}
+                <input
+                  type="checkbox"
                   label="Select if you agree to our"
                   value="privacy"
                   name="privacy"
+                  required
                 />
+                Select if you agree to our
                 <Link legacyBehavior href={"/privacy"}>
                   <a target="_blank" className={style.privacy}>
                     <u>Privacy Policy</u>

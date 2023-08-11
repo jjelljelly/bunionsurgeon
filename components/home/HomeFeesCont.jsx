@@ -1,5 +1,4 @@
 import { FeesFlipCard } from "../templates/FeesFlipCard";
-import style from "./HomeFeesCont.module.css";
 
 export function HomeFeesCont({
   unilatLocal,
@@ -8,7 +7,6 @@ export function HomeFeesCont({
   bilatSedation,
 }) {
   return (
-    // <div className={style.feesCont}>
     <>
       <FeesFlipCard
         feeType="One Foot"
@@ -21,6 +19,5 @@ export function HomeFeesCont({
         sedation={bilatSedation}
       />
     </>
-    // </div>
   );
 }

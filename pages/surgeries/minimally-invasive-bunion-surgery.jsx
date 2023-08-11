@@ -7,6 +7,7 @@ import { Modal } from "../../components/templates/Modal";
 import { MisTimeline } from "../../components/surgery/surgeryTimelines/MisTimeline";
 import { getPlaiceholder } from "plaiceholder";
 import Image from "next/image";
+import { MinimallyImage } from "./minimallyImage";
 
 const pecaSteps = [
   {
@@ -79,6 +80,10 @@ export async function getStaticProps() {
     "/images/bunion-logo.png"
   );
 
+  const { base64: minimallyBase64, img: minimallyImg } = await getPlaiceholder(
+    "/images/minimally-invasive-surgery.jpg"
+  );
+
   return {
     props: {
       blImage: {
@@ -89,11 +94,19 @@ export async function getStaticProps() {
         ...logoImg,
         blurDataURL: logoBase64,
       },
+      minimallyImage: {
+        ...minimallyImg,
+        blurDataURL: minimallyBase64,
+      },
     },
   };
 }
 
-export default function MinimallyInvasive({ blImage, logoImage }) {
+export default function MinimallyInvasive({
+  blImage,
+  logoImage,
+  minimallyImage,
+}) {
   const [item, setItem] = useState(false);
   const [idx, setIdx] = useState();
 
@@ -209,7 +222,10 @@ export default function MinimallyInvasive({ blImage, logoImage }) {
           </p>
         </div>
         <div className={style.misCont}>
-          <div className={style.video}>MIS video to follow</div>
+          <div className={style.image}>
+            <div className={style.picOverlay}></div>
+            <MinimallyImage minimallyImage={minimallyImage} />
+          </div>
           <div className={style.misIntro}>
             <h2>What are the benefits of minimally invasive bunion surgery?</h2>
             <p>

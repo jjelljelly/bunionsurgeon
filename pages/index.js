@@ -25,8 +25,8 @@ const mapStyles = [
 ];
 
 export async function getStaticProps() {
-  const { base64, img } = await getPlaiceholder("/images/homepage-idea.jpg");
-  const { base64: bsBase64, img: bsImg } = await getPlaiceholder("/images/bunion-surgeon-homepage-test.jpeg");
+  const { base64, img } = await getPlaiceholder("/images/kaser-nazir-homepage.png");
+  const { base64: bsBase64, img: bsImg } = await getPlaiceholder("/images/homepage-surgery.jpg");
   const { base64: blBase64, img: blImg } = await getPlaiceholder(
     "/images/abstract-lines.png"
   );

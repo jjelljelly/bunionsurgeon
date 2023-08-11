@@ -1,6 +1,5 @@
 import style from "./PricingHomepage.module.css";
 import { usePricingContext } from "../../context/pricingContext";
-import { FeesFlipCard } from "../templates/FeesFlipCard";
 import { HomeFeesCont } from "./HomeFeesCont";
 
 export function PricingHomepage({}) {
@@ -28,23 +27,23 @@ export function PricingHomepage({}) {
         </div>
         <div className={style.pricing}>
           <div className={style.price}>
-            Consultation <br /> £200
+            <p className={style.feeDescription}>Consultation</p>
+            <p>£200</p>
           </div>
           <div className={style.price}>
-            X-ray per foot <br /> £100
+            <p className={style.feeDescription}>X-ray per foot</p>
+            <p>£100</p>
           </div>
-          <div className={style.fetchedPrice}>
-            <HomeFeesCont
-              unilatLocal={"£" + Math.round(data?.unilateralMinimalBunionLocal)}
-              unilatSedation={
-                "£" + Math.round(data?.unilateralMinimalBunionSedation)
-              }
-              bilatLocal={"£" + Math.round(data?.bilateralMinimalBunionLocal)}
-              bilatSedation={
-                "£" + Math.round(data?.bilateralMinimalBunionSedation)
-              }
-            />
-          </div>
+          <HomeFeesCont
+            unilatLocal={"£" + Math.round(data?.unilateralMinimalBunionLocal)}
+            unilatSedation={
+              "£" + Math.round(data?.unilateralMinimalBunionSedation)
+            }
+            bilatLocal={"£" + Math.round(data?.bilateralMinimalBunionLocal)}
+            bilatSedation={
+              "£" + Math.round(data?.bilateralMinimalBunionSedation)
+            }
+          />
         </div>
       </div>
     </div>

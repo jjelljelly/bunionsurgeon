@@ -9,6 +9,8 @@ import { useState } from "react";
 import { Marker } from "../components/templates/map/Marker";
 import { NewMap } from "../components/templates/map/NewMap.";
 import { getPlaiceholder } from "plaiceholder";
+import { AboutImage } from "../components/about/AboutImage";
+
 // import {
 //   InfoWindow,
 //   withScriptjs,
@@ -28,6 +30,10 @@ export async function getStaticProps() {
     "/images/bunion-logo.png"
   );
 
+  const { base64: aboutBase64, img: aboutImg } = await getPlaiceholder(
+    "/images/about-us.png"
+  );
+
   return {
     props: {
       blImage: {
@@ -37,6 +43,10 @@ export async function getStaticProps() {
       logoImage: {
         ...logoImg,
         blurDataURL: logoBase64,
+      },
+      aboutImage: {
+        ...aboutImg,
+        blurDataURL: aboutBase64,
       },
     },
   };
@@ -49,7 +59,7 @@ const mapStyles = [
   },
 ];
 
-export default function About({ blImage, logoImage }) {
+export default function About({ blImage, logoImage, aboutImage }) {
   const [clicks, setClicks] = useState([]);
   const [zoom, setZoom] = useState(16);
   const [center, setCenter] = useState({
@@ -178,7 +188,9 @@ export default function About({ blImage, logoImage }) {
             </p>
           </div>
           <div className={style.kaserCont}>
-            <div className={style.video}>Video to follow</div>
+            <div className={style.image}>
+              <AboutImage aboutImage={aboutImage} />
+            </div>
             <div className={style.kaserBio}>
               <h2>Who is Mr Kaser Nazir?</h2>
               <p>
@@ -206,7 +218,6 @@ export default function About({ blImage, logoImage }) {
           </div>
         </div>
         <NazirTimeline />
-        {/* <NewMap /> */}
         <Wrapper apiKey={process.env.NEXT_PUBLIC_MAP_API} render={render}>
           <Location center={center} zoom={zoom} options={{ styles: mapStyles }}>
             <Marker

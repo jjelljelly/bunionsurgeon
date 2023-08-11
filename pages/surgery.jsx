@@ -6,6 +6,7 @@ import Link from "next/link";
 import { BunionInfo } from "../components/surgery/BunionInfo";
 import { FrequentQuestions } from "../components/surgery/FrequentQuestions";
 import { getPlaiceholder } from "plaiceholder";
+import { fetchEntries } from "../lib/contentful";
 
 export async function getStaticProps() {
   const { base64: blBase64, img: blImg } = await getPlaiceholder(
@@ -14,6 +15,13 @@ export async function getStaticProps() {
   const { base64: logoBase64, img: logoImg } = await getPlaiceholder(
     "/images/bunion-logo.png"
   );
+  const { base64: surgeryBase64, img: surgeryImg } = await getPlaiceholder(
+    "/images/surgery-pic.jpg"
+  );
+
+  const fetchedProducts = await fetchEntries({
+    content_type: "faqBunion",
+  });
 
   return {
     props: {
@@ -25,11 +33,21 @@ export async function getStaticProps() {
         ...logoImg,
         blurDataURL: logoBase64,
       },
+      surgeryImage: {
+        ...surgeryImg,
+        blurDataURL: surgeryBase64,
+      },
+      faqBunion: fetchedProducts,
     },
   };
 }
 
-export default function Surgery({ blImage, logoImage }) {
+export default function Surgery({
+  blImage,
+  logoImage,
+  surgeryImage,
+  faqBunion,
+}) {
   return (
     <>
       <Head>
@@ -140,7 +158,7 @@ export default function Surgery({ blImage, logoImage }) {
             bunion specialist, Mr Kaser Nazir.
           </p>
         </div>
-        <BunionInfo />
+        <BunionInfo surgeryImage={surgeryImage} />
         <div className={style.surgeryCont}>
           <h2>Types of Bunion Surgery</h2>
           <div className={style.surgeryType}>
@@ -170,7 +188,7 @@ export default function Surgery({ blImage, logoImage }) {
             </Link>
           </div>
         </div>
-        <FrequentQuestions />
+        <FrequentQuestions faqBunion={faqBunion} />
       </Layout>
     </>
   );

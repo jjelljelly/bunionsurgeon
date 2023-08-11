@@ -7,7 +7,7 @@ export function HappyFeet({ images }) {
     <>
       <div className={style.picOverlay}></div>
       <Image
-        src="/images/bunion-surgeon-homepage-test.jpeg"
+        src={src}
         fill
         alt="Image of Mr Kaser Nazir holding foot with bunion"
         className={style.happyFeet}

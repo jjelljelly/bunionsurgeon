@@ -17,7 +17,12 @@ export function Footer() {
           <p className={style.footText}>admin@bunionsurgeon.co.uk</p>
         </div>
         <div className={style.iconContainer}>
-          <Youtube />
+          <Link legacyBehavior href={"https://www.youtube.com/@BunionSurgeon"}>
+            <a target="_blank">
+              <Youtube />
+            </a>
+          </Link>
+
           <Link
             legacyBehavior
             href={"https://www.instagram.com/bunionsurgeon/?hl=en"}

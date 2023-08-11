@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   width: 80%;
+  margin: 10px 0;
 }
 
 .boxContainer {
@@ -9,9 +10,14 @@
   flex-direction: column;
 }
 
+.boxContainer input {
+  padding: 10px 0;
+}
+
 .privacyContainer {
   display: flex;
   flex-direction: row;
+  padding: 20px 0;
 }
 
 .privacy {

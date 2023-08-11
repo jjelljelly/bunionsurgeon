@@ -1,7 +1,6 @@
 .blogPageCont {
   display: flex;
   justify-content: space-evenly;
-  min-height: 200px;
   width: 100%;
   align-items: center;
   flex-wrap: wrap;
