@@ -11,7 +11,7 @@ export function AboutImage({ aboutImage }) {
         blurDataURL={blurDataURL}
         alt="Profile picture of Mr Kaser Nazir"
         style={{
-          objectFit: "cover",
+          objectFit: "contain",
           objectPosition: "center",
         }}
         sizes="100%"

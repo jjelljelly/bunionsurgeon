@@ -18,7 +18,7 @@ const lapidusSteps = [
       alt: "Lapidus procedure step 1",
     },
     image2: {
-      src: "/images/step1-lapidus.png",
+      src: "/images/step1-lapidus-text.png",
       alt: "Lapidus procedure step 1",
     },
   },
@@ -30,7 +30,7 @@ const lapidusSteps = [
       alt: "Lapidus procedure step 2",
     },
     image2: {
-      src: "/images/step2-lapidus.png",
+      src: "/images/step2-lapidus-text.png",
       alt: "Lapidus procedure step 2",
     },
   },
@@ -38,11 +38,11 @@ const lapidusSteps = [
     title: "Step three",
     text: "Plate and screws used to aid fusion of midfoot.",
     image1: {
-      src: "/images/step3-scarf.png",
+      src: "/images/step3-lapidus.png",
       alt: "Lapidus procedure step 3",
     },
     image2: {
-      src: "/images/step3-scarf.png",
+      src: "/images/step3-lapidus-text.png",
       alt: "Lapidus procedure step 3",
     },
   },
@@ -50,11 +50,11 @@ const lapidusSteps = [
     title: "Step four",
     text: "A small wedge is removed from the phalanx to straighten the end of the toe.",
     image1: {
-      src: "/images/step4-scarf.png",
+      src: "/images/step4-lapidus.png",
       alt: "Lapidus procedure step 4",
     },
     image2: {
-      src: "/images/step4-scarf-text.png",
+      src: "/images/step4-lapidus-text.png",
       alt: "Lapidus procedure step 4",
     },
   },
@@ -62,11 +62,11 @@ const lapidusSteps = [
     title: "Step five",
     text: "The phalanx is fixed together where the wedge has been removed, promoting a correct alignment of the toe.",
     image1: {
-      src: "/images/step5-scarf.png",
+      src: "/images/step5-lapidus.png",
       alt: "Lapidus procedure step 5",
     },
     image2: {
-      src: "/images/step5-scarf-text.png",
+      src: "/images/step5-lapidus-text.png",
       alt: "Lapidus procedure step 5",
     },
   },

@@ -34,6 +34,10 @@ export async function getStaticProps() {
     "/images/about-us.png"
   );
 
+  const { base64: aboutTestBase64, img: aboutTestImg } = await getPlaiceholder(
+    "/images/about-us-tester.jpg"
+  );
+
   return {
     props: {
       blImage: {
@@ -48,6 +52,10 @@ export async function getStaticProps() {
         ...aboutImg,
         blurDataURL: aboutBase64,
       },
+      aboutTestImage: {
+        ...aboutTestImg,
+        blurDataURL: aboutTestBase64,
+      },
     },
   };
 }
@@ -59,7 +67,12 @@ const mapStyles = [
   },
 ];
 
-export default function About({ blImage, logoImage, aboutImage }) {
+export default function About({
+  blImage,
+  logoImage,
+  aboutImage,
+  aboutTestImage,
+}) {
   const [clicks, setClicks] = useState([]);
   const [zoom, setZoom] = useState(16);
   const [center, setCenter] = useState({
@@ -188,32 +201,34 @@ export default function About({ blImage, logoImage, aboutImage }) {
             </p>
           </div>
           <div className={style.kaserCont}>
-            <div className={style.image}>
-              <AboutImage aboutImage={aboutImage} />
-            </div>
-            <div className={style.kaserBio}>
-              <h2>Who is Mr Kaser Nazir?</h2>
-              <p>
-                Mr Kaser Nazir is a foot and ankle surgeon who primarily
-                operates in central London. He is one of the leading bunion
-                surgeons in the United Kingdom.
-              </p>
-              <p>
-                Specialising in minimally invasive and innovative surgical
-                approaches, Mr Kaser Nazir provides excellent results following
-                bunion surgery.
-              </p>
-              <p>
-                During your consultation, Mr Kaser Nazir will diligently listen
-                to your concerns, preferences and together find the most
-                appropriate surgical option.
-              </p>
+            <div className={style.boxed}>
+              <div className={style.image}>
+                <AboutImage aboutImage={aboutTestImage} />
+              </div>
+              <div className={style.kaserBio}>
+                <h2>Who is Mr Kaser Nazir?</h2>
+                <p>
+                  Mr Kaser Nazir is a foot and ankle surgeon who primarily
+                  operates in central London. He is one of the leading bunion
+                  surgeons in the United Kingdom.
+                </p>
+                <p>
+                  Specialising in minimally invasive and innovative surgical
+                  approaches, Mr Kaser Nazir provides excellent results
+                  following bunion surgery.
+                </p>
+                <p>
+                  During your consultation, Mr Kaser Nazir will diligently
+                  listen to your concerns, preferences and together find the
+                  most appropriate surgical option.
+                </p>
 
-              <p>
-                Following your procedure, you will be able to reach Mr Nazir
-                directly over the phone, SMS or Whatsapp to ensure you have
-                successful recovery.
-              </p>
+                <p>
+                  Following your procedure, you will be able to reach Mr Nazir
+                  directly over the phone, SMS or Whatsapp to ensure you have
+                  successful recovery.
+                </p>
+              </div>
             </div>
           </div>
         </div>
