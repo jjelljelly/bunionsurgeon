@@ -60,3 +60,8 @@
     padding: 0 30px;
   }
 }
+
+@media screen and (min-width: 2000px) {
+  .form {
+  }
+}

@@ -35,3 +35,11 @@
     flex-direction: column;
   }
 }
+
+@media screen and (min-width: 2000px) {
+  .button {
+    height: 100px;
+    width: 500px;
+    font-size: 35px;
+  }
+}

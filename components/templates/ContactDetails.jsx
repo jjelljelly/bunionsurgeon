@@ -10,13 +10,13 @@ export function ContactDetails() {
         <button className={style.contact}>
           <Link href="tel:+442078208007">
             <h2 className={style.title}>Call us</h2>
-            +44207 820 8007
+            <p>+44207 820 8007</p>
           </Link>
         </button>
         <button className={style.contact}>
           <Link href="mailto:admin@bunionsurgeon.co.uk">
             <h2 className={style.title}>Email us</h2>
-            admin@bunionsurgeon.co.uk
+            <p>admin@bunionsurgeon.co.uk</p>
           </Link>
         </button>
         <div className={style.contact}>

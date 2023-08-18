@@ -182,3 +182,18 @@
     justify-content: center;
   }
 }
+
+@media screen and (min-width: 2000px) {
+  .lapidusCont {
+    height: 800px;
+  }
+  .stepsCont {
+    font-size: 40px;
+  }
+  .imageCont {
+    height: 450px;
+  }
+  .modalImage {
+    height: 90%;
+  }
+}

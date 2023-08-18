@@ -26,7 +26,9 @@ export function BulletpointSurgery({ images, image }) {
           <BackgroundLines image={image} />
           <div className={styling.buttonCont}>
             <button>
-              <Link href={"/surgeries/minimally-invasive"}>Find out more</Link>
+              <Link href={"/surgeries/minimally-invasive-bunion-surgery"}>
+                Find out more
+              </Link>
             </button>
           </div>
         </div>

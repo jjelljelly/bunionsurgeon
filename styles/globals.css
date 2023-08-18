@@ -107,3 +107,37 @@ textarea {
     font-size: 14px;
   }
 }
+
+@media screen and (min-width: 2000px) {
+  p {
+    font-size: 40px;
+  }
+
+  h4 {
+    font-size: 40px;
+  }
+
+  h1 {
+    font-size: 60px;
+  }
+
+  h2 {
+    font-size: 50px;
+  }
+
+  h3 {
+    font-size: 40px;
+  }
+
+  li {
+    font-size: 40px;
+  }
+
+  a {
+    font-size: 40px;
+  }
+
+  label {
+    font-size: 40px;
+  }
+}

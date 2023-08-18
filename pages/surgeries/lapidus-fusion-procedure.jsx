@@ -8,6 +8,8 @@ import Image from "next/image";
 import { useState } from "react";
 import { getPlaiceholder } from "plaiceholder";
 import { LapidusImage } from "../../components/surgeryImages/LapidusImage";
+import { FrequentQuestions } from "../../components/surgery/FrequentQuestions";
+import { fetchEntries } from "../../lib/contentful";
 
 const lapidusSteps = [
   {
@@ -83,6 +85,9 @@ export async function getStaticProps() {
   const { base64: lapidusBase64, img: lapidusImg } = await getPlaiceholder(
     "/images/lapidus-image.jpg"
   );
+  const fetchedProducts = await fetchEntries({
+    content_type: "faqLapidus",
+  });
 
   return {
     props: {
@@ -98,11 +103,17 @@ export async function getStaticProps() {
         ...lapidusImg,
         blurDataURL: lapidusBase64,
       },
+      faqBunion: fetchedProducts,
     },
   };
 }
 
-export default function Lapidus({ blImage, logoImage, lapidusImage }) {
+export default function Lapidus({
+  blImage,
+  logoImage,
+  lapidusImage,
+  faqBunion,
+}) {
   const [item, setItem] = useState(false);
   const [idx, setIdx] = useState();
   return (
@@ -233,6 +244,7 @@ export default function Lapidus({ blImage, logoImage, lapidusImage }) {
             </ul>
           </div>
         </div>
+        <LapidusTimeline />
         <div className={style.howCont}>
           <h2 className={style.howTitle}>
             How is the Lapidus procedure performed?
@@ -285,7 +297,7 @@ export default function Lapidus({ blImage, logoImage, lapidusImage }) {
             </div>
           )}
         </Modal>
-        <LapidusTimeline />
+        <FrequentQuestions faqBunion={faqBunion} />
       </Layout>
     </>
   );

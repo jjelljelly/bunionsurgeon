@@ -27,11 +27,11 @@ export function PricingHomepage({}) {
         </div>
         <div className={style.pricing}>
           <div className={style.price}>
-            <p className={style.feeDescription}>Consultation</p>
+            <h3 className={style.feeDescription}>Consultation</h3>
             <p>£200</p>
           </div>
           <div className={style.price}>
-            <p className={style.feeDescription}>X-ray per foot</p>
+            <h3 className={style.feeDescription}>X-ray per foot</h3>
             <p>£100</p>
           </div>
           <HomeFeesCont

@@ -8,6 +8,8 @@ import { useState } from "react";
 import Image from "next/image";
 import { getPlaiceholder } from "plaiceholder";
 import { ScarfImage } from "../../components/surgeryImages/ScarfImage";
+import { FrequentQuestions } from "../../components/surgery/FrequentQuestions";
+import { fetchEntries } from "../../lib/contentful";
 
 const scarfSteps = [
   {
@@ -88,6 +90,10 @@ export async function getStaticProps() {
     "/images/scarf-akin-image.jpg"
   );
 
+  const fetchedProducts = await fetchEntries({
+    content_type: "faqScarf",
+  });
+
   return {
     props: {
       blImage: {
@@ -102,11 +108,17 @@ export async function getStaticProps() {
         ...scarfImg,
         blurDataURL: scarfBase64,
       },
+      faqBunion: fetchedProducts,
     },
   };
 }
 
-export default function ScarfAkin({ blImage, logoImage, scarfImage }) {
+export default function ScarfAkin({
+  blImage,
+  logoImage,
+  scarfImage,
+  faqBunion,
+}) {
   const [item, setItem] = useState(false);
   const [idx, setIdx] = useState();
 
@@ -233,6 +245,7 @@ export default function ScarfAkin({ blImage, logoImage, scarfImage }) {
             </ul>
           </div>
         </div>
+
         <div className={style.whatIs}>
           <h2>What is the Scarf and Akin Osteotomy?</h2>
           <p>
@@ -302,6 +315,7 @@ export default function ScarfAkin({ blImage, logoImage, scarfImage }) {
           )}
         </Modal>
         <ScarfTimeline />
+        <FrequentQuestions faqBunion={faqBunion} />
       </Layout>
     </>
   );

@@ -242,3 +242,18 @@
     align-items: center;
   }
 }
+
+@media screen and (min-width: 2000px) {
+  .misCont {
+    height: 800px;
+  }
+  .stepsCont {
+    font-size: 40px;
+  }
+  .imageCont {
+    height: 450px;
+  }
+  .modalImage {
+    height: 90%;
+  }
+}

@@ -5,7 +5,7 @@ const timelineObj = [
   {
     time: "First five days",
     description:
-      "This is the worst time for pain but you will be given painkillers to help. You must rest completely for 2-4 days. You will be able to walk immediately for 10 minutes an hour but should elevate most of the time to promote healing.",
+      "This is the worst time for pain but you will be given painkillers to take as directed. You must rest completely for 2-4 days. You will be able to walk immediately for 10 minutes an hour but should elevate most of the time to promote healing.",
   },
   {
     time: "Between five - fourteen days",

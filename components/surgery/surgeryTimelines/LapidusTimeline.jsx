@@ -5,7 +5,7 @@ const timelineObj = [
   {
     time: "Two - four days",
     description:
-      "This is the worst time for pain but you will be given painkillers to help. You must rest completely for 2-4 days. You should restrict your walking to going to the bathroom and when getting about use your crutches in the way you will have been shown.",
+      "This is the worst time for pain but you will be given painkillers to take as directed. You must rest completely for 2-4 days. You should restrict your walking to going to the bathroom and when getting about use your crutches in the way you will have been shown.",
   },
   {
     time: "One week after surgery",

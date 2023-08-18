@@ -12,7 +12,9 @@ export function Banner({ image }) {
           minimally invasive bunion surgery techniques
         </h3>
       </div>
-      <BannerBackground image={image} />
+      <div className={style.image}>
+        <BannerBackground image={image} />
+      </div>
     </div>
   );
 }

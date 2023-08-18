@@ -11,7 +11,7 @@ export function BannerBackground({ image }) {
       className={styles.bannerImage}
       placeholder="blur"
       blurDataURL={blurDataURL}
-      style={{ objectFit: "cover", objectPosition: "center" }}
+      style={{ objectFit: "cover", objectPosition: "top" }}
       sizes="100%"
       priority={true}
     />

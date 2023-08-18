@@ -8,6 +8,8 @@ import { MisTimeline } from "../../components/surgery/surgeryTimelines/MisTimeli
 import { getPlaiceholder } from "plaiceholder";
 import Image from "next/image";
 import { MinimallyImage } from "../../components/surgeryImages/MinimallyImage";
+import { fetchEntries } from "../../lib/contentful";
+import { FrequentQuestions } from "../../components/surgery/FrequentQuestions";
 
 const pecaSteps = [
   {
@@ -83,6 +85,9 @@ export async function getStaticProps() {
   const { base64: minimallyBase64, img: minimallyImg } = await getPlaiceholder(
     "/images/minimally-invasive-surgery.jpg"
   );
+  const fetchedProducts = await fetchEntries({
+    content_type: "faQminimallyinvasive",
+  });
 
   return {
     props: {
@@ -98,6 +103,7 @@ export async function getStaticProps() {
         ...minimallyImg,
         blurDataURL: minimallyBase64,
       },
+      faqBunion: fetchedProducts,
     },
   };
 }
@@ -106,6 +112,7 @@ export default function MinimallyInvasive({
   blImage,
   logoImage,
   minimallyImage,
+  faqBunion,
 }) {
   const [item, setItem] = useState(false);
   const [idx, setIdx] = useState();
@@ -339,6 +346,7 @@ export default function MinimallyInvasive({
             swelling.
           </p>
         </div>
+        <FrequentQuestions faqBunion={faqBunion} />
       </Layout>
     </>
   );

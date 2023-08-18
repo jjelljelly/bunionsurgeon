@@ -5,7 +5,7 @@ const timelineObj = [
   {
     time: "First two - four days",
     description:
-      "This is the worst time for pain but you will be given painkillers to help. You must rest completely for two - four days. You will be able to stand and take weight carefully using crutches, but should rest with your feet up as much as possible. At three days you will be able to move around a little more.",
+      "This is the worst time for pain but you will be given painkillers to take as directed. You must rest completely for two - four days. You will be able to stand and take weight carefully using crutches, but should rest with your feet up as much as possible. At three days you will be able to move around a little more.",
   },
   {
     time: "One week after surgery",

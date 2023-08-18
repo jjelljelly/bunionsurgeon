@@ -1,14 +1,11 @@
 import Image from "next/image";
-import styles from "./Layout.module.css";
+import style from "./BunLogo.module.css";
 import Link from "next/link";
 
 export function BunLogo({ logo }) {
   const { src, blurDataURL } = logo;
   return (
-    <Link
-      href={"/"}
-      style={{ position: "relative", height: "110px", width: "180px" }}
-    >
+    <Link href={"/"} className={style.logo}>
       <Image
         src={src}
         blurDataURL={blurDataURL}

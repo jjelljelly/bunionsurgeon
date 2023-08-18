@@ -78,3 +78,13 @@
     background-color: #063b5e;
   }
 }
+
+@media screen and (min-width: 2000px) {
+  .surgeryCont {
+    height: 700px;
+  }
+
+  .surgeryType {
+    height: 500px;
+  }
+}
