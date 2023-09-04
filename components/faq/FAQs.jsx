@@ -45,7 +45,7 @@ export function FAQs({ faqBunion }) {
         .map((entry) => {
           return (
             <div key={entry.sys.id} className={style.FAQContainer}>
-              <Accordion className={style.question}>
+              <Accordion sx={{ color: "#063b5e" }}>
                 <AccordionSummary
                   expandIcon={<ExpandMoreIcon />}
                   // aria-controls="panel1a-content"
