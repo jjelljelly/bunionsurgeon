@@ -1,7 +1,6 @@
 import { Divider } from "./Divider";
 import style from "./Footer.module.css";
 import { Instagram } from "./FooterIcons/Instagram";
-import { Twitter } from "./FooterIcons/Twitter";
 import { Youtube } from "./FooterIcons/Youtube";
 import Link from "next/link";
 
@@ -10,11 +9,17 @@ export function Footer() {
     <footer>
       <div>
         <div className={style.footContainer}>
-          <p className={style.footText}>+44 207 820 8007</p>
+          <Link href="tel:+442078208007">
+            <p className={style.footText}>+44 207 820 8007</p>
+          </Link>
           <Divider />
-          <p className={style.footText}>17 Harley Street, London, W1G 9QH</p>
+          <Link href="https://goo.gl/maps/wc9BqFWdm2FXC4jZA" target="_blank">
+            <p className={style.footText}>17 Harley Street, London, W1G 9QH</p>
+          </Link>
           <Divider />
-          <p className={style.footText}>admin@bunionsurgeon.co.uk</p>
+          <Link href="mailto:admin@bunionsurgeon.co.uk">
+            <p className={style.footText}>admin@bunionsurgeon.co.uk</p>
+          </Link>
         </div>
         <div className={style.iconContainer}>
           <Link legacyBehavior href={"https://www.youtube.com/@BunionSurgeon"}>

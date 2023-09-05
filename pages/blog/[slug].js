@@ -49,11 +49,11 @@ export default function Slug({ blogs, logoImage, blImage }) {
                     position: 2,
                     item: {
                       "@type": "WebPage",
-                      "@id": "https://www.bunionsurgeon.co.uk/blog/" + `${getSlug(blogs?.fields?.blogTitle)}`,
+                      "@id": `https://www.bunionsurgeon.co.uk/blog/${getSlug(blogs?.fields?.blogTitle)}`,
                       name: `${blogs?.fields?.blogTitle}`,
                       description:
                         `${blogs?.fields?.metaData}`,
-                      url: "https://www.bunionsurgeon.co.uk/blog/" + `${getSlug(blogs?.fields?.blogTitle)}`,
+                      url: `https://www.bunionsurgeon.co.uk/blog/${getSlug(blogs?.fields?.blogTitle)}`,
                     },
                     previousItem: "https://www.bunionsurgeon.co.uk/#listItem",
                   },
@@ -64,7 +64,6 @@ export default function Slug({ blogs, logoImage, blImage }) {
                 "@id": "https://www.bunionsurgeon.co.uk/#organization",
                 name: "Bunion Surgeon",
                 url: "https://www.bunionsurgeon.co.uk/",
-
                 contactPoint: {
                   "@type": "ContactPoint",
                   telephone: "+44 207 820 8007",
@@ -84,12 +83,12 @@ export default function Slug({ blogs, logoImage, blImage }) {
                 },
               },
               {
+
                 "@type": "WebPage",
-                "@id": "https://www.bunionsurgeon.co.uk/blog/" + `${getSlug(blogs?.fields?.blogTitle)}` + "#webpage",
-                url: "https://www.bunionsurgeon.co.uk/blog/" + `${getSlug(blogs?.fields?.blogTitle)}`,
+                "@id": `https://www.bunionsurgeon.co.uk/blog/${getSlug(blogs?.fields?.blogTitle)}#webpage`,
+                url: `https://www.bunionsurgeon.co.uk/blog/${getSlug(blogs?.fields?.blogTitle)}`,
                 name: `${blogs?.fields?.blogTitle}`,
-                description:
-                  "Mr Kaser Nazir, Consultant Podiatric Surgeon, Mr. Nazir has performed over 1900 Bunion surgeries since 2010 with a 97% success rate...",
+                description: "Mr Kaser Nazir, Consultant Podiatric Surgeon, Mr. Nazir has performed over 1900 Bunion surgeries since 2010 with a 97% success rate...",
                 inLanguage: "en-GB",
                 isPartOf: { "@id": "https://www.bunionsurgeon.co.uk/#website" },
                 breadcrumb: {
@@ -135,7 +134,7 @@ export default function Slug({ blogs, logoImage, blImage }) {
           }
         })}
       </div>
-    </Layout >
+    </Layout>
   );
 }
 

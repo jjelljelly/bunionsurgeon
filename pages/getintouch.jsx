@@ -9,6 +9,7 @@ import { useState } from "react";
 import { ContactDetails } from "../components/templates/ContactDetails";
 import Form from "../components/templates/Form";
 import { getPlaiceholder } from "plaiceholder";
+import Link from "next/link";
 
 const render = (status) => {
   return <h1>{status}</h1>;

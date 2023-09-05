@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "postbuild": "next-sitemap",
     "start": "next start"
   },
   "dependencies": {
@@ -22,6 +23,7 @@
     "contentful": "^9.3.5",
     "js-cookie": "^3.0.5",
     "next": "13.0.4",
+    "next-sitemap": "^4.2.2",
     "nodemailer": "^6.8.0",
     "plaiceholder": "^2.5.0",
     "react": "18.2.0",
