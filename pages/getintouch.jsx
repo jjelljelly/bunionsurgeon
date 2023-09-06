@@ -123,7 +123,6 @@ export default function GetInTouch({ blImage, logoImage }) {
                 "@id": "https://www.bunionsurgeon.co.uk/#organization",
                 name: "Bunion Surgeon",
                 url: "https://www.bunionsurgeon.co.uk/",
-
                 contactPoint: {
                   "@type": "ContactPoint",
                   telephone: "+44 207 820 8007",
@@ -150,7 +149,9 @@ export default function GetInTouch({ blImage, logoImage }) {
                 description:
                   "Contact us, via - Tel: 0207 820 8007, Email: admin@bunionsurgeon.co.uk, Address: 17 Harley Street, London, W1G 9QH",
                 inLanguage: "en-GB",
-                isPartOf: { "@id": "https://www.bunionsurgeon.co.uk/#website" },
+                isPartOf: {
+                  "@id": "https://www.bunionsurgeon.co.uk/#website",
+                },
                 breadcrumb: {
                   "@id":
                     "https://www.bunionsurgeon.co.uk/getintouch/#breadcrumblist",

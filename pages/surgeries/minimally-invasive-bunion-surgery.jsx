@@ -179,7 +179,6 @@ export default function MinimallyInvasive({
                 "@id": "https://www.bunionsurgeon.co.uk/#organization",
                 name: "Bunion Surgeon",
                 url: "https://www.bunionsurgeon.co.uk/",
-
                 contactPoint: {
                   "@type": "ContactPoint",
                   telephone: "+44 207 820 8007",
@@ -207,7 +206,9 @@ export default function MinimallyInvasive({
                 description:
                   "Keyhole Surgery, also known as Minimally Invasive Surgery, uses modern techniques and equipment to decrease the number and size of incisions...",
                 inLanguage: "en-GB",
-                isPartOf: { "@id": "https://www.bunionsurgeon.co.uk/#website" },
+                isPartOf: {
+                  "@id": "https://www.bunionsurgeon.co.uk/#website",
+                },
                 breadcrumb: {
                   "@id":
                     "https://www.bunionsurgeon.co.uk/surgeries/minimally-invasive/#breadcrumblist",

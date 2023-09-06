@@ -106,7 +106,6 @@ export default function Surgery({
                 "@id": "https://www.bunionsurgeon.co.uk/#organization",
                 name: "Bunion Surgeon",
                 url: "https://www.bunionsurgeon.co.uk/",
-
                 contactPoint: {
                   "@type": "ContactPoint",
                   telephone: "+44 207 820 8007",
@@ -133,7 +132,9 @@ export default function Surgery({
                 description:
                   "Key information on how to recognise a Bunion and how common they are...",
                 inLanguage: "en-GB",
-                isPartOf: { "@id": "https://www.bunionsurgeon.co.uk/#website" },
+                isPartOf: {
+                  "@id": "https://www.bunionsurgeon.co.uk/#website",
+                },
                 breadcrumb: {
                   "@id":
                     "https://www.bunionsurgeon.co.uk/what-is-a-bunion/#breadcrumblist",

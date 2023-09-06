@@ -91,7 +91,6 @@ export default function Gallery({ images, blImage, logoImage }) {
                 "@id": "https://www.bunionsurgeon.co.uk/#organization",
                 name: "Bunion Surgeon",
                 url: "https://www.bunionsurgeon.co.uk/",
-
                 contactPoint: {
                   "@type": "ContactPoint",
                   telephone: "+44 207 820 8007",
@@ -118,7 +117,9 @@ export default function Gallery({ images, blImage, logoImage }) {
                 description:
                   "Gallery of images documenting our patient's pre-surgery Bunion's and the results of the operation post-surgery.",
                 inLanguage: "en-GB",
-                isPartOf: { "@id": "https://www.bunionsurgeon.co.uk/#website" },
+                isPartOf: {
+                  "@id": "https://www.bunionsurgeon.co.uk/#website",
+                },
                 breadcrumb: {
                   "@id":
                     "https://www.bunionsurgeon.co.uk/gallery/#breadcrumblist",

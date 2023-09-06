@@ -147,7 +147,6 @@ export default function About({
                 "@id": "https://www.bunionsurgeon.co.uk/#organization",
                 name: "Bunion Surgeon",
                 url: "https://www.bunionsurgeon.co.uk/",
-
                 contactPoint: {
                   "@type": "ContactPoint",
                   telephone: "+44 207 820 8007",
@@ -174,7 +173,9 @@ export default function About({
                 description:
                   "Mr Kaser Nazir, Consultant Podiatric Surgeon, Mr. Nazir has performed over 1900 Bunion surgeries since 2010 with a 97% success rate...",
                 inLanguage: "en-GB",
-                isPartOf: { "@id": "https://www.bunionsurgeon.co.uk/#website" },
+                isPartOf: {
+                  "@id": "https://www.bunionsurgeon.co.uk/#website",
+                },
                 breadcrumb: {
                   "@id":
                     "https://www.bunionsurgeon.co.uk/about/#breadcrumblist",

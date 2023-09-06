@@ -176,7 +176,6 @@ export default function Lapidus({
                 "@id": "https://www.bunionsurgeon.co.uk/#organization",
                 name: "Bunion Surgeon",
                 url: "https://www.bunionsurgeon.co.uk/",
-
                 contactPoint: {
                   "@type": "ContactPoint",
                   telephone: "+44 207 820 8007",
@@ -204,7 +203,9 @@ export default function Lapidus({
                 description:
                   "The Lapidus Fusion Procedure is a surgical procedure, generally reserved for severe deformities or patient's who suffer from hypermobility.",
                 inLanguage: "en-GB",
-                isPartOf: { "@id": "https://www.bunionsurgeon.co.uk/#website" },
+                isPartOf: {
+                  "@id": "https://www.bunionsurgeon.co.uk/#website",
+                },
                 breadcrumb: {
                   "@id":
                     "https://www.bunionsurgeon.co.uk/surgeries/lapidus/#breadcrumblist",

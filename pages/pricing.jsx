@@ -89,7 +89,6 @@ export default function Pricing({ blImage, logoImage }) {
                 "@id": "https://www.bunionsurgeon.co.uk/#organization",
                 name: "Bunion Surgeon",
                 url: "https://www.bunionsurgeon.co.uk/",
-
                 contactPoint: {
                   "@type": "ContactPoint",
                   telephone: "+44 207 820 8007",
@@ -116,7 +115,9 @@ export default function Pricing({ blImage, logoImage }) {
                 description:
                   "We believe in total transparency when it comes to the fees and costs involved in Bunion Surgery. Below is a breakdown of fees for patients who are self-funding.",
                 inLanguage: "en-GB",
-                isPartOf: { "@id": "https://www.bunionsurgeon.co.uk/#website" },
+                isPartOf: {
+                  "@id": "https://www.bunionsurgeon.co.uk/#website",
+                },
                 breadcrumb: {
                   "@id":
                     "https://www.bunionsurgeon.co.uk/pricing/#breadcrumblist",
