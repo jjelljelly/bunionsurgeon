@@ -22,7 +22,10 @@ export function Footer() {
           </Link>
         </div>
         <div className={style.iconContainer}>
-          <Link legacyBehavior href={"https://www.youtube.com/@BunionSurgeon"}>
+          <Link
+            legacyBehavior
+            href={"https://www.youtube.com/@TheBunionSurgeon"}
+          >
             <a target="_blank">
               <Youtube />
             </a>
