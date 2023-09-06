@@ -274,7 +274,6 @@ export default function MinimallyInvasive({
           <h2 className={style.howTitle}>
             How is the minimally invasive bunion procedure performed?
           </h2>
-          {/* <div className={style.svgCont}> */}
           <div className={style.stepsCont}>
             {pecaSteps.map((item, idx) => {
               return (
@@ -299,7 +298,6 @@ export default function MinimallyInvasive({
                 </div>
               );
             })}
-            {/* </div> */}
           </div>
         </div>
         <Modal
