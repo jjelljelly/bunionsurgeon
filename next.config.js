@@ -95,7 +95,7 @@ module.exports = withPlaiceholder({
             },
             {
                 source: '/national-bunion-day',
-                destination: '//blog/national-bunion-day',
+                destination: '/blog/national-bunion-day',
                 permanent: true,
             },
             {
@@ -113,7 +113,46 @@ module.exports = withPlaiceholder({
                 destination: '/about',
                 permanent: true,
             },
-
+            {
+                source: '/463af5c3-e4ef-4f36-877d-447d16f3b627',
+                destination: '/',
+                permanent: true,
+            },
+            {
+                source: '/bunioncorrection',
+                destination: '/surgery',
+                permanent: true,
+            },
+            {
+                source: '/lapidus-fusion-procedure',
+                destination: '/surgeries/lapidus-fusion-procedure',
+                permanent: true,
+            },
+            {
+                source: '/keyhole-bunion-surgery',
+                destination: '/surgeries/minimally-invasive-bunion-surgery',
+                permanent: true,
+            },
+            {
+                source: '/minimally-invasive-bunion-surgery',
+                destination: '/surgeries/minimally-invasive-bunion-surgery',
+                permanent: true,
+            },
+            {
+                source: '/scarf-and-akin-osteotomy',
+                destination: '/surgeries/scarf-and-akin-osteotomy',
+                permanent: true,
+            },
+            {
+                source: '/bunionette',
+                destination: '/surgery',
+                permanent: true,
+            },
+            {
+                source: '/hallux-varus',
+                destination: '/surgery',
+                permanent: true,
+            }
         ]
     },
     images: {
