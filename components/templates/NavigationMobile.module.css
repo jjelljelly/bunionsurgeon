@@ -9,6 +9,9 @@
     top: 100%;
     right: 0;
     width: 100%;
+    z-index: 10;
+    max-height: calc(100vh - 120px);
+    overflow: auto;
   }
   .navList {
     display: flex;
@@ -16,7 +19,7 @@
     list-style: none;
     list-style-type: none;
     width: 100%;
-    justify-content: space-evenly;
+    /* justify-content: space-evenly; */
     padding: 0;
     margin: 0;
     -webkit-animation: slide-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)

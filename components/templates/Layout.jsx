@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { Navigation } from "./Navigation";
 import { BunLogo } from "./BunLogo";
 import { Footer } from "./Footer";
@@ -8,7 +7,7 @@ import Cookies from "../../pages/cookies";
 
 export function Layout({ children, logo }) {
   return (
-    <div id="top">
+    <div>
       <header className={styles.navCont}>
         <BunLogo logo={logo} />
         <Navigation />
