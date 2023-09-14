@@ -2,7 +2,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
   width: 100%;
   color: #063b5e;
   text-align: center;
@@ -46,7 +45,7 @@
   position: relative;
 }
 
-@media screen and (min-width: 701px) {
+@media screen and (min-width: 1200px) {
   .flipCard:hover .wrapper {
     transform: rotateY(180deg);
   }
@@ -96,13 +95,13 @@
   flex-direction: row;
 }
 
-@media screen and (min-width: 701px) {
+@media screen and (min-width: 1200px) {
   .flipCard:hover .wrapper {
     transform: rotateY(180deg);
   }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1199px) {
   .flipCard {
     width: 100%;
   }
