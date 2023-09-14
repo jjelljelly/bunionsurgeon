@@ -109,7 +109,6 @@
 
 .modalCont {
   display: flex;
-  height: 100%;
   width: 100%;
   align-items: center;
 }
@@ -119,7 +118,7 @@
   position: relative;
   width: 40%;
   border-radius: 20px;
-  min-height: 250px;
+  height: 250px;
 }
 
 .modalText {
@@ -160,13 +159,13 @@
   min-height: 325px;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 400px) {
   .headerSec {
     padding: 0 30px;
   }
   .misCont {
     flex-direction: column;
-    height: 750px;
+    /* height: 70vh; */
   }
   .image {
     width: 100%;
@@ -220,6 +219,12 @@
   }
 }
 
+@media screen and (min-width: 401px) and (max-width: 700px) {
+  .modalImage {
+    height: 200px;
+  }
+}
+
 @media screen and (min-width: 701px) and (max-width: 1200px) {
   .misIntro {
     padding: 30px 40px;
@@ -232,7 +237,7 @@
     flex-direction: column;
   }
   .modalImage {
-    height: 50%;
+    height: 160px;
     width: 80%;
   }
   .modalText {

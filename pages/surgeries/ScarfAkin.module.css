@@ -83,7 +83,7 @@
 }
 
 .imageCont {
-  height: 270px;
+  height: 250px;
   width: 18%;
   display: flex;
   border: solid 3px #063b5e;
@@ -106,7 +106,6 @@
 
 .modalCont {
   display: flex;
-  height: 100%;
   width: 100%;
   align-items: center;
 }
@@ -116,7 +115,7 @@
   position: relative;
   width: 40%;
   border-radius: 20px;
-  min-height: 250px;
+  height: 250px;
 }
 
 .modalText {
@@ -125,7 +124,7 @@
   white-space: pre-line;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 400px) {
   .headerSec {
     padding: 0 30px;
   }
@@ -169,6 +168,12 @@
   }
   .modalText {
     width: 100%;
+  }
+}
+
+@media screen and (min-width: 401px) and (max-width: 700px) {
+  .modalImage {
+    height: 200px;
   }
 }
 

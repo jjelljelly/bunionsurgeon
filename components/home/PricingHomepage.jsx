@@ -28,7 +28,7 @@ export function PricingHomepage({}) {
         <div className={style.pricing}>
           <div className={style.price}>
             <h3 className={style.feeDescription}>Consultation</h3>
-            <p>£200</p>
+            <p>£250</p>
           </div>
           <div className={style.price}>
             <h3 className={style.feeDescription}>X-ray per foot</h3>
