@@ -16,7 +16,7 @@ export function BeforeAndAfterCard({ images }) {
               <div
                 className={style.flipCardFront}
                 onClick={() => {
-                  if (window.screen.width > 700) {
+                  if (window.screen.width > 1200) {
                     setItem(item);
                     setIdx(idx);
                   }
@@ -47,7 +47,7 @@ export function BeforeAndAfterCard({ images }) {
               <div
                 className={style.flipCardBack}
                 onClick={() => {
-                  if (window.screen.width > 700) {
+                  if (window.screen.width > 1200) {
                     setItem(item);
                     setIdx(idx);
                   }
