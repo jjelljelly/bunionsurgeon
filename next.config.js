@@ -89,8 +89,8 @@ module.exports = withPlaiceholder({
                 permanent: true,
             },
             {
-                source: '/scarf-and-akin-osteotomy-bunion-surgery',
-                destination: '/blog/scarf-and-akin-osteotomy-bunion-surgery',
+                source: '/scarf-akin-osteotomy-bunion-surgery',
+                destination: '/blog/scarf-&-akin-osteotomy-–-bunion-surgery',
                 permanent: true,
             },
             {
@@ -152,7 +152,18 @@ module.exports = withPlaiceholder({
                 source: '/hallux-varus',
                 destination: '/surgery',
                 permanent: true,
+            },
+            {
+                source: '/after-surgery',
+                destination: '/before-after-gallery',
+                permanent: true,
+            },
+            {
+                source: '/book-an-appointment',
+                destination: '/getintouch',
+                permanent: true,
             }
+
         ]
     },
     images: {
