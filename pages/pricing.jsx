@@ -76,7 +76,7 @@ export default function Pricing({ blImage, logoImage }) {
                     item: {
                       "@type": "WebPage",
                       "@id": "https://www.bunionsurgeon.co.uk/pricing/",
-                      name: "Self funding fees and insurance for bunion surgery",
+                      name: "Cost of Bunion Surgery",
                       description:
                         "We believe in total transparency when it comes to the fees and costs involved in Bunion Surgery. Below is a breakdown of fees for patients who are self-funding.",
                       url: "https://www.bunionsurgeon.co.uk/pricing/",
@@ -112,7 +112,7 @@ export default function Pricing({ blImage, logoImage }) {
                 "@type": "WebPage",
                 "@id": "https://www.bunionsurgeon.co.uk/pricing/#webpage",
                 url: "https://www.bunionsurgeon.co.uk/pricing/",
-                name: "Pricing for Bunion Surgery | Insurance for Bunion Surgery | Bunion Surgeon",
+                name: "Cost of Bunion Surgery | Bunion Surgeon",
                 description:
                   "We believe in total transparency when it comes to the fees and costs involved in Bunion Surgery. Below is a breakdown of fees for patients who are self-funding.",
                 inLanguage: "en-GB",
@@ -133,7 +133,7 @@ export default function Pricing({ blImage, logoImage }) {
       <Layout logo={logoImage}>
         <div className={style.headerSec}>
           <BackgroundLines image={blImage} />
-          <h1>Pricing Information</h1>
+          <h1>Cost of Bunion Surgery</h1>
           <p>
             Pricing of bunion surgery can vary depending on the severity of your
             bunion and your particular requirements. Here you will find typical
