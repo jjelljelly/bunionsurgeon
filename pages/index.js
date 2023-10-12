@@ -73,8 +73,8 @@ export default function Home({ imageProps, bsImage, blImage, logoImage }) {
   return (
     <>
       <Head>
-        <title>Bunion Surgeon London | Minimally invasive keyhole bunion surgery</title>
-        <meta name="description" content="Welcome to Bunion Surgeon in central London. Our bunion surgeon provides comprehensive assessment and minimally invasive surgery to correct bunion deformities. " />
+        <title>Bunion Surgeon London, Bunion Specialist: Bunionsurgeon.co.uk</title>
+        <meta name="description" content="Expert Bunion Surgeon in London: Our experienced bunion specialist in London offers advanced bunion treatments for lasting relief. Discover the difference in your stride." />
         <link rel="icon" href="/images/bunion-logo.png" />
         <meta
           name="viewport"
