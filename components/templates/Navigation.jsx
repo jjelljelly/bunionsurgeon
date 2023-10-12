@@ -22,8 +22,8 @@ const navObjects = [
         subMenuLink: "/surgery",
       },
       {
-        subMenuTitle: "Minimally Invase Bunion Surgery",
-        subMenuLink: "/surgeries/minimally-invasive-bunion-surgery",
+        subMenuTitle: "Minimally Invasive Keyhole Bunion Surgery",
+        subMenuLink: "/surgeries/minimally-invasive-keyhole-bunion-surgery",
       },
       {
         subMenuTitle: "Scarf and Akin Osteotomy",

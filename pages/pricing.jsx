@@ -135,9 +135,9 @@ export default function Pricing({ blImage, logoImage }) {
           <BackgroundLines image={blImage} />
           <h1>Cost of Bunion Surgery</h1>
           <p>
-            Pricing of bunion surgery can vary depending on the severity of your
-            bunion and your particular requirements. Here you will find typical
-            fees.
+            The fee for bunion surgery can vary depending on the severity of
+            your bunion and your particular requirements. Here you will find
+            typical pricing for each bunion operation we offer.
           </p>
         </div>
         <div className={style.buttonCont}>

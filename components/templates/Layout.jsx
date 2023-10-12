@@ -3,7 +3,6 @@ import { BunLogo } from "./BunLogo";
 import { Footer } from "./Footer";
 import styles from "./Layout.module.css";
 import { NavigationMobile } from "./NavigationMobile";
-import Cookies from "../../pages/cookies";
 
 export function Layout({ children, logo }) {
   return (
@@ -14,7 +13,6 @@ export function Layout({ children, logo }) {
         <NavigationMobile />
       </header>
       {children}
-      <Cookies />
       <Footer />
     </div>
   );

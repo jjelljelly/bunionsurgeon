@@ -12,6 +12,7 @@ import { Marker } from '../components/templates/map/Marker'
 import { useState } from "react";
 import { getPlaiceholder } from "plaiceholder";
 
+
 // Google maps
 const render = (status) => {
   return <h1>{status}</h1>;
@@ -57,6 +58,7 @@ export async function getStaticProps() {
 };
 
 export default function Home({ imageProps, bsImage, blImage, logoImage }) {
+
 
   const [clicks, setClicks] = useState([]);
   const [zoom, setZoom] = useState(16); // initial zoom

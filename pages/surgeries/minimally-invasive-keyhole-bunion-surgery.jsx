@@ -121,7 +121,8 @@ export default function MinimallyInvasive({
     <>
       <Head>
         <title>
-          Minimally Invasive Bunion Surgery London, Minimally Invasive Bunionectomy & Toe Surgery: Bunionsurgeon.co.uk
+          Minimally Invasive Keyhole Bunion Surgery London, Minimally Invasive
+          Bunionectomy & Toe Surgery: Bunionsurgeon.co.uk
         </title>
         <meta
           name="description"
@@ -224,10 +225,10 @@ export default function MinimallyInvasive({
       <Layout logo={logoImage}>
         <div className={style.headerSec}>
           <BackgroundLines image={blImage} />
-          <h1>Minimally Invasive Bunion Surgery</h1>
+          <h1>Minimally Invasive Keyhole Bunion Surgery</h1>
           <p>
             With over 98% success rate, The Bunion Surgeon is one of the leading
-            minimally invasive bunion experts in the United Kingdom.
+            minimally invasive keyhole bunion experts in the United Kingdom.
           </p>
         </div>
         <div className={style.misCont}>
@@ -236,13 +237,16 @@ export default function MinimallyInvasive({
             <MinimallyImage minimallyImage={minimallyImage} />
           </div>
           <div className={style.misIntro}>
-            <h2>What are the benefits of minimally invasive bunion surgery?</h2>
+            <h2>
+              What are the benefits of minimally invasive keyhole bunion
+              surgery?
+            </h2>
             <p>
-              The minimally invasive bunion surgery has several benefits
-              including:
+              The minimally invasive keyhole bunion operation has several
+              benefits including:
             </p>
             <ul className={style.bulletCont}>
-              <li> Reduced swelling following surgery</li>
+              <li> Reduced swelling following the bunion surgery</li>
               <li> Decreased postoperative pain</li>
               <li> Faster return to closed footwear and normal activities</li>
               <li> Smaller incision resulting in less visible scar</li>

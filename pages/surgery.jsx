@@ -51,7 +51,10 @@ export default function Surgery({
   return (
     <>
       <Head>
-        <title>Bunion Treatment London, Foot Bunion Removal, Big Toe Surgery: Bunionsurgeon.co.uk</title>
+        <title>
+          Bunion Treatment London, Foot Bunion Removal, Big Toe Surgery:
+          Bunionsurgeon.co.uk
+        </title>
         <meta
           name="description"
           content="Discover effective bunion treatments in London. From conservative options to minimally invasive bunionette, big toe, foot bunion & keyhole surgery, we offer solutions for your foot pain."
@@ -165,11 +168,11 @@ export default function Surgery({
           <h2>Types of Bunion Surgery</h2>
           <div className={style.surgeryType}>
             <Link
-              href={"/surgeries/minimally-invasive-bunion-surgery"}
+              href={"/surgeries/minimally-invasive-keyhole-bunion-surgery"}
               className={style.link}
             >
               <button className={style.surgery}>
-                <h2>Minimally invasive bunion surgery</h2>
+                <h2>Minimally invasive keyhole bunion surgery</h2>
               </button>
             </Link>
             <Link
