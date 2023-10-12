@@ -121,11 +121,11 @@ export default function MinimallyInvasive({
     <>
       <Head>
         <title>
-          Minimally Invasive Keyhole Bunion Surgery | Bunion Surgeon
+          Minimally Invasive Bunion Surgery London, Minimally Invasive Bunionectomy & Toe Surgery: Bunionsurgeon.co.uk
         </title>
         <meta
           name="description"
-          content="Keyhole Surgery, also known as Minimally Invasive Surgery, uses modern techniques and equipment to decrease the number and size of incisions..."
+          content="Discover the benefits of minimally invasive bunion surgery in London. Find a skilled minimally invasive toe surgeon for your minimally invasive bunionectomy today."
         />
         <link rel="icon" href="/images/bunion-logo.png" />
         <meta
