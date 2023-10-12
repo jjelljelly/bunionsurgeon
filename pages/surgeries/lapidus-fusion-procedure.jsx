@@ -119,10 +119,10 @@ export default function Lapidus({
   return (
     <>
       <Head>
-        <title>Lapidus Procedure | Bunion Surgeon</title>
+        <title>Lapidus Bunionectomy London, Lapidus Hallux Valgus Correction & Surgery: Bunionsurgeon.co.uk</title>
         <meta
           name="description"
-          content="The Lapidus Procedure is generally reserved to correct severe bunion deformities and for patient's suffering from hypermobility."
+          content="Lapidus Fusion Procedure in London - Learn about Lapidus hallux valgus correction at top Lapidus Bunion Clinics in London. Trust our lapidus surgery specialists for your bunion correction needs."
         />
         <link rel="icon" href="/images/bunion-logo.png" />
         <meta
