@@ -125,10 +125,10 @@ export default function ScarfAkin({
   return (
     <>
       <Head>
-        <title>Bunion Surgery | Scarf & Akin Osteotomy | bunionsurgeon</title>
+        <title>Scarf Akin Osteotomy London, Scarf Akin Hallux Valgus, Foot Scarf & Akin Osteotomy: Bunionsurgeon.co.uk</title>
         <meta
           name="description"
-          content="Key information on surgical treatment of Bunions, also known as Hallux Valgus, with the Scarf & Akin Osteotomy. Offering a faster recovery than traditional ..."
+          content="Experience Scarf Akin Osteotomy for Hallux Valgus in London. Our Scarf Akin Bunion Surgery experts provide top-notch care to correct foot issues. Book an appointment now! "
         />
         <link rel="icon" href="/images/bunion-logo.png" />
         <meta
