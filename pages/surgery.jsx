@@ -51,10 +51,10 @@ export default function Surgery({
   return (
     <>
       <Head>
-        <title>What is a Bunion? | Bunion Surgeon</title>
+        <title>Bunion Treatment London, Foot Bunion Removal, Big Toe Surgery: Bunionsurgeon.co.uk</title>
         <meta
           name="description"
-          content="Key information on how to recognise a bunion, the ranges of bunion surgery and when it is time to have bunion surgery."
+          content="Discover effective bunion treatments in London. From conservative options to minimally invasive bunionette, big toe, foot bunion & keyhole surgery, we offer solutions for your foot pain."
         />
         <link rel="icon" href="/images/bunion-logo.png" />
         <meta
