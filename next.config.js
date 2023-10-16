@@ -130,12 +130,17 @@ module.exports = withPlaiceholder({
             },
             {
                 source: '/keyhole-bunion-surgery',
-                destination: '/surgeries/minimally-invasive-bunion-surgery',
+                destination: '/surgeries/minimally-invasive-keyhole-bunion-surgery',
                 permanent: true,
             },
             {
                 source: '/minimally-invasive-bunion-surgery',
-                destination: '/surgeries/minimally-invasive-bunion-surgery',
+                destination: '/surgeries/minimally-invasive-keyhole-bunion-surgery',
+                permanent: true,
+            },
+            {
+                source: '/surgeries/minimally-invasive-bunion-surger',
+                destination: '/surgeries/minimally-invasive-keyhole-bunion-surgery',
                 permanent: true,
             },
             {
