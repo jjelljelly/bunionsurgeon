@@ -139,7 +139,7 @@ module.exports = withPlaiceholder({
                 permanent: true,
             },
             {
-                source: '/surgeries/minimally-invasive-bunion-surger',
+                source: '/surgeries/minimally-invasive-bunion-surgery',
                 destination: '/surgeries/minimally-invasive-keyhole-bunion-surgery',
                 permanent: true,
             },
