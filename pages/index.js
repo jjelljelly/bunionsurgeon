@@ -86,6 +86,17 @@ export default function Home({ imageProps, bsImage, blImage, logoImage }) {
         <script type="application/ld+json" class="aioseo-schema">
           {JSON.stringify({ "@context": "https:\/\/schema.org", "@graph": [{ "@type": "BreadcrumbList", "@id": "https:\/\/www.bunionsurgeon.co.uk\/#breadcrumblist", "itemListElement": [{ "@type": "ListItem", "@id": "https:\/\/www.bunionsurgeon.co.uk\/#listItem", "position": 1, "item": { "@type": "WebPage", "@id": "https:\/\/www.bunionsurgeon.co.uk\/", "name": "Home", "description": "London\u2019s Premier Minimally Invasive Bunion Clinic", "url": "https:\/\/www.bunionsurgeon.co.uk\/" }, "nextItem": "https:\/\/www.bunionsurgeon.co.uk\/#listItem" }, { "@type": "ListItem", "@id": "https:\/\/www.bunionsurgeon.co.uk\/#listItem", "position": 2, "item": { "@type": "WebPage", "@id": "https:\/\/www.bunionsurgeon.co.uk\/", "name": "Home", "url": "https:\/\/www.bunionsurgeon.co.uk\/" }, "previousItem": "https:\/\/www.bunionsurgeon.co.uk\/#listItem" }] }, { "@type": "Organization", "@id": "https:\/\/www.bunionsurgeon.co.uk\/#organization", "name": "Bunion Surgeon", "url": "https:\/\/www.bunionsurgeon.co.uk\/", "contactPoint": { "@type": "ContactPoint", "telephone": "+44 207 820 8007", "contactType": "none" } }, { "@type": "WebSite", "@id": "https:\/\/www.bunionsurgeon.co.uk\/#website", "url": "https:\/\/www.bunionsurgeon.co.uk\/", "name": "bunionsurgeon", "description": "London\u2019s Premier Minimally Invasive Bunion Clinic", "inLanguage": "en-GB", "publisher": { "@id": "https:\/\/www.bunionsurgeon.co.uk\/#organization" }, "potentialAction": { "@type": "SearchAction", "target": { "@type": "EntryPoint", "urlTemplate": "https:\/\/www.bunionsurgeon.co.uk\/?s={search_term_string}" }, "query-input": "required name=search_term_string" } }, { "@type": "WebPage", "@id": "https:\/\/www.bunionsurgeon.co.uk\/#webpage", "url": "https:\/\/www.bunionsurgeon.co.uk\/", "name": "Bunion Surgeon London | Minimally Invasive Keyhole Bunion Surgery", "inLanguage": "en-GB", "isPartOf": { "@id": "https:\/\/www.bunionsurgeon.co.uk\/#website" }, "breadcrumb": { "@id": "https:\/\/www.bunionsurgeon.co.uk\/#breadcrumblist" }, "datePublished": "2018-11-12T15:14:39+00:00", "dateModified": "2023-06-05T15:19:43+01:00" }] })}
         </script>
+
+          <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XZSPGZ1KVC"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-XZSPGZ1KVC');
+</script>
+
       </Head>
       <Layout logo={logoImage} >
         <Banner image={imageProps} />
