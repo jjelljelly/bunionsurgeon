@@ -191,6 +191,14 @@ export default function Surgery({
                 <h2>Lapidus procedure</h2>
               </button>
             </Link>
+            <Link
+              href={"/surgeries/tailors-bunion-correction"}
+              className={style.link}
+            >
+              <button className={style.surgery}>
+                <h2>Tailor's Bunion Correction</h2>
+              </button>
+            </Link>
           </div>
         </div>
         <FrequentQuestions faqBunion={faqBunion} />

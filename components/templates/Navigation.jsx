@@ -33,6 +33,10 @@ const navObjects = [
         subMenuTitle: "Lapidus Procedure",
         subMenuLink: "/surgeries/lapidus-fusion-procedure",
       },
+      {
+        subMenuTitle: "Tailor's Bunion procedure",
+        subMenuLink: "/surgeries/tailors-bunion-correction",
+      },
     ],
   },
   {
