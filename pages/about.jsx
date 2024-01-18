@@ -11,12 +11,6 @@ import { NewMap } from "../components/templates/map/NewMap.";
 import { getPlaiceholder } from "plaiceholder";
 import { AboutImage } from "../components/about/AboutImage";
 
-// import {
-//   InfoWindow,
-//   withScriptjs,
-//   withGoogleMap,
-// } from "@react-google-maps/api";
-
 // Google maps
 const render = (status) => {
   return <h1>{status}</h1>;
@@ -178,8 +172,7 @@ export default function About({
                   "@id": "https://www.bunionsurgeon.co.uk/#website",
                 },
                 breadcrumb: {
-                  "@id":
-                    "https://www.bunionsurgeon.co.uk/about/#breadcrumblist",
+                  "@id": "https://www.bunionsurgeon.co.uk/about/#breadcrumblist",
                 },
                 datePublished: "2018-11-23T18:13:22+00:00",
                 dateModified: "2023-06-05T16:22:32+01:00",
