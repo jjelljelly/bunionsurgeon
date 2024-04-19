@@ -2,7 +2,7 @@ import style from "./PricingHomepage.module.css";
 import { usePricingContext } from "../../context/pricingContext";
 import { HomeFeesCont } from "./HomeFeesCont";
 
-export function PricingHomepage({}) {
+export function PricingHomepage({ }) {
   const data = usePricingContext({});
   return (
     <div className={style.pricingOuter}>
@@ -32,7 +32,7 @@ export function PricingHomepage({}) {
           </div>
           <div className={style.price}>
             <h3 className={style.feeDescription}>X-ray per foot</h3>
-            <p>£100</p>
+            <p>£132</p>
           </div>
           <HomeFeesCont
             unilatLocal={"£" + Math.round(data?.unilateralMinimalBunionLocal)}
