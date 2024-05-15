@@ -2,12 +2,18 @@ import { BackgroundLines } from "./BackgroundLines";
 import { HappyFeet } from "./HappyFeet";
 import styling from "./BulletpointSurgery.module.css";
 import Link from "next/link";
+import { Video } from "./Video";
 
 export function BulletpointSurgery({ images, image }) {
   return (
     <div className={styling.bulletpointCont}>
       <div className={styling.happyfeetCont}>
-        <HappyFeet images={images} />
+        <div className={styling.happyfeetVideo}>
+          <Video />
+        </div>
+        <div className={styling.happyfeetText}>
+          <p>Mr Kaser Nazir carries out bunion correction, as seen on Really TV</p>
+        </div>
       </div>
       <div className={styling.bulletpointTextCont}>
         <div className={styling.bulletpoints}>

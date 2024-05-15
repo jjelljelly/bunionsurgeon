@@ -7,6 +7,19 @@
   display: flex;
   position: relative;
   width: 50%;
+  flex-direction: column;
+}
+
+.happyfeetVideo {
+  background-color: #e1e7f2;
+}
+
+.happyfeetText {
+  padding: 20px;
+  color: #063b5e;
+  background-color: #e1e7f2;
+  text-align: center;
+  font-weight: 800;
 }
 
 .picOverlay {
@@ -64,17 +77,28 @@
     flex-wrap: wrap;
     min-height: 500px;
   }
+
   .happyfeetCont {
     width: 100%;
-    height: 300px;
   }
+
+  .happyfeetText {
+    background-color: white;
+  }
+
+  .happyfeetVideo {
+    background-color: white;
+  }
+
   .bulletpointTextCont {
     width: 100%;
     height: 475px;
   }
+
   .header {
     padding: 0 20px;
   }
+
   .bullet {
     display: flex;
     flex-direction: column;
@@ -84,6 +108,7 @@
     width: 80%;
     padding: 10px 20px;
   }
+
   .moreInfo {
     height: 18%;
   }
@@ -104,6 +129,7 @@
   .bulletpoints {
     height: 80%;
   }
+
   .moreInfo {
     height: 20%;
   }
