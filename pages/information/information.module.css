@@ -1,0 +1,76 @@
+.headerSec {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: #063b5e;
+    color: white;
+    min-height: 300px;
+    padding: 40px 40px 50px;
+    position: relative;
+}
+
+.body {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 40px 50px;
+    background-color: rgb(225, 231, 242);
+    color: #063b5e;
+}
+
+.body2 {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 40px 50px;
+    background-color: white;
+    color: #063b5e;
+}
+
+.body3 {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 40px 50px;
+    background-color: #063b5e;
+    color: white;
+}
+
+.splitScreen {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.opening {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bulletPoints {
+    width: 60%;
+    padding: 0 40px;
+}
+
+.bulletPoints li {
+    text-align: left;
+}
+
+@media screen and (max-width: 1200px) {
+    .opening {
+        width: 100%;
+    }
+
+    .bulletPoints {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .splitScreen {
+        flex-direction: column;
+    }
+}

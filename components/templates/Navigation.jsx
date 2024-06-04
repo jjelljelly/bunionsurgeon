@@ -15,7 +15,7 @@ const navObjects = [
   },
   {
     title: "Surgery",
-    subMenu: true,
+    subMenu: "true1",
     subMenuItems: [
       {
         subMenuTitle: "Surgery",
@@ -36,6 +36,20 @@ const navObjects = [
       {
         subMenuTitle: "Tailor's Bunion procedure",
         subMenuLink: "/surgeries/tailors-bunion-correction",
+      },
+    ],
+  },
+  {
+    title: "Bunion Information",
+    subMenu: "true2",
+    subMenuItems: [
+      {
+        subMenuTitle: "Bunion Treatment",
+        subMenuLink: "/information/bunion-treatment",
+      },
+      {
+        subMenuTitle: "Bunion Surgeon",
+        subMenuLink: "/information/bunion-surgeon",
       },
     ],
   },
@@ -78,7 +92,7 @@ export function Navigation() {
               <li
                 key={item.title}
                 className={styling.navItem}
-                onClick={() => setDropDown(dropDown ? false : item.subMenu)}
+                onClick={() => setDropDown(dropDown === item.subMenu ? false : item.subMenu)}
               >
                 {item?.link ? (
                   <Link href={item?.link} scroll={true}>
@@ -87,7 +101,23 @@ export function Navigation() {
                 ) : (
                   <a style={{ cursor: "pointer" }}>{item.title}</a>
                 )}
-                {dropDown && (
+                {(item.title === "Surgery" && dropDown === 'true1') && (
+                  <ul className={styling.dropMenu}>
+                    {item.subMenuItems?.map((dropItem) => {
+                      return (
+                        <li
+                          key={dropItem.subMenuTitle}
+                          className={styling.dropItem}
+                        >
+                          <Link href={dropItem.subMenuLink ?? ""} scroll={true}>
+                            {dropItem.subMenuTitle}
+                          </Link>
+                        </li>
+                      );
+                    })}
+                  </ul>
+                )}
+                {(item.title === "Bunion Information" && dropDown === 'true2') && (
                   <ul className={styling.dropMenu}>
                     {item.subMenuItems?.map((dropItem) => {
                       return (

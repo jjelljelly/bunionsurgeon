@@ -7,6 +7,7 @@
     align-items: center;
     text-align: center;
   }
+
   .navList {
     list-style-type: none;
     width: 100%;
@@ -29,7 +30,7 @@
   display: flex;
   position: absolute;
   left: 28%;
-  top: 300%;
+  top: 183%;
   flex-direction: column;
   text-align: left;
   padding: 0;
@@ -66,16 +67,19 @@
     -webkit-transform: translateY(-100px);
     transform: translateY(-100px);
   }
+
   100% {
     -webkit-transform: translateY(0px);
     transform: translateY(0px);
   }
 }
+
 @keyframes slide-bottom {
   0% {
     -webkit-transform: translateY(-100px);
     transform: translateY(-100px);
   }
+
   100% {
     -webkit-transform: translateY(0px);
     transform: translateY(0px);
