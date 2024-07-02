@@ -176,26 +176,24 @@ export default function BunionSurgeon({
                             <ul>
 
                                 <li>Mild Bunion: Surgery involves the removal of the enlarged
-                                    portion of bone whilereinstating the tendons, muscles, sinews, and ligaments surrounding
+                                    portion of bone while reinstating the tendons, muscles, sinews, and ligaments surrounding
                                     the joint.</li>
                                 <li>Moderate Bunion: The surgeon cuts and changes the position of the bone to a moderate Bunion.</li>
-                                <li>Readjusting one or more bones in the forefoot to a position where the abnormal angle in the
-                                    big toe joint will be corrected.</li>
                                 <li>Severe Bunion: For a severe bunion, the surgery will involve removing the
                                     enlarged portion of the bone by cutting and readjusting the bone while correcting the
                                     position of the ligaments and tendons.</li>
                                 <li>Arthitic big toe: As the joint is damaged due to arthritis, the bone is fused with the joint so they heal
                                     together. It eliminates pain and eases movement. Sometimes, joint replacement surgery
-                                    helps to reconstruct the big toe joint.</li>
+                                    is instead carried out to reconstruct the big toe joint.</li>
                             </ul>
                         </div>
                         <div className={style.opening}>
                             <p>Surgeons perform different types of bunion surgeries in the UK, depending on their expertise. It also depends on the severity
-                                of individual cases, as well as the overall health condition andactivity level. The condition of
-                                bones and connective tissue govern the type of surgery would be deemed appropriate to
+                                of an individual's Bunion deformity, as well as their  overall health condition and activity level. The condition of
+                                bones and connective tissue govern the type of surgery that would be deemed appropriate to
                                 correct the problem. This may involve minimally invasive bunion surgery, the scarf and akin osteotomy or Lapidus fusion.</p></div>
                     </div>
-                    <p>Mr. Nazir is an expert at minimal invasive bunion surgery , which causes less swelling, less
+                    <p>Mr. Nazir is an expert at minimal invasive keyhole bunion surgery, which causes less swelling, less
                         pain, and a faster return to normal activites. This specialised Bunion surgery technique involves a smaller incision resulting in a less visible scar.
                     </p>
                     <p>Visit our Bunion surgery pricing page for further information or contact us today to arrange an appointment</p>

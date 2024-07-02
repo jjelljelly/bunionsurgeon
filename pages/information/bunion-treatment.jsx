@@ -146,11 +146,9 @@ export default function BunionTreatment({
                     <BackgroundLines image={blImage} />
                     <h1>Bunion Treatment in London</h1>
                     <p>
-                        Bunions can affect anybody’s foot as a result of constant pressure on the joint of the big toe and
-                        sometimes the small toe as well. Most of the time, it occurs due to faulty footwear worn by both
-                        men and women in which the feet are confined and always under pressure. The base
-                        of the big toe get enlarged or distorted, which may need to be corrected to get back to the original
-                        shape and also walk around painlessly.
+                        Bunions are a common condition that result from constant pressure on the joint of the big toe and
+                        sometimes the small toe as well. Most of the time, it occurs due to too tight footwear which the feet are confined and always under pressure. The base
+                        of the big toe gets enlarged or deformed, which may need to be corrected to remove the boney bump and realign the toe.
                     </p>
                 </div>
                 <div className={style.body}>
@@ -158,8 +156,8 @@ export default function BunionTreatment({
                     <div className={style.splitScreen}>
                         <div className={style.opening}>
                             <p>You specialist will carry out an X-ray to examine what damagae has been done to the bone before
-                                starting any treatments. Depending on the severity of the condition, your specialist will advise on a treatment plan. There are non-invasive and invasive bunion treatment options. It depends on your
-                                condition as to what plan will be suggested.</p></div>
+                                starting any treatments. There are non-invasive and invasive bunion treatment options. It depends on your
+                                condition as to what plan will be suggested. Though the only way to remove a Bunion is through surgery.</p></div>
                         <div className={style.bulletPoints}>
                             <p>Some of the non surgical treatments may include: </p>
 
@@ -167,10 +165,9 @@ export default function BunionTreatment({
                                 <li>Changing shoes: Wearing spacious and comfortable shoes can aid discomfort and stop the bunion deformity deterioating.</li>
                                 <li>Ibuprofen (Advil, Motrin IB), Acetaminophen (Tylenol), and naproxen
                                     sodium (Aleve) can relieve the pain. Cortisone injections also help in the same way.</li>
-                                <li>Padding: Bunion pads or cushions are available over the counter which can be very
-                                    useful for both the pain and in providing support to the painful bone.</li>
+                                <li>Padding: Bunion pads or cushions are available over the counter can help with both pain and in providing support to the region.</li>
                                 <li>Shoe inserts: Splints or inserts/ custom orthotics can help to distribute the pressure evenly
-                                    during movement. This reduces the inflammation and the pain in the foot. It can also prevents your
+                                    during movement. This reduces the inflammation and the pain in the foot. It can also prevent your
                                     bunion from getting worse.</li>
                                 <li>Ice application: This can relieve swelling and soreness of the bunion.</li>
 
@@ -193,19 +190,16 @@ export default function BunionTreatment({
                             </ul>
                         </div>
                         <div className={style.opening}>
-                            <p>If the above-mentioned non surgical options do not resolve the pain, or your bunion continues to deterioate, then surgery may be suggested. Surgery is normally not advised to the patient unless the bunion is causing
-                                There are quite a few surgical options for bunion treatment in the UK.</p></div>
+                            <p>If the above-mentioned non surgical options do not resolve the pain, or your bunion continues to deterioate, then surgery may be suggested. Surgery may include the minimally invasive keyhole bunion correction, scarf and akin osteotomy or the Lapidus fusion.</p></div>
                     </div>
                 </div>
                 <div className={style.body3}>
                     <h2>Treatment carried out by an expert Bunion surgeon</h2>
-                    <p>Our bunion expert Mr. Kaser Nazir provides options for 4 main types of bunion treatment- minimally
-                        invasive keyhole bunion surgery, Lapidus procedure, scarf and akin osteotomy, and tailor’s bunion
-                        correction. Minimally invasive Keyhole bunion correction can provide less pain and less amount of time to recover. In the Lapidus,
-                        realignment of the bunion is carried out, this is particuarly recommended for patient's with hypermobility. The Lapidus fusion helps to Stabilise the midfoot and also
+                    <p>Our bunion expert, Mr. Kaser Nazir, typically advises on one of three Bunion surgery options- minimally
+                        invasive keyhole bunion surgery, Lapidus procedure and scarf and akin osteotomy. Minimally invasive Keyhole bunion correction can provide less pain and a faster recovery. The Lapidus fusion involves
+                        correcting the Bunion deformity via a fusion with the use of a Lapidus plate and screws, this is particuarly recommended for patient's with hypermobility. The Lapidus fusion helps to Stabilise the midfoot and also
                         reduces the risk of recurrence. A scarf and akin osteotomy is performed on small to moderate deformities.</p>
-                    <p>Mr. Kaser Nazir has been correcting bunions for over 21 years and is an expert in his field. He is covered by a majority of the insurance companies. Both
-                        patients and the peers vouch for his bunion treatment options, with glowing reviews following previous Bunion surgeries carried out.</p>
+                    <p>Mr. Kaser Nazir has been correcting bunions for over 21 years and is an expert in his field. He is covered by all major insurance companies and offer package prices for self-funding patients.</p>
                 </div>
                 <FrequentQuestions faqBunion={faqBunion} />
             </Layout >
