@@ -31,8 +31,12 @@ export function PricingHomepage({ }) {
             <p>£250</p>
           </div>
           <div className={style.price}>
-            <h3 className={style.feeDescription}>X-ray per foot</h3>
-            <p>£100</p>
+            <h3 className={style.feeDescription}>X-ray one foot</h3>
+            <p>£160</p>
+          </div>
+          <div className={style.price}>
+            <h3 className={style.feeDescription}>X-ray both feet</h3>
+            <p>£264</p>
           </div>
           <HomeFeesCont
             unilatLocal={"£" + Math.round(data?.unilateralMinimalBunionLocal)}

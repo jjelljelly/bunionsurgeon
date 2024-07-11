@@ -36,7 +36,7 @@
 }
 
 .price {
-  width: 40%;
+  width: 30%;
   text-align: center;
   background-color: #e1e7f2;
   padding: 10px 0;
@@ -56,6 +56,7 @@
     padding-top: 0;
     padding: 0 10px;
   }
+
   .infoCont {
     flex-wrap: wrap;
   }
