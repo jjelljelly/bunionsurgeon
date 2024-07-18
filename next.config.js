@@ -238,11 +238,6 @@ module.exports = withPlaiceholder({
                 destination: '/before-after-gallery',
                 permanent: true,
             },
-            {
-                source: '/_next/image?url=/images/lapidus-image.jpg&amp;w=3840&amp;q=75',
-                destination: '/surgeries/lapidus-fusion-procedure',
-                permanent: true,
-            },
         ]
     },
     images: {
