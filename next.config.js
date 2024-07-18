@@ -240,7 +240,7 @@ module.exports = withPlaiceholder({
             },
             {
                 source: '/_next/image?url=/images/lapidus-image.jpg&amp;w=3840&amp;q=75',
-                destination: '/_next/image?url=%2Fimages%2Flapidus-image.jpg&w=1920&q=75',
+                destination: '/surgeries/lapidus-fusion-procedure',
                 permanent: true,
             },
         ]
