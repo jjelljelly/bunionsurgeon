@@ -109,6 +109,11 @@ module.exports = withPlaiceholder({
                 permanent: true,
             },
             {
+                source: '/how-to-recognise-a-bunion/1000',
+                destination: '/blog/how-to-recognise-a-bunion',
+                permanent: true,
+            },
+            {
                 source: '/surgeon-biography',
                 destination: '/about',
                 permanent: true,
@@ -167,8 +172,77 @@ module.exports = withPlaiceholder({
                 source: '/book-an-appointment',
                 destination: '/getintouch',
                 permanent: true,
-            }
-
+            },
+            {
+                source: '/gallery',
+                destination: '/before-after-gallery',
+                permanent: true,
+            },
+            {
+                source: '/surgeries/lapidus',
+                destination: '/surgeries/lapidus-fusion-procedure',
+                permanent: true,
+            },
+            {
+                source: '/surgeries/minimally-invasive/',
+                destination: '/surgeries/minimally-invasive-keyhole-bunion-surgery',
+                permanent: true,
+            },
+            {
+                source: '/blog/[slug]',
+                destination: '/blog',
+                permanent: true,
+            },
+            {
+                source: '/information/surgeon/',
+                destination: '/information/bunion-surgeon',
+                permanent: true,
+            },
+            {
+                source: '/surgical-timeline/admin@bunionsurgeon.co.uk',
+                destination: '/surgery',
+                permanent: true,
+            },
+            {
+                source: '/lsurgeries/lapidus/',
+                destination: '/surgeries/lapidus-fusion-procedure',
+                permanent: true,
+            },
+            {
+                source: '/privacy-policy/',
+                destination: '/privacy',
+                permanent: true,
+            },
+            {
+                source: '/feed/',
+                destination: '/',
+                permanent: true,
+            },
+            {
+                source: '/e1346bab-ba6b-4e25-b95c-e3a6dc41dbb5/',
+                destination: '/',
+                permanent: true,
+            },
+            {
+                source: '/9a2fab2f-3e0b-4bcd-9a37-028de314691d-2/',
+                destination: '/',
+                permanent: true,
+            },
+            {
+                source: '/c516daac-55e3-4fb4-8ef8-953c2f1129f5/',
+                destination: '/',
+                permanent: true,
+            },
+            {
+                source: '/image/',
+                destination: '/before-after-gallery',
+                permanent: true,
+            },
+            {
+                source: '/_next/image?url=/images/lapidus-image.jpg&amp;w=3840&amp;q=75',
+                destination: '/_next/image?url=%2Fimages%2Flapidus-image.jpg&w=1920&q=75',
+                permanent: true,
+            },
         ]
     },
     images: {
