@@ -74,12 +74,6 @@ const navObjects = [
     subMenu: false,
     link: "/blog",
   },
-
-  {
-    title: "Book online",
-    subMenu: false,
-    link: "https://bookonline.bunionsurgeon.co.uk/",
-  },
 ];
 
 export function NavigationMobile() {

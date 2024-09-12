@@ -31,11 +31,17 @@ export function BulletpointSurgery({ images, image }) {
         <div className={styling.moreInfo}>
           <BackgroundLines image={image} />
           <div className={styling.buttonCont}>
-            <button>
+            <button className={styling.actions}>
               <Link href={"/surgeries/minimally-invasive-bunion-surgery"}>
                 Find out more
               </Link>
             </button>
+            <Link href={"https://bookonline.bunionsurgeon.co.uk/"}
+              target="_blank">
+              <button className={styling.actions}>
+                Book online
+              </button>
+            </Link>
           </div>
         </div>
       </div>

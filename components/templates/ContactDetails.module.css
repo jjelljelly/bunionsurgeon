@@ -35,6 +35,11 @@
   font-size: 18px;
 }
 
+.contact button {
+  margin: 20px;
+  font-size: 18px;
+}
+
 .title {
   margin-top: 0;
 }
@@ -58,6 +63,7 @@
     height: 450px;
     padding-top: 20px;
   }
+
   .contact {
     width: 80%;
     height: 30%;

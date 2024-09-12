@@ -20,6 +20,11 @@ export function Footer() {
           <Link href="mailto:admin@bunionsurgeon.co.uk">
             <p className={style.footText}>admin@bunionsurgeon.co.uk</p>
           </Link>
+          <Divider />
+          <Link href={"https://bookonline.bunionsurgeon.co.uk/"}
+            target="_blank" >
+            <p className={style.footText}>Book online</p>
+          </Link>
         </div>
         <div className={style.iconContainer}>
           <Link

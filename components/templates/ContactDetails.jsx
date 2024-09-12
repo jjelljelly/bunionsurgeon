@@ -19,6 +19,13 @@ export function ContactDetails() {
             <p>admin@bunionsurgeon.co.uk</p>
           </Link>
         </button>
+        <Link href={"https://bookonline.bunionsurgeon.co.uk/"}
+          target="_blank"
+          className={style.contact}>
+          <button>
+            Book online
+          </button>
+        </Link>
         <div className={style.contact}>
           <TelephoneSvg />
         </div>

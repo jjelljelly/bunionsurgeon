@@ -1,5 +1,6 @@
 import { BannerBackground } from "./BannerBackground";
 import style from "./Banner.module.css";
+import Link from "next/link";
 
 export function Banner({ image }) {
   return (
@@ -11,6 +12,12 @@ export function Banner({ image }) {
           Sculpting feet to perfection through <br />
           minimally invasive bunion surgery techniques
         </h3>
+        <Link href={"https://bookonline.bunionsurgeon.co.uk/"}
+          target="_blank">
+          <button>
+            Book online
+          </button>
+        </Link>
       </div>
       <div className={style.image}>
         <BannerBackground image={image} />

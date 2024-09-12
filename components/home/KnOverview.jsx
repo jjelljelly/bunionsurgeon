@@ -19,9 +19,17 @@ export function KnOverview({ image }) {
           <br />
           The result is both functionally and cosmetically beautiful.
         </h3>
-        <Link href={"/about"}>
-          <button>Find out more</button>
-        </Link>
+        <div>
+          <Link href={"/about"}>
+            <button className={style.actions}>Find out more</button>
+          </Link>
+          <Link href={"https://bookonline.bunionsurgeon.co.uk/"}
+            target="_blank">
+            <button className={style.actions}>
+              Book online
+            </button>
+          </Link>
+        </div>
       </div>
     </div>
   );
