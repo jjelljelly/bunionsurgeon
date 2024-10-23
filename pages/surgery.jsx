@@ -57,7 +57,7 @@ export default function Surgery({
         </title>
         <meta
           name="description"
-          content="Discover effective bunion treatments in London. From conservative options to minimally invasive bunionette, big toe, foot bunion & keyhole surgery, we offer solutions for your foot pain."
+          content="Lapidus Fusion Procedure in London - The procedure is generally reserved to correct severe bunion deformities and for patient's suffering from hypermobility.."
         />
         <link rel="icon" href="/images/bunion-logo.png" />
         <meta

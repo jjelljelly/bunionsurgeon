@@ -128,7 +128,7 @@ export default function ScarfAkin({
         <title>Scarf Akin Osteotomy London, Scarf Akin Hallux Valgus, Foot Scarf & Akin Osteotomy: Bunionsurgeon.co.uk</title>
         <meta
           name="description"
-          content="Experience Scarf Akin Osteotomy for Hallux Valgus in London. Our Scarf Akin Bunion Surgery experts provide top-notch care to correct foot issues. Book an appointment now! "
+          content="Mr Kaser Nazir is an expert bunion surgery, offering the Scarf Akin Osteotomy for Hallux Valgus in London. "
         />
         <link rel="icon" href="/images/bunion-logo.png" />
         <meta

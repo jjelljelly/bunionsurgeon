@@ -76,7 +76,7 @@ export default function Home({ imageProps, bsImage, blImage, logoImage }) {
     <>
       <Head>
         <title>Bunion Surgeon London, Bunion Specialist: Bunionsurgeon.co.uk</title>
-        <meta name="description" content="Expert Bunion Surgeon in London: Our experienced bunion specialist in London offers advanced bunion treatments for lasting relief. Discover the difference in your stride." />
+        <meta name="description" content="Mr Kaser Nazir is an expert Bunion Surgeon based in London, offering the minimally invasive keyhole bunion surgery with minimal scarring and faster healing." />
         <link rel="icon" href="/images/bunion-logo.png" />
         <meta
           name="viewport"

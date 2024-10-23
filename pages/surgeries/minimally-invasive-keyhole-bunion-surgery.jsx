@@ -126,7 +126,7 @@ export default function MinimallyInvasive({
         </title>
         <meta
           name="description"
-          content="Discover the benefits of minimally invasive bunion surgery in London. Find a skilled minimally invasive toe surgeon for your minimally invasive bunionectomy today."
+          content="Discover the benefits of keyhole bunion surgery in London. Mr Kaser Nazir is a skilled surgeon who is an expert in minimally invasive keyhole bunion surgery."
         />
         <link rel="icon" href="/images/bunion-logo.png" />
         <meta
