@@ -4,6 +4,7 @@ import Link from "next/link";
 import { getSlug } from "../../lib/utils";
 
 export function Blog({ blogs }) {
+  console.log('blogs', blogs)
   return (
     <div className={style.blogPageCont}>
       {blogs.map((item) => (
@@ -18,9 +19,9 @@ export function Blog({ blogs }) {
             <p>{item?.fields?.metaData?.slice(0, 60)}...</p>
             <div className={style.imageCont}>
               <Image
-                src={"https:" + item.fields.cardImage.fields.file.url}
+                src={item?.fields?.cardImage?.fields?.file?.url ? "https:" + item?.fields?.cardImage?.fields?.file?.url : "/images/bunion-logo.png"}
                 fill
-                alt={item.fields.cardImage.fields.description}
+                alt={item?.fields?.cardImage?.fields?.description}
                 style={{
                   objectFit: "contain",
                   objectPosition: "center",

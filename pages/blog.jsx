@@ -13,6 +13,7 @@ export async function getStaticProps() {
   const fetchedProducts = await fetchEntries({
     content_type: "bunionSurgeonBlogs",
   });
+  console.log('fetched prod: ', fetchedProducts)
   const { base64: logoBase64, img: logoImg } = await getPlaiceholder(
     "/images/bunion-logo.png"
   );
