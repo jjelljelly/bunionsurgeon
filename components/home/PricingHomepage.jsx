@@ -1,6 +1,7 @@
 import style from "./PricingHomepage.module.css";
 import { usePricingContext } from "../../context/pricingContext";
 import { HomeFeesCont } from "./HomeFeesCont";
+import Link from "next/link";
 
 export function PricingHomepage({ }) {
   const data = usePricingContext({});
@@ -23,6 +24,12 @@ export function PricingHomepage({ }) {
             your insurance provider to request authorisation for a consultation
             and X-ray, our team will assist you with all required information to
             authorise the procedure following your appointment.
+          </p>
+          <p>
+            Our bunion procedures are carried out at The Weymouth Street Hospital who have partnered with <Link href={"https://www.bunionsurgeon.co.uk/surgeries/minimally-invasive-keyhole-bunion-surgery"}
+              target="_blank">
+              <b>Chrysallis Finance</b>
+            </Link> to offer monthly payment plans.
           </p>
         </div>
         <div className={style.pricing}>
