@@ -11,7 +11,7 @@ export function SurgeryFees({ visible }) {
       <div>
         <div className={style.addInfo}>
           <p>
-            Our bunion procedures are carried out at The Weymouth Street Hospital who have partnered with <Link href={"https://www.bunionsurgeon.co.uk/surgeries/minimally-invasive-keyhole-bunion-surgery"}
+            Our bunion procedures are carried out at The Weymouth Street Hospital who have partnered with <Link href={"https://www.phoenixhospitalgroup.com/paying-for-your-care/finance-options/"}
               target="_blank">
               <b>Chrysallis Finance</b>
             </Link> to offer monthly payment plans.
