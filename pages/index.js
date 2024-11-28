@@ -32,7 +32,7 @@ export async function getStaticProps() {
     "/images/abstract-lines.png"
   );
   const { base64: logoBase64, img: logoImg } = await getPlaiceholder(
-
+    "/images/bunion-logo.png"
   );
 
   return {
