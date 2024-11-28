@@ -11,7 +11,7 @@ export function Banner({ image }) {
         <h3>We specialise in state-of-the-art <Link href={"https://www.bunionsurgeon.co.uk/surgeries/minimally-invasive-keyhole-bunion-surgery"}
           target="_blank">
           <b>minimally invasive bunion surgery</b>
-        </Link> to help you walk comfortably and confidently again. Our advanced techniques are designed to minimise pain, reduce recovery time, and achieve exceptional outcomes - all while focusingon your individual needs.</h3>
+        </Link> to help you walk comfortably and confidently again. Our advanced techniques are designed to minimise pain, reduce recovery time, and achieve exceptional outcomes - all while focusing on your individual needs.</h3>
         <h3>Take the first step toward a pain-free life.</h3>
         <h3>Contact us today!</h3>
         <Link href={"https://bookonline.bunionsurgeon.co.uk/"}
