@@ -38,22 +38,31 @@
   .mainContainer {
     padding-top: 30px;
   }
+
   .header {
     padding-bottom: 20px;
   }
+
   .secContainer {
     display: none;
   }
+
   .textCont {
     width: 100%;
     align-items: center;
   }
 }
 
-@media screen and (min-width: 700px) and (max-width: 1200px) {
+@media screen and (min-width: 701px) and (max-width: 1200px) {
+
+  .mainContainer {
+    height: 750px;
+  }
+
   .secContainer {
     display: none;
   }
+
   .textCont {
     width: 100%;
     align-items: center;

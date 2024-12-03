@@ -74,6 +74,10 @@
     height: 650px;
     padding-top: 0px;
   }
+
+  .contactWrapper {
+    height: 1300px;
+  }
 }
 
 @media screen and (min-width: 2000px) {

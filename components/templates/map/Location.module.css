@@ -21,7 +21,7 @@
   min-height: 300px;
   display: flex;
   justify-content: center;
-  aliqn-items: center;
+  align-items: center;
   flex-direction: column;
   text-align: center;
   padding: 0 30px;
@@ -36,6 +36,7 @@
   align-items: center;
   justify-content: center;
 }
+
 .map {
   width: 90%;
   height: 100%;
@@ -51,23 +52,23 @@
   margin-top: 0;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
   .locationCont {
-    padding-top: 40px;
+    padding: 10px;
   }
+
   .infoCont {
-    /* flex-direction: row; */
     flex-wrap: wrap;
-    min-height: 700px;
     justify-content: space-evenly;
     padding-top: 0;
   }
+
   .address {
     width: 100%;
     border: none;
   }
+
   .mapCont {
-    width: 100%;
-    height: 300px;
+    display: none;
   }
 }

@@ -10,7 +10,7 @@ const navObjects = [
     link: "/",
   },
   {
-    title: "About us",
+    title: "About Mr Kaser Nazir - The Surgeon",
     subMenu: false,
     link: "/about",
   },

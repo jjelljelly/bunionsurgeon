@@ -33,7 +33,7 @@ export function PricingHomepage({ }) {
           </p>
         </div>
         <div className={style.pricing}>
-          <div className={style.price}>
+          <div className={style.priceConsult}>
             <h3 className={style.feeDescription}>Consultation</h3>
             <p>£250</p>
           </div>

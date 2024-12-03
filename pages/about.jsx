@@ -7,7 +7,6 @@ import { Wrapper, InfoWindow } from "@googlemaps/react-wrapper";
 import style from "./about.module.css";
 import { useState } from "react";
 import { Marker } from "../components/templates/map/Marker";
-import { NewMap } from "../components/templates/map/NewMap.";
 import { getPlaiceholder } from "plaiceholder";
 import { AboutImage } from "../components/about/AboutImage";
 
@@ -87,7 +86,7 @@ export default function About({
   return (
     <>
       <Head>
-        <title>About Us | Mr Kaser Nazir | Bunion Surgeon</title>
+        <title>About | Mr Kaser Nazir | Bunion Surgeon</title>
         <meta
           name="description"
           content="Our bunion surgeon, Mr Kaser Nazir, is one of the leading surgeons in the United Kingdom. With over a 97% success rate, excellent patient results and feedback."
