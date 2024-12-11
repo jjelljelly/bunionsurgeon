@@ -11,7 +11,7 @@ import { Location } from '../components/templates/map/Location'
 import { Marker } from '../components/templates/map/Marker'
 import { useState } from "react";
 import { getPlaiceholder } from "plaiceholder";
-import { BeforeAndAfterHome } from '../components/home/BeforeandAfterHome'
+import { BeforeAndAfterHome } from '../components/home/BeforeAndAfterHome'
 import { fetchEntries } from '../lib/contentful'
 
 
@@ -65,7 +65,7 @@ export async function getStaticProps() {
 
 export default function Home({ imageProps, bsImage, blImage, logoImage, beforeAfterImages }) {
 
-  const firstThree = beforeAfterImages.filter((item, idx) => idx < 6)
+  const firstThree = beforeAfterImages.filter((item, idx) => idx < 8)
   const [clicks, setClicks] = useState([]);
   const [zoom, setZoom] = useState(16); // initial zoom
   const [center, setCenter] = useState({
