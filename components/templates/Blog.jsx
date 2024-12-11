@@ -4,7 +4,6 @@ import Link from "next/link";
 import { getSlug } from "../../lib/utils";
 
 export function Blog({ blogs }) {
-  console.log('blogs', blogs)
   return (
     <div className={style.blogPageCont}>
       {blogs.map((item) => (

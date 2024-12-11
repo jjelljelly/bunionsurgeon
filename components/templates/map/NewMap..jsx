@@ -31,7 +31,7 @@ export function NewMap() {
   }, []);
 
   const onLoading = (marker) => {
-    console.log("marker: ", marker);
+    // console.log("marker: ", marker);
   };
 
   return isLoaded ? (

@@ -7,8 +7,6 @@
 .bannerText {
   z-index: 1;
   position: absolute;
-  /* left: 17%;
-  top: 30%; */
   top: 10%;
   text-align: center;
   color: #4f5f78;
@@ -22,7 +20,8 @@
 
 .image {
   width: 100%;
-  height: 90vh;
+  height: 100vh;
+  position: relative;
 }
 
 .bannerQuote {
@@ -46,13 +45,13 @@
   }
 }
 
-@media screen and (min-width: 751px) and (max-width: 1200px) {
+@media screen and (min-width: 801px) and (max-width: 1200px) {
   .bannercont {
-    height: 700px;
+    height: 500px;
   }
 
   .image {
-    height: 50vh;
+    height: 55vh;
   }
 
   .bannerText {
@@ -60,8 +59,70 @@
   }
 }
 
-@media screen and (min-width: 2000px) {
+
+@media screen and (min-width: 751px) and (max-width: 800px) {
+  .bannercont {
+    height: 500px;
+  }
+
   .image {
-    height: 80vh;
+    height: 90vh;
+  }
+
+  .bannerText {
+    top: 0%;
+  }
+}
+
+
+@media screen and (min-width: 1201px) and (max-width: 1399px) {
+  .bannercont {
+    height: 450px;
+  }
+
+  .image {
+    height: 60vh;
+  }
+
+  .bannerText {
+    top: 0%;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .image {
+    height: 90vh;
+  }
+
+  .bannercont {
+    height: 800px;
+
+  }
+}
+
+@media screen and (min-width: 1400px) and (min-height: 1100px) {
+  .image {
+    height: 70vh;
+  }
+
+  .bannercont {
+    height: 800px;
+
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  .image {
+    display: none;
+  }
+
+  .bannerCont {
+    display: flex;
+    justify-content: center;
+  }
+
+  .bannerText {
+    width: 60%;
+
   }
 }

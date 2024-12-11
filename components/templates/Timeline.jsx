@@ -11,7 +11,6 @@ export function Timeline({ children, timelineObj }) {
 
   return (
     <div className={style.timelineCont}>
-      {/* <h2 className={style.header}>Clinical Qualifications and Posts</h2> */}
       <div className={style.arrowCont}>
         <button
           onClick={() => setTimeline(timeline - 1)}

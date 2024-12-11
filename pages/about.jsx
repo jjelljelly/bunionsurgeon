@@ -78,7 +78,6 @@ export default function About({
   };
 
   const onIdle = (m) => {
-    console.log("onIdle");
     setZoom(m.getZoom());
     setCenter(m.getCenter().toJSON());
   };

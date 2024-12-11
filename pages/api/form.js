@@ -4,7 +4,7 @@ export default function handler(req, res) {
 
     // Optional logging to see the responses
     // in the command line where next.js app is running.
-    console.log('body: ', body)
+    // console.log('body: ', body)
 
     // Guard clause checks for details in body
     // and returns early if they are not found
@@ -12,15 +12,15 @@ export default function handler(req, res) {
         // Sends a HTTP bad request error code
         return res.status(400).json({ data: 'Provide full details' })
     }
-    console.log(process.env.EMAIL)
+    // console.log(process.env.EMAIL)
 
     // Node function to handle contact form submission
     if (req.body.oh_no_honey) {
         //handle as spam
-        console.log("spam")
+        // console.log("spam")
         // res.send('spam')
     } else {
-        console.log('Sending mail');
+        // console.log('Sending mail');
 
         //nodemailer transporter
         const nodemailer = require('nodemailer');
@@ -57,11 +57,9 @@ export default function handler(req, res) {
         };
 
         transporter.sendMail(forwardMail, async (error, info) => {
-            // if (error) await console.log(error)
             if (error) {
                 console.log("error")
             }
-            //res.send(info)
         });
 
         //send email confirmation to form user

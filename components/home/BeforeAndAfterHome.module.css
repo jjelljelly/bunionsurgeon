@@ -1,0 +1,141 @@
+.baaCont {
+    width: 100%;
+    background-color: white;
+    min-height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 20px 10px;
+    color: #063b5e;
+}
+
+.cardCont {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    color: #063b5e;
+    text-align: center;
+    flex-direction: row;
+}
+
+.card {
+    height: 275px;
+    border: dotted 3px #063b5e;
+    width: 32%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px 5px 20px;
+    padding: 5px;
+}
+
+.twoImages {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.imageCont {
+    width: 50%;
+    min-height: 175px;
+    position: relative;
+}
+
+.image {
+    padding: 10px 0 0;
+    border-radius: 20px;
+    object-fit: contain;
+}
+
+
+
+@media screen and (max-width: 700px) {
+
+    .card {
+        width: 100%;
+    }
+}
+
+
+.header {
+    text-align: center;
+    color: #4f5f78;
+    margin: 0;
+    padding: 40px 0;
+}
+
+.line {
+    width: 80%;
+    border: solid 2px #4f5f78;
+    margin: 0 10px;
+}
+
+.arrowCont {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.timeLine {
+    height: 18px;
+    width: 1px;
+    border-right: 2px solid white;
+}
+
+.itemContainer {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+.timelineValues {
+    padding: 0 10px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+
+.button {
+    visibility: hidden;
+    margin: 0;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    padding: 20px 20px;
+    display: flex;
+    align-items: center;
+}
+
+.buttonVis {
+    margin: 0;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.time {
+    font-weight: bold;
+}
+
+.description {
+    font-style: italic;
+}
+
+@media screen and (max-width: 700px) {
+    .itemContainer {
+        width: 90%;
+        min-height: 250px;
+    }
+}

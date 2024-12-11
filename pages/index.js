@@ -11,6 +11,8 @@ import { Location } from '../components/templates/map/Location'
 import { Marker } from '../components/templates/map/Marker'
 import { useState } from "react";
 import { getPlaiceholder } from "plaiceholder";
+import { BeforeAndAfterHome } from '../components/home/BeforeandAfterHome'
+import { fetchEntries } from '../lib/contentful'
 
 
 // Google maps
@@ -31,6 +33,9 @@ export async function getStaticProps() {
   const { base64: blBase64, img: blImg } = await getPlaiceholder(
     "/images/abstract-lines.png"
   );
+  const fetchedProducts = await fetchEntries({
+    content_type: "beforeandafterimage",
+  });
   const { base64: logoBase64, img: logoImg } = await getPlaiceholder(
     "/images/bunion-logo.png"
   );
@@ -41,6 +46,7 @@ export async function getStaticProps() {
         ...img,
         blurDataURL: base64,
       },
+      beforeAfterImages: fetchedProducts,
       bsImage: {
         ...bsImg,
         blurDataURL: bsBase64
@@ -57,9 +63,9 @@ export async function getStaticProps() {
   };
 };
 
-export default function Home({ imageProps, bsImage, blImage, logoImage }) {
+export default function Home({ imageProps, bsImage, blImage, logoImage, beforeAfterImages }) {
 
-
+  const firstThree = beforeAfterImages.filter((item, idx) => idx < 6)
   const [clicks, setClicks] = useState([]);
   const [zoom, setZoom] = useState(16); // initial zoom
   const [center, setCenter] = useState({
@@ -90,6 +96,7 @@ export default function Home({ imageProps, bsImage, blImage, logoImage }) {
       <Layout logo={logoImage} >
         <Banner image={imageProps} />
         <KnOverview image={blImage} />
+        <BeforeAndAfterHome images={firstThree} />
         <BulletpointSurgery images={bsImage} image={blImage} />
         <PricingHomepage />
         <ExtraInfo image={blImage} />

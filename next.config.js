@@ -240,9 +240,6 @@ module.exports = withPlaiceholder({
             },
         ]
     },
-    // images: {
-    //     domains: ['images.ctfassets.net'],
-    // }
     images: {
         remotePatterns: [
             {
