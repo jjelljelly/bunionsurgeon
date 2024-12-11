@@ -74,7 +74,7 @@ export function BeforeAndAfterCard({ images }) {
                   src={"https:" + item?.fields.beforeImage.fields.file.url}
                   alt={item?.fields.beforeAlt}
                   fill
-                  objectFit="contain"
+                  sizes={'(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'}
                   className={style.image}
                 />
               </div>
@@ -82,8 +82,8 @@ export function BeforeAndAfterCard({ images }) {
                 <Image
                   src={"https:" + item?.fields.afterImage.fields.file.url}
                   alt={item?.fields.afterAlt}
+                  sizes={'(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'}
                   fill
-                  objectFit="contain"
                   className={style.image}
                 />
               </div>

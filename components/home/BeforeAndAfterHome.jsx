@@ -48,6 +48,7 @@ export function BeforeAndAfterHome({ images }) {
                                             src={"https:" + item.fields.beforeImage.fields.file.url}
                                             alt={item.fields.beforeAlt}
                                             fill
+                                            sizes={'(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'}
                                             className={style.image}
                                         />
                                     </div>
@@ -56,6 +57,7 @@ export function BeforeAndAfterHome({ images }) {
                                             src={"https:" + item.fields.afterImage.fields.file.url}
                                             alt={item.fields.afterAlt}
                                             fill
+                                            sizes={'(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'}
                                             className={style.image}
                                         />
                                     </div>
