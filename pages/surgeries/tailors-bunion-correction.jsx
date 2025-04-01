@@ -161,7 +161,7 @@ export default function TailorsBunion({
                 url: "https://www.bunionsurgeon.co.uk/",
                 contactPoint: {
                   "@type": "ContactPoint",
-                  telephone: "+44 207 820 8007",
+                  telephone: "020 74594326",
                   contactType: "none",
                 },
               },
@@ -205,7 +205,7 @@ export default function TailorsBunion({
           <BackgroundLines image={blImage} />
           <h1>Tailor's Bunion Correction</h1>
           <p>
-          The osteotomy procedure is favoured by Mr Kaser Nazir to correct a Tailor`s Bunion.
+            The osteotomy procedure is favoured by Mr Kaser Nazir to correct a Tailor`s Bunion.
           </p>
         </div>
         <div className={style.tailorsCont}>
@@ -232,7 +232,7 @@ export default function TailorsBunion({
             The condition is often progressive if left untreated, it cannot be corrected without surgery. As the bump on the fifth toe gets larger it can cause pain from excessive friction against footwear.
           </p>
           <p>
-          The osteotomy procedure allows correction of the Tailor’s bunion with the use of two screw fixations.
+            The osteotomy procedure allows correction of the Tailor’s bunion with the use of two screw fixations.
           </p>
         </div>
         <div className={style.howCont}>

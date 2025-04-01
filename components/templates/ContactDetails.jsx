@@ -8,9 +8,9 @@ export function ContactDetails() {
     <div className={style.contactWrapper}>
       <div className={style.howContact}>
         <button className={style.contact}>
-          <Link href="tel:+442078208007">
+          <Link href="tel:+442074594326">
             <h2 className={style.title}>Call us</h2>
-            <p>+44207 820 8007</p>
+            <p>+44207 459 4326</p>
           </Link>
         </button>
         <button className={style.contact}>

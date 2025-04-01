@@ -9,8 +9,8 @@ export function Footer() {
     <footer>
       <div>
         <div className={style.footContainer}>
-          <Link href="tel:+442078208007">
-            <p className={style.footText}>+44 207 820 8007</p>
+          <Link href="tel:+442074594326">
+            <p className={style.footText}>+44207 459 4326</p>
           </Link>
           <Divider />
           <Link href="https://goo.gl/maps/wc9BqFWdm2FXC4jZA" target="_blank">

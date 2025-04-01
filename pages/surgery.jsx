@@ -112,7 +112,7 @@ export default function Surgery({
                 url: "https://www.bunionsurgeon.co.uk/",
                 contactPoint: {
                   "@type": "ContactPoint",
-                  telephone: "+44 207 820 8007",
+                  telephone: "020 74594326",
                   contactType: "none",
                 },
               },

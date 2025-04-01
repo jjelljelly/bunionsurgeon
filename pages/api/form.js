@@ -283,7 +283,7 @@ export default function handler(req, res) {
             <td style="overflow-wrap:break-word;word-break:break-word;padding:10px 10px 1px;font-family: "Playfair Display", serif;" align="left">
                 
         <div style="color: #ffffff; line-height: 180%; text-align: center; word-wrap: break-word;">
-            <p style="font-size: 14px; line-height: 180%;"><em>02078208007</em></p>
+            <p style="font-size: 14px; line-height: 180%;"><em>02074594326</em></p>
         </div>
 
             </td>

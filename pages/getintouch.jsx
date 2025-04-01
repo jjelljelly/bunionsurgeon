@@ -70,7 +70,7 @@ export default function GetInTouch({ blImage, logoImage }) {
         <title>Get In Touch | Bunion Surgeon</title>
         <meta
           name="description"
-          content="If you have any questions contact us, via - Tel: 0207 820 8007, Email: admin@bunionsurgeon.co.uk, Address: 17 Harley Street, London, W1G 9QH"
+          content="If you have any questions contact us, via - Tel: 020 74594326, Email: admin@bunionsurgeon.co.uk, Address: 17 Harley Street, London, W1G 9QH"
         />
         <link rel="icon" href="/images/bunion-logo.png" />
         <meta
@@ -112,7 +112,7 @@ export default function GetInTouch({ blImage, logoImage }) {
                       "@id": "https://www.bunionsurgeon.co.uk/getintouch/",
                       name: "Get in Touch",
                       description:
-                        "Contact us, via - Tel: 0207 820 8007, Email: admin@bunionsurgeon.co.uk, Address: 17 Harley Street, London, W1G 9QH",
+                        "Contact us, via - Tel: 02074594326, Email: admin@bunionsurgeon.co.uk, Address: 17 Harley Street, London, W1G 9QH",
                       url: "https://www.bunionsurgeon.co.uk/getintouch/",
                     },
                     previousItem: "https://www.bunionsurgeon.co.uk/#listItem",
@@ -126,7 +126,7 @@ export default function GetInTouch({ blImage, logoImage }) {
                 url: "https://www.bunionsurgeon.co.uk/",
                 contactPoint: {
                   "@type": "ContactPoint",
-                  telephone: "+44 207 820 8007",
+                  telephone: "020 74594326",
                   contactType: "none",
                 },
               },
@@ -148,7 +148,7 @@ export default function GetInTouch({ blImage, logoImage }) {
                 url: "https://www.bunionsurgeon.co.uk/getintouch/",
                 name: "Get In Touch | bunionsurgeon",
                 description:
-                  "Contact us, via - Tel: 0207 820 8007, Email: admin@bunionsurgeon.co.uk, Address: 17 Harley Street, London, W1G 9QH",
+                  "Contact us, via - Tel: 020 74594326, Email: admin@bunionsurgeon.co.uk, Address: 17 Harley Street, London, W1G 9QH",
                 inLanguage: "en-GB",
                 isPartOf: {
                   "@id": "https://www.bunionsurgeon.co.uk/#website",
